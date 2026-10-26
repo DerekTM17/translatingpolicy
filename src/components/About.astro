@@ -1,0 +1,25 @@
+---
+/**
+ * "Who's behind this": name, title, bio, three principles. `[DEREK: ...]`
+ * placeholders render visibly (dashed orange) until Derek supplies the copy.
+ */
+import about from '../data/about.json';
+
+const isPlaceholder = (s: string) => s.startsWith('[DEREK:');
+---
+
+<section class="wrap" id="about">
+  <div class="sec-title"><h2>Who's behind this</h2><small>About</small></div>
+  <div class="about">
+    <div>
+      <h3>{about.name}</h3>
+      <div class="role">{isPlaceholder(about.title) ? <span class="ph">{about.title}</span> : about.title}</div>
+    </div>
+    <div>
+      <p>{isPlaceholder(about.bio) ? <span class="ph">{about.bio}</span> : about.bio}</p>
+      <ul class="principles">
+        {about.principles.map((pr) => <li><b>{pr.name}</b><span>{pr.text}</span></li>)}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+{
+  "name": "Derek Miller",
+  "title": "[DEREK: one-line title]",
+  "bio": "[DEREK: bio paragraph]",
+  "principles": [
+    { "name": "Plain language", "text": "Written so an eighth grader can follow it. No jargon left unexplained." },
+    { "name": "Show the source", "text": "Every summary links to the official record it came from." },
+    { "name": "Show the cost", "text": "Where a number exists, it's on the page, along with who calculated it." }
+  ]
+}

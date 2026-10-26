@@ -1,0 +1,26 @@
+---
+/**
+ * Mission hero: headline, lede, and a real before/after pair (statute text on
+ * the left, its plain-English meaning on the right, linked to the source).
+ */
+import hero from '../data/hero.json';
+
+// The mockup accents everything after the first comma ("in plain English.").
+const [lead, ...rest] = hero.headline.split(', ');
+const accent = rest.join(', ');
+---
+
+<section class="hero wrap" id="mission">
+  <div class="eyebrow">translatingpolicy.com</div>
+  <h1>{accent ? <>{lead}, <em>{accent}</em></> : lead}</h1>
+  <p class="lede">{hero.lede}</p>
+  <figure class="translate" aria-label="Example translation">
+    <div class="from">
+      <span class="k">The bill says</span>
+      <blockquote cite={hero.before.sourceUrl}>“{hero.before.text}”</blockquote>
+      <a class="src" href={hero.before.sourceUrl}>{hero.before.sourceLabel} ↗</a>
+    </div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="to"><span class="k">What it means</span>{hero.after}</div>
+  </figure>
+</section>

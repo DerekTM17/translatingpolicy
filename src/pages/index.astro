@@ -1,12 +1,34 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import Hero from '../components/Hero.astro';
+import ProjectRow from '../components/ProjectRow.astro';
+import About from '../components/About.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { getProjects } from '../lib/projects';
+
+const projects = getProjects();
 ---
 
 <BaseLayout
   title="Translating Policy"
   description="Free tools that turn public policy into plain facts."
 >
-  <main>
-    <h1>Translating Policy</h1>
+  <SiteNav />
+  <main id="top">
+    <Hero />
+    <section class="wrap" id="projects">
+      <div class="sec-title"><h2>The tools</h2><small>{projects.length} live</small></div>
+      <div class="listc">
+        {projects.map((project) => <ProjectRow project={project} />)}
+      </div>
+    </section>
+    <About />
   </main>
+  <SiteFooter />
 </BaseLayout>
+
+<script>
+  import { initEffects } from '../scripts/effects';
+  initEffects();
+</script>

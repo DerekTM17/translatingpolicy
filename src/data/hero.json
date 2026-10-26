@@ -1,0 +1,10 @@
+{
+  "headline": "Government, in plain English.",
+  "lede": "Bills, budgets and legislative records are written for lawyers. These tools turn them into something anyone can read in a few minutes, with the original source one click away.",
+  "before": {
+    "text": "If a provider elects to transmit emergency alerts to subscribers by satellite under paragraph (1), the provider may not impose a separate or additional charge for such transmission or capability.",
+    "sourceLabel": "H.R. 7022, Mystic Alerts Act, sec. 2(a)(5)",
+    "sourceUrl": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022enr.htm"
+  },
+  "after": "If your phone company sends emergency alerts by satellite, it can't charge you more for them."
+}
