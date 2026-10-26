@@ -41,3 +41,28 @@
   - The Vercel MCP connector isn't authorized for team derektm17s-projects (403).
   - The statehouse prod host is statehouse.up.railway.app.
 - **Resume:** `cd ~/projects/translatingpolicy`, read this handoff + the SDD ledger, invoke superpowers:subagent-driven-development, and resume at the first task without a `complete` line (Task 7).
+
+#### Handoff — Task 7 done: translatingpolicy.com is live; Phase C (back-links) next
+
+- **Goal:** finish Phase B of `docs/superpowers/plans/2026-10-26-translatingpolicy-hub-plan.md` (subagent-driven), then Phase C.
+- **Done (verified):**
+  - Railway's TLS incident (status.railway.com incident 854ABT7N) was resolved 20:02 UTC, but our two certs stayed frozen at ISSUE_FAILED / `retryable: false`, and retries were refused by both the MCP and the CLI. With Derek's OK, both Railway custom domains were **deleted and re-added** (21:10 UTC). New IDs: uscongress `e6d437c1-65da-4bbe-98a9-d4fc28a70438` (CNAME ha8jx6z7.up.railway.app), statehouses `1813881c-2e23-4f94-b77f-ea9de1d53538` (CNAME s56uvna2.up.railway.app). The old IDs in the previous handoff are gone. Certs issued within minutes (Let's Encrypt, exp 2027-01-24).
+  - `npm run check-links`: all 5 OK.
+  - **Task 7 done.** Derek switched GoDaddy through Claude in Chrome: `@` A 216.198.79.1 (replacing the "WebsiteBuilder Site" record = 13.248.243.5/76.223.105.230), `www` CNAME e745fe0d3a5fa4fa.vercel-dns-017.com, and the uscongress/statehouses CNAMEs set to the new targets. The `_railway-verify` TXT records were not needed (already verified). Checks: `curl --resolve translatingpolicy.com:443:216.198.79.1` → 200, 4 rows; www → 308 to apex; Cloudflare DNS returns the new IP. Google DNS still had the old IPs cached at handoff time (TTL ~48 min), so recheck plain `curl -s https://translatingpolicy.com/ | grep -o 'class="rowc' | wc -l` → 4.
+  - The ledger entry "translatingpolicy.com now opens the policy tools home page" was shipped (3eba76e). The SDD ledger has a `Task 7: complete` line. Memory `project_translatingpolicy_domain.md` was updated. Both session crons were deleted.
+  - The "Enforce HTTPS" item for inflation-reality looks done: http:// returns 301 to https.
+- **Next:** Phase C, Tasks 8–12 in the plan (lines 159–198). Each tool gets a "← Translating Policy" link to https://translatingpolicy.com plus a switch of its canonical address. Work one repo per task, using TDD:
+  1. Task 8: congressional-dashboard on branch `claude/translatingpolicy-backlink`, then open a PR. Derek merges.
+  2. Task 9: state-legislature-dashboard. Commit on main locally; Derek pushes with `!` because a push deploys to production.
+  3. Task 10: attractor. Set `site:` in `astro.config.mjs` and add the back-link; a push to main deploys.
+  4. Task 11: inflation-reality back-link. Also switch `scripts/fetch-fred.mjs:16` to https://inflation.translatingpolicy.com and fix the stale comment in `routes.js:17` (deferred minors from Task 6).
+  5. Task 12: wrap-up. Run check-links again, ship one ledger entry per repo, update memory.
+- **Decisions:** every ruling is in the gitignored SDD ledger `.superpowers/sdd/2026-10-26-translatingpolicy-hub-plan/progress.md`. Collect its `Ruling:` lines for the final report. New today: deleting and re-adding domains was OK this one time, with Derek's explicit approval, after the incident resolved. Don't do it again without asking.
+- **Gotchas:**
+  - Railway retry tools refuse when `retryable: false`. Their message ("check DNS records") is misleading.
+  - Re-adding a Railway domain gives it a **new CNAME target and TXT**. Railway still issued the cert while GoDaddy had the old CNAME.
+  - GoDaddy shows its parking A records as a single "WebsiteBuilder Site" record.
+  - `dig` is not installed. Use `curl "https://dns.google/resolve?name=X&type=A"` or cloudflare-dns.com with `accept: application/dns-json`.
+  - The classifier blocks `gh pr merge`, pushes that deploy to production, and `gh api PUT`. Hand Derek `!` commands. (Congressional memory: `gh pr merge` works when Derek explicitly says merge.)
+  - inflation-reality has a note left UNCOMMITTED in `~/projects/inflation-reality-phase2b/docs/SESSIONS.md`. That worktree is the unmerged Rev 4 redesign; don't mix the Task 11 work into it. Do Task 11 in `~/projects/inflation-reality` on main.
+- **Resume:** `cd ~/projects/translatingpolicy`, read this handoff and the SDD ledger, invoke superpowers:subagent-driven-development, and start at Task 8.
