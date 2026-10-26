@@ -1,11 +1,11 @@
 ---
 /**
- * "Who's behind this": name, title, bio, three principles. `[DEREK: ...]`
+ * "Who's behind this": name, title, bio, three principles. Owner-copy
  * placeholders render visibly (dashed orange) until Derek supplies the copy.
  */
 import about from '../data/about.json';
+import { isPlaceholder } from '../lib/placeholder';
 
-const isPlaceholder = (s: string) => s.startsWith('[DEREK:');
 ---
 
 <section class="wrap" id="about">
