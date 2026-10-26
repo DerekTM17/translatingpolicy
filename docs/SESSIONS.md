@@ -66,3 +66,9 @@
   - The classifier blocks `gh pr merge`, pushes that deploy to production, and `gh api PUT`. Hand Derek `!` commands. (Congressional memory: `gh pr merge` works when Derek explicitly says merge.)
   - inflation-reality has a note left UNCOMMITTED in `~/projects/inflation-reality-phase2b/docs/SESSIONS.md`. That worktree is the unmerged Rev 4 redesign; don't mix the Task 11 work into it. Do Task 11 in `~/projects/inflation-reality` on main.
 - **Resume:** `cd ~/projects/translatingpolicy`, read this handoff and the SDD ledger, invoke superpowers:subagent-driven-development, and start at Task 8.
+
+#### Handoff — Phase C done: hub plan COMPLETE (Tasks 1–12)
+
+- **Done (verified live 2026-10-26 ~22:05 UTC):** every tool shows a "← Translating Policy" link to https://translatingpolicy.com. Congress (PR #216 merged, 041a445) and ATTRACTOR (567bfb0) also switched their share/canonical addresses to their subdomains. Statehouse is at b6d7ed5; Inflation (631a809) also fetches CPI data from the new address. `npm run check-links` 5/5 OK; old URLs still 200/301. Ledger shipped for all five repos; memory updated. SDD workspace deleted; attractor-backlink worktree removed.
+- **Follow-ups (not started):** LinkHub revisit; link the hub from the portfolio site; ~/drafts/translatingpolicy-hub/ is now a stale duplicate of docs/superpowers/ (safe to delete once Derek agrees); ATTRACTOR hub bottom bar sits slightly off-centre on desktop since the link was added (cosmetic).
+- **Gotcha:** after the DNS switch, Derek's own machine kept the old GoDaddy IPs past a Windows `ipconfig /flushdns` (router/ISP cache). Use Chrome's chrome://net-internals/#dns or `nslookup translatingpolicy.com 1.1.1.1`.
