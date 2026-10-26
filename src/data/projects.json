@@ -1,0 +1,43 @@
+[
+  {
+    "id": "congress",
+    "title": "Congressional Dashboard",
+    "host": "uscongress.",
+    "url": "https://uscongress.translatingpolicy.com",
+    "status": "Live",
+    "statusNote": "nightly",
+    "description": "Every bill moving through Congress, in plain language. See what the Congressional Budget Office says each one would cost.",
+    "stat": "Bills · votes · CBO costs",
+    "accent": "congress"
+  },
+  {
+    "id": "statehouse",
+    "title": "State Legislature Dashboard",
+    "host": "statehouses.",
+    "url": "https://statehouses.translatingpolicy.com",
+    "status": "Live",
+    "description": "The same treatment for state capitols: what your legislature is voting on this session, and what it would change.",
+    "stat": "13 of 50 states, more coming",
+    "accent": "state"
+  },
+  {
+    "id": "attractor",
+    "title": "ATTRACTOR",
+    "host": "attractor.",
+    "url": "https://attractor.translatingpolicy.com",
+    "status": "Live",
+    "description": "Proposals for a country that builds again. Each one shows how it works, what it costs, and the strongest argument against it.",
+    "stat": "39 proposals · 8 policy areas",
+    "accent": "attractor"
+  },
+  {
+    "id": "inflation",
+    "title": "Inflation Reality",
+    "host": "inflation.",
+    "url": "https://inflation.translatingpolicy.com",
+    "status": "Live",
+    "description": "Type in a price and a year. See what it would cost today, using the government's own inflation numbers.",
+    "stat": "Official CPI data",
+    "accent": "inflation"
+  }
+]

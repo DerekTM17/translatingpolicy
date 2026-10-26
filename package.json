@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check-links": "node scripts/check-links.mjs",
     "test": "python3 scripts/reading-level.py && vitest run"
   },
   "dependencies": {
