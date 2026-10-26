@@ -1,0 +1,19 @@
+/* Design tokens, named as in the approved mockup and shared with ATTRACTOR. */
+:root {
+  color-scheme: dark;
+  --void: #010509;
+  --void-mid: #031020;
+  --glow: #00b4ff;
+  --glow-rgb: 0, 180, 255;
+  --ink: rgba(214, 238, 255, 0.92);
+  --ink-dim: rgba(150, 200, 235, 0.62);
+  --line: rgba(0, 180, 255, 0.16);
+  --accent: #ff6a00;
+  --c-congress: #00b4ff;  --c-congress-rgb: 0, 180, 255;
+  --c-state: #00e88c;     --c-state-rgb: 0, 232, 140;
+  --c-attractor: #ff6a00; --c-attractor-rgb: 255, 106, 0;
+  --c-inflation: #ffb830; --c-inflation-rgb: 255, 184, 48;
+  --f-display: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
