@@ -72,3 +72,30 @@
 - **Done (verified live 2026-10-26 ~22:05 UTC):** every tool shows a "← Translating Policy" link to https://translatingpolicy.com. Congress (PR #216 merged, 041a445) and ATTRACTOR (567bfb0) also switched their share/canonical addresses to their subdomains. Statehouse is at b6d7ed5; Inflation (631a809) also fetches CPI data from the new address. `npm run check-links` 5/5 OK; old URLs still 200/301. Ledger shipped for all five repos; memory updated. SDD workspace deleted; attractor-backlink worktree removed.
 - **Follow-ups (not started):** LinkHub revisit; link the hub from the portfolio site; ~/drafts/translatingpolicy-hub/ is now a stale duplicate of docs/superpowers/ (safe to delete once Derek agrees); ATTRACTOR hub bottom bar sits slightly off-centre on desktop since the link was added (cosmetic).
 - **Gotcha:** after the DNS switch, Derek's own machine kept the old GoDaddy IPs past a Windows `ipconfig /flushdns` (router/ISP cache). Use Chrome's chrome://net-internals/#dns or `nslookup translatingpolicy.com 1.1.1.1`.
+
+#### Handoff — ATTRACTOR top back-link live; next: plan how people email translatingpolicy@gmail.com
+
+- **Goal:** finish the back-links, then set up a review of how visitors contact Derek.
+- **Done (verified):**
+  - ATTRACTOR's home page has "← Translating Policy" in the top bar, ahead of "ATTRACTOR // HUB" and stacked above it on phones. The bottom-bar link stays. Shipped as attractor 53656ff, built off origin/main in a temporary worktree, now removed.
+  - Tests: 221/221 pass, including reading-level, and the build passes. A headless check of the live site at 320, 375 and 1280px showed the link clickable and scrollWidth == innerWidth.
+  - The Phase C handoff above still applies: all four tools are linked and live, and check-links passed 5/5.
+- **Next — review email contact for translatingpolicy@gmail.com (no code yet; brainstorm first).** What exists today, checked against origin/main:
+  - **Congress + Statehouse:**
+    - `frontend/src/config.js` has `FEEDBACK_EMAIL = "translatingpolicy@gmail.com"` and an empty `FEEDBACK_FORM_URL`, so a Google Form would win if one were set.
+    - Every "Send feedback" link is a `mailto:` with a per-app subject. Statehouse has one in the header and one in the footer; the footer copy opens with target=_blank.
+  - **ATTRACTOR:**
+    - `SITE.contactEmail = 'TranslatingPolicy@gmail.com'` in `src/content/domains.ts:163`, mixed case.
+    - Shown as "Email Derek" in the hub top bar (`NavOverlay.tsx`) and as EmailContact.astro in the footer.
+    - `scripts/verify-evidence-build.mjs` pins the exact string.
+  - **Hub (translatingpolicy.com) + Inflation Reality:** no contact link at all.
+  - **Open questions for Derek:**
+    - Should the hub list a contact, and should Inflation Reality get one?
+    - mailto, a form, or both? A Google Form avoids exposing the address to scrapers and works for people without a mail app.
+    - Spam exposure of a plain address in page HTML.
+    - Should all sites use one casing and one wording ("Send feedback" vs "Email Derek")?
+    - Per-site subject lines so Derek can filter mail. Gmail filters and labels may help; the Gmail connector is available.
+    - Who answers, and how fast? Is an auto-reply wanted?
+- **Decisions:** no ledger entry for the top link, because it's part of the "link back" entry already shipped. Deploying pushes stay with Derek.
+- **Gotchas:** git grep with a revision is `git grep PATTERN origin/main -- paths` (rev before `--`). The attractor checkout `~/projects/attractor` sits on `policy/housing-assistance-design` with unreleased commits; ship small site fixes from a worktree off origin/main.
+- **Resume:** `cd ~/projects/translatingpolicy`, read this handoff, invoke superpowers:brainstorming on "how visitors contact Derek at translatingpolicy@gmail.com across the hub and four tools".
