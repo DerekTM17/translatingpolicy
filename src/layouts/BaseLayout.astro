@@ -1,13 +1,35 @@
 ---
 import '../styles/global.css';
+import about from '../data/about.json';
 
 interface Props {
+  /** The <title>: descriptive, for search results and browser tabs. */
   title: string;
   description: string;
+  /** Short name for link previews (og:title / twitter:title). Defaults to title. */
+  socialTitle?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, socialTitle = title } = Astro.props;
+const siteName = 'Translating Policy';
 const canonical = 'https://translatingpolicy.com/';
+const ogImage = new URL('/og-image.png', canonical).href;
+const ogImageAlt = 'Translating Policy: free tools that turn public policy into plain facts.';
+
+// Structured data for search engines. No sameAs links: the repo's data holds
+// no profile URLs, and we only list ones that are real.
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: siteName, url: canonical },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: about.name,
+    jobTitle: about.title,
+    url: canonical,
+  },
+];
+// Escape '<' so data can never close the <script> tag early.
+const jsonLdHtml = JSON.stringify(jsonLd).replace(/</g, '\\u003c');
 ---
 
 <!doctype html>
@@ -19,9 +41,23 @@ const canonical = 'https://translatingpolicy.com/';
     <meta name="description" content={description} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={socialTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={socialTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +67,8 @@ const canonical = 'https://translatingpolicy.com/';
     />
 
     <link rel="canonical" href={canonical} />
+
+    <script type="application/ld+json" set:html={jsonLdHtml} />
   </head>
   <body>
     <slot />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://translatingpolicy.com/sitemap-index.xml
