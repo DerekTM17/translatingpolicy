@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Render the link-preview image and the Apple touch icon into public/.
+"""Write the site icons and the link-preview image into public/.
 
     python3 scripts/make-social-images.py
 
 Outputs:
+  public/favicon.svg           the "TP" monogram, drawn from plain shapes
+  public/favicon.ico           16x16 + 32x32 PNGs of the monogram
+  public/apple-touch-icon.png  180x180 monogram, full bleed
   public/og-image.png          1200x630, shown when the site is shared
-  public/apple-touch-icon.png  180x180, the favicon on the site's dark field
 
 Uses Python Playwright (headless Chromium) so the real site fonts load from
 Google Fonts, the same way the page gets them. Nothing here is a build-time
 dependency: run it by hand when the text or the colors change, then commit
 the PNGs. Colors mirror src/styles/tokens.css.
 """
-import re
+import struct
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -77,33 +79,69 @@ OG_HTML = f"""<!doctype html>
 </body></html>"""
 
 
-def icon_html() -> str:
-    """The favicon's path, filled white on the site's dark field."""
-    svg = (PUBLIC / 'favicon.svg').read_text()
-    path = re.search(r'<path d="([^"]+)"', svg).group(1)
+# The "TP" monogram, drawn with blocky shapes in the spirit of Chakra Petch
+# (squared letters, one clipped corner) so it needs no web font. Every
+# coordinate is even on a 32 grid, so the 16px render stays pixel-crisp.
+# Colors: --void-mid field, light-blue ink, --accent bar.
+FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#031020"/>
+  <g fill="#bfe6ff">
+    <path d="M4 6h12v4h-4v14H8V10H4z"/>
+    <path fill-rule="evenodd" d="M18 6h8l2 2v8l-2 2h-4v6h-4zM22 10v4h2v-4z"/>
+  </g>
+  <rect x="4" y="26" width="10" height="2" fill="#ff6a00"/>
+</svg>
+"""
+
+
+def icon_html(size: int, full_bleed: bool = False) -> str:
+    """The monogram at `size` px. Full bleed fills the rounded corners, since
+    iOS applies its own mask to touch icons."""
+    bg = '#031020' if full_bleed else 'transparent'
     return f"""<!doctype html><html><head><style>
   * {{ margin: 0; }}
-  html, body {{ width: 180px; height: 180px; background: #010509; }}
-  svg {{ display: block; margin: 26px; width: 128px; height: 128px; }}
-</style></head><body>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#ffffff" d="{path}"/></svg>
-</body></html>"""
+  html, body {{ width: {size}px; height: {size}px; background: {bg}; }}
+  svg {{ display: block; width: {size}px; height: {size}px; }}
+</style></head><body>{FAVICON_SVG}</body></html>"""
 
 
-def render(browser, html: str, width: int, height: int, out: Path) -> None:
+def write_ico(pngs: list[tuple[int, bytes]], out: Path) -> None:
+    """Pack PNG images into an .ico (PNG-in-ICO, read by every current browser)."""
+    header = struct.pack('<HHH', 0, 1, len(pngs))
+    offset = 6 + 16 * len(pngs)
+    entries, blobs = b'', b''
+    for size, data in pngs:
+        entries += struct.pack('<BBBBHHII', size, size, 0, 0, 1, 32, len(data), offset)
+        offset += len(data)
+        blobs += data
+    out.write_bytes(header + entries + blobs)
+    print(f'wrote {out.relative_to(ROOT)}')
+
+
+def render(browser, html: str, width: int, height: int, out: Path | None = None) -> bytes:
+    """Screenshot `html` at width x height; save to `out` if given."""
     page = browser.new_page(viewport={'width': width, 'height': height})
     page.set_content(html, wait_until='networkidle')
     page.evaluate('document.fonts.ready')
-    page.screenshot(path=str(out), clip={'x': 0, 'y': 0, 'width': width, 'height': height})
+    png = page.screenshot(
+        omit_background=True, clip={'x': 0, 'y': 0, 'width': width, 'height': height}
+    )
     page.close()
-    print(f'wrote {out.relative_to(ROOT)}')
+    if out:
+        out.write_bytes(png)
+        print(f'wrote {out.relative_to(ROOT)}')
+    return png
 
 
 def main() -> None:
     with sync_playwright() as p:
         browser = p.chromium.launch()
+        (PUBLIC / 'favicon.svg').write_text(FAVICON_SVG)
+        print('wrote public/favicon.svg')
+        icos = [(n, render(browser, icon_html(n), n, n)) for n in (16, 32)]
+        write_ico(icos, PUBLIC / 'favicon.ico')
+        render(browser, icon_html(180, full_bleed=True), 180, 180, PUBLIC / 'apple-touch-icon.png')
         render(browser, OG_HTML, 1200, 630, PUBLIC / 'og-image.png')
-        render(browser, icon_html(), 180, 180, PUBLIC / 'apple-touch-icon.png')
         browser.close()
 
 
