@@ -17,6 +17,8 @@ Work to pick up after Now.
   Address translatingpolicy@gmail.com. Today: Congress+Statehouse mailto via frontend/src/config.js (form URL empty); ATTRACTOR SITE.contactEmail mixed-case; hub + Inflation have none. See docs/SESSIONS.md last handoff for open questions.
 - [ ] Help search engines find the hub and show a picture when people share it <!-- added 2026-11-01 -->
   SEO audit 2026-11-01. Missing: robots.txt, sitemap (@astrojs/sitemap), og:image + twitter tags, JSON-LD (WebSite + Person), a more descriptive title, apple-touch-icon.
+- [ ] Register translatingpolicy.com with Google Search Console and Bing Webmaster Tools <!-- added 2026-11-01 -->
+  Derek's task. Verify as a Domain property with one DNS TXT record so every subdomain is covered, then submit each site's sitemap.
 
 ## Someday
 
