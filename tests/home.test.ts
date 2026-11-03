@@ -69,7 +69,7 @@ describe('home page: hero', () => {
 describe('home page: project rows', () => {
   const rows = [...html.matchAll(/<a\b([^>]*\bclass="rowc"[^>]*)>/g)].map((m) => m[1]);
   it('renders exactly one row per project', () => {
-    expect(rows).toHaveLength(4);
+    expect(rows).toHaveLength(5);
   });
   it('links rows to the project URLs in order, each with data-p', () => {
     const projects = getProjects();
@@ -80,7 +80,7 @@ describe('home page: project rows', () => {
     });
   });
   it('gives each row a spotlight span', () => {
-    expect(html.match(/<span\b[^>]*class="spot"/g) ?? []).toHaveLength(4);
+    expect(html.match(/<span\b[^>]*class="spot"/g) ?? []).toHaveLength(5);
   });
 });
 

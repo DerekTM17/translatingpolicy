@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs';
+import { getProjects } from '../src/lib/projects';
 import { describe, expect, it } from 'vitest';
 
 // dist/ is built once by tests/global-setup.ts.
@@ -54,6 +55,10 @@ describe('JSON-LD', () => {
     expect(data).toContainEqual(
       expect.objectContaining({ '@type': 'Person', name: about.name, jobTitle: about.title }),
     );
+  });
+  it('lists every tool, in order, so search engines can follow them', () => {
+    const list = data.find((d) => d['@type'] === 'ItemList') as { itemListElement: { item: { url: string } }[] };
+    expect(list.itemListElement.map((e) => e.item.url)).toEqual(getProjects().map((p) => p.url));
   });
 });
 

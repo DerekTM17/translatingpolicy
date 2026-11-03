@@ -1,6 +1,6 @@
 import raw from '../data/projects.json';
 
-export type Accent = 'congress' | 'state' | 'attractor' | 'inflation';
+export type Accent = 'congress' | 'state' | 'attractor' | 'inflation' | 'war';
 
 export type Project = {
   id: string;
@@ -15,7 +15,7 @@ export type Project = {
   accent: Accent;
 };
 
-const ACCENTS: Accent[] = ['congress', 'state', 'attractor', 'inflation'];
+const ACCENTS: Accent[] = ['congress', 'state', 'attractor', 'inflation', 'war'];
 const REQUIRED = ['id', 'title', 'host', 'url', 'description', 'stat'] as const;
 
 /** Check the raw JSON and return typed projects in file order. Throws on bad data. */
