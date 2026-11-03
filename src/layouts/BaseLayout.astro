@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import about from '../data/about.json';
+import { getProjects } from '../lib/projects';
 
 interface Props {
   /** The <title>: descriptive, for search results and browser tabs. */
@@ -26,6 +27,16 @@ const jsonLd = [
     name: about.name,
     jobTitle: about.title,
     url: canonical,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'The tools',
+    itemListElement: getProjects().map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: { '@type': 'WebApplication', name: p.title, url: p.url, description: p.description, applicationCategory: 'ReferenceApplication', isAccessibleForFree: true },
+    })),
   },
 ];
 // Escape '<' so data can never close the <script> tag early.

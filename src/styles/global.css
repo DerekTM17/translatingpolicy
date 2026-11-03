@@ -130,6 +130,7 @@ nav a:focus-visible::after { right: 0; }
 .rowc[data-p="state"]     { --c: var(--c-state);     --c-rgb: var(--c-state-rgb); }
 .rowc[data-p="attractor"] { --c: var(--c-attractor); --c-rgb: var(--c-attractor-rgb); }
 .rowc[data-p="inflation"] { --c: var(--c-inflation); --c-rgb: var(--c-inflation-rgb); }
+.rowc[data-p="war"]       { --c: var(--c-war);       --c-rgb: var(--c-war-rgb); }
 @media (max-width: 640px) { .rowc { grid-template-columns: minmax(0, 1fr) auto; } .rowc .meta { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; } }
 @keyframes wave { from { left: -40%; } to { left: 105%; } }
 

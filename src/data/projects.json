@@ -39,5 +39,16 @@
     "description": "Type in a price and a year. See what it would cost today, using the government's own inflation numbers.",
     "stat": "Official CPI data",
     "accent": "inflation"
+  },
+  {
+    "id": "iranwar",
+    "title": "Iran War Cost",
+    "host": "iranwar.",
+    "url": "https://iranwar.translatingpolicy.com",
+    "status": "Live",
+    "statusNote": "daily",
+    "description": "What the war with Iran is costing Americans at the pump and at home. Pick your state to see what it costs you.",
+    "stat": "Gas · diesel · all 50 states",
+    "accent": "war"
   }
 ]
