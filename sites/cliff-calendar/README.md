@@ -87,3 +87,12 @@ The hub site at the repo root (Astro) does not build or read this folder.
 - Poll Congress.gov daily for a new funding or extender law and flip the status chips.
 - Share images per card for TikTok, Instagram and Threads.
 - Add TANF families by state once the ACF caseload file is confirmed.
+
+## Two looks
+
+This page builds in either of Derek's two design styles. The markup, data and sources are identical; only the stylesheet and fonts change.
+
+- **Hub look** (default): the translatingpolicy.com hub style, `src/index.css`. `npm run build`.
+- **Dashboard look**: the Congressional Dashboard's newsprint style (white paper and ink, signal blue, Newsreader / Libre Franklin / Share Tech Mono, rules instead of boxes, light and dark), `src/styles/dashboard.css`. `npm run build:dashboard`, or set `VITE_STYLE=dashboard` in the host's environment variables (for example a Vercel project setting) so the normal build picks it.
+
+`vite.config.js` picks the stylesheet and swaps the font link and theme color in `index.html` from `VITE_STYLE`.

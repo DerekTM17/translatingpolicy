@@ -6,7 +6,9 @@
   "description": "The Cliff Calendar: what stops on Dec 11 and Dec 31, 2026 if Congress misses its deadlines.",
   "scripts": {
     "dev": "vite",
+    "dev:dashboard": "VITE_STYLE=dashboard vite",
     "build": "node scripts/check-data.mjs && vite build",
+    "build:dashboard": "VITE_STYLE=dashboard npm run build",
     "preview": "vite preview",
     "check-data": "node scripts/check-data.mjs"
   },
