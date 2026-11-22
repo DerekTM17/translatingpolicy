@@ -36,7 +36,7 @@ const ITEMS = [
 export default function Mechanics() {
   return (
     <section id="mechanics" aria-labelledby="mech-h" className="mt-16">
-      <h2 id="mech-h" className="font-serif text-3xl font-bold">How the rule works</h2>
+      <h2 id="mech-h" className="h2">How the rule works</h2>
       <p className="mt-2 max-w-2xl muted">The details, for caseworkers, reporters, and anyone who wants the mechanics.</p>
       <div className="mt-6 space-y-3">
         {ITEMS.map((it) => (

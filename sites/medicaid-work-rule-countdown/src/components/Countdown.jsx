@@ -14,9 +14,9 @@ export default function Countdown({ now }) {
         {MILESTONES.map((m) => {
           const d = daysUntil(m.date, now);
           return (
-            <li key={m.date} className="card p-4">
-              <p className="text-xs font-semibold uppercase tracking-wide text-accent">{formatDate(m.date)}</p>
-              <p className="mt-1 font-serif text-4xl font-bold tabular-nums">
+            <li key={m.date} className="card p-4 card-hot">
+              <p className="label text-accent">{formatDate(m.date)}</p>
+              <p className="big-num mt-1 text-4xl">
                 {d > 0 ? d : d === 0 ? 'Today' : 'Passed'}
                 {d > 0 && <span className="ml-1 text-base font-normal muted">{d === 1 ? 'day' : 'days'}</span>}
               </p>

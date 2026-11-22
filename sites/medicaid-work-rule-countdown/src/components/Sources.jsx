@@ -12,12 +12,12 @@ const UNKNOWNS = [
 export default function Sources() {
   return (
     <section id="sources" aria-labelledby="sources-h" className="mt-16">
-      <h2 id="sources-h" className="font-serif text-3xl font-bold">What we do not know yet</h2>
+      <h2 id="sources-h" className="h2">What we do not know yet</h2>
       <ul className="mt-4 max-w-3xl list-disc space-y-1 pl-5">
         {UNKNOWNS.map((u) => <li key={u}>{u}</li>)}
       </ul>
 
-      <h2 className="mt-12 font-serif text-3xl font-bold">Sources and method</h2>
+      <h2 className="h2 mt-12">Sources and method</h2>
       <p className="mt-2 max-w-3xl muted">
         Rules come from federal primary sources first: the CMS rule and fact sheet, the Federal Register, and CMS guidance letters. State choices come from public statements by governors and state agencies as reported by news and trade outlets, each dated. When a state has said nothing public, we say so. Nothing on this page is estimated or invented. All facts checked Nov 22, 2026.
       </p>

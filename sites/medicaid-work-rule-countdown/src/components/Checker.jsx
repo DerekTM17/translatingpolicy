@@ -6,18 +6,18 @@ import { HH_LABELS } from './StateMap.jsx';
 const EMPTY = { state: '', age: '', medicare: '', group: '', exemptions: [], activities: [] };
 
 const TONE = {
-  not_applicable: 'border-l-teal-600',
-  exempt: 'border-l-teal-600',
-  meets: 'border-l-amber-500',
-  unclear: 'border-l-stone-400',
-  at_risk: 'border-l-red-700',
-  incomplete: 'border-l-stone-300',
+  not_applicable: 'tone-ok',
+  exempt: 'tone-ok',
+  meets: 'tone-meets',
+  unclear: 'tone-unclear',
+  at_risk: 'tone-risk',
+  incomplete: 'tone-none',
 };
 
 function Radio({ name, value, current, onChange, children }) {
   return (
-    <label className="flex cursor-pointer items-start gap-2 rounded-lg px-2 py-1.5 hover:bg-black/5 dark:hover:bg-white/5">
-      <input type="radio" name={name} value={value} checked={current === value} onChange={() => onChange(value)} className="mt-1 accent-teal-700" />
+    <label className="flex cursor-pointer items-start gap-2 opt px-2 py-1.5">
+      <input type="radio" name={name} value={value} checked={current === value} onChange={() => onChange(value)} className="mt-1" />
       <span>{children}</span>
     </label>
   );
@@ -33,13 +33,13 @@ function Checks({ items, values, onChange, unsureLabel }) {
   return (
     <div className="space-y-1">
       {items.map((it) => (
-        <label key={it.key} className="flex cursor-pointer items-start gap-2 rounded-lg px-2 py-1.5 hover:bg-black/5 dark:hover:bg-white/5">
-          <input type="checkbox" checked={values.includes(it.key)} onChange={() => toggle(it.key)} className="mt-1 accent-teal-700" />
+        <label key={it.key} className="flex cursor-pointer items-start gap-2 opt px-2 py-1.5">
+          <input type="checkbox" checked={values.includes(it.key)} onChange={() => toggle(it.key)} className="mt-1" />
           <span>{it.label}</span>
         </label>
       ))}
-      <label className="flex cursor-pointer items-start gap-2 rounded-lg px-2 py-1.5 hover:bg-black/5 dark:hover:bg-white/5">
-        <input type="checkbox" checked={values.includes('unsure')} onChange={() => toggle('unsure')} className="mt-1 accent-teal-700" />
+      <label className="flex cursor-pointer items-start gap-2 opt px-2 py-1.5">
+        <input type="checkbox" checked={values.includes('unsure')} onChange={() => toggle('unsure')} className="mt-1" />
         <span className="muted">{unsureLabel}</span>
       </label>
     </div>
@@ -56,7 +56,7 @@ export default function Checker() {
 
   return (
     <section id="checker" aria-labelledby="checker-h" className="mt-14">
-      <h2 id="checker-h" className="font-serif text-3xl font-bold">Does this apply to me?</h2>
+      <h2 id="checker-h" className="h2">Does this apply to me?</h2>
       <p className="mt-2 max-w-2xl muted">
         Answer a few questions. Nothing you pick is saved or sent anywhere; it all stays in your browser. This is a guide, not legal advice. Your state Medicaid agency has the final word.
       </p>
@@ -68,7 +68,7 @@ export default function Checker() {
             <select
               value={a.state}
               onChange={(e) => set('state')(e.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border rule bg-transparent px-3 py-2"
+              className="focus-ring mt-2 w-full border rule bg-transparent px-3 py-2"
               aria-label="State"
             >
               <option value="">Pick your state</option>
@@ -134,7 +134,7 @@ export default function Checker() {
 
         <div aria-live="polite" className="lg:sticky lg:top-6 lg:self-start">
           <div className={'card border-l-8 p-5 ' + (TONE[result.code] || '')}>
-            <p className="text-xs font-semibold uppercase tracking-wide muted">Your likely result</p>
+            <p className="label muted">Your likely result</p>
             <p className="mt-1 text-xl font-bold">{result.title}</p>
             {result.summary && <p className="mt-2">{result.summary}</p>}
             {result.steps && (

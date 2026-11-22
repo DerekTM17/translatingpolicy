@@ -7,6 +7,8 @@ A plain-language page for translatingpolicy.com that answers two questions about
 
 It has a countdown to the key dates, a private "Does this apply to me?" checker, a state tile map of each state's public position on the CMS grace period (the "hold harmless" option), a sourced timeline, a mechanics section for caseworkers and reporters, and a full source list.
 
+Design: the translating.policy hub look (ATTRACTOR dark style, dark only): void background, cyan glow, faint scanlines, Chakra Petch / Inter / JetBrains Mono. Tokens are copied from the hub's `src/styles/tokens.css` into `src/index.css`. This page's project accent is magenta `--c-medicaid: #ff4fd8`. Respects `prefers-reduced-motion`; hover effects only on pointer devices.
+
 Proposed subdomain: `medicaid.translatingpolicy.com` (see "Deploy" below). Status: v1 draft, not deployed.
 
 ## What is real and what is not

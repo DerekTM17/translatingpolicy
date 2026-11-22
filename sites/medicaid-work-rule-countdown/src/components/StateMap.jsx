@@ -22,7 +22,7 @@ const COLOR_VAR = {
   not_announced: 'var(--hh-not-announced)',
   'n/a': 'var(--hh-none)',
 };
-const TEXT_ON = { yes: 'var(--on-strong)', no: 'var(--on-strong)' };
+const TEXT_ON = { yes: 'var(--on-strong)', no: 'var(--on-strong)', undecided: 'var(--on-strong)' };
 
 const srcById = Object.fromEntries(sources.map((s) => [s.id, s]));
 const COLS = 12;
@@ -62,7 +62,7 @@ export default function StateMap() {
       .data(states, (d) => d.code)
       .join((enter) => {
         const t = enter.append('g').attr('class', 'tile').attr('role', 'button').attr('tabindex', 0);
-        t.append('rect').attr('rx', 7);
+        t.append('rect').attr('rx', 2);
         t.append('text').attr('class', 'abbr');
         t.append('circle').attr('class', 'early');
         t.append('title');
@@ -85,7 +85,7 @@ export default function StateMap() {
       .attr('width', CELL)
       .attr('height', CELL)
       .attr('fill', (d) => COLOR_VAR[d.holdHarmless])
-      .attr('stroke', (d) => (d.code === selected ? 'var(--text)' : d.coverage === 'none' ? 'var(--line)' : 'none'))
+      .attr('stroke', (d) => (d.code === selected ? 'var(--glow)' : d.coverage === 'none' ? 'var(--line)' : 'none'))
       .attr('stroke-width', (d) => (d.code === selected ? 3 : 1))
       .attr('stroke-dasharray', (d) => (d.coverage === 'none' && d.code !== selected ? '4 3' : null));
 
@@ -95,6 +95,7 @@ export default function StateMap() {
       .attr('text-anchor', 'middle')
       .attr('font-size', 14)
       .attr('font-weight', 700)
+      .attr('font-family', 'var(--f-mono)')
       .attr('fill', (d) => TEXT_ON[d.holdHarmless] || 'var(--text)')
       .attr('opacity', (d) => (d.coverage === 'none' ? 0.55 : 1))
       .text((d) => d.code);
@@ -103,7 +104,7 @@ export default function StateMap() {
       .attr('cx', CELL - 9)
       .attr('cy', 9)
       .attr('r', (d) => (d.early ? 4.5 : 0))
-      .attr('fill', 'var(--color-danger)');
+      .attr('fill', 'var(--c-medicaid)');
 
     g.select('title').text((d) => d.name + ': ' + HH_LABELS[d.holdHarmless]);
   }, [selected]);
@@ -112,7 +113,7 @@ export default function StateMap() {
 
   return (
     <section id="states" aria-labelledby="states-h" className="mt-16">
-      <h2 id="states-h" className="font-serif text-3xl font-bold">Is your state waiting until July?</h2>
+      <h2 id="states-h" className="h2">Is your state waiting until July?</h2>
       <p className="mt-2 max-w-2xl muted">
         43 states and DC have to run the rule. CMS lets each one keep checking from January but hold off on cutting coverage until July 1, 2027. CMS asked states to decide by Dec 11, 2026, and has not said it will publish their answers, so we track public statements state by state.
       </p>
@@ -130,14 +131,14 @@ export default function StateMap() {
             {ORDER.map((k) => (
               <li key={k} className="flex items-center gap-2">
                 <span
-                  className="inline-block h-4 w-4 rounded"
+                  className="inline-block h-4 w-4"
                   style={{ background: COLOR_VAR[k], border: k === 'n/a' ? '1px dashed var(--line)' : '1px solid var(--line)' }}
                 />
                 {HH_LABELS[k]} ({counts.get(k) || 0})
               </li>
             ))}
             <li className="flex items-center gap-2">
-              <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: 'var(--color-danger)' }} />
+              <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: 'var(--c-medicaid)', boxShadow: '0 0 8px var(--c-medicaid)' }} />
               Started or planned early
             </li>
           </ul>
@@ -145,12 +146,12 @@ export default function StateMap() {
 
         {sel && (
           <div className="card p-5 lg:self-start" aria-live="polite">
-            <p className="text-xs font-semibold uppercase tracking-wide muted">Checked {formatDate(sel.checked)}</p>
+            <p className="label muted">Checked {formatDate(sel.checked)}</p>
             <h3 className="mt-1 text-2xl font-bold">{sel.name}</h3>
             <p className="mt-1 font-semibold text-accent">{HH_LABELS[sel.holdHarmless]}</p>
             <p className="mt-2">{sel.note}</p>
             {sel.early && <p className="mt-2 font-semibold">{sel.early}</p>}
-            <p className="mt-4 text-xs font-semibold uppercase tracking-wide muted">Sources</p>
+            <p className="mt-4 label muted">Sources</p>
             <SourceLinks ids={sel.sources} />
           </div>
         )}

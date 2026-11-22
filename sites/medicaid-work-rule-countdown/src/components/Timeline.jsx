@@ -73,7 +73,7 @@ export default function Timeline({ now }) {
 
   return (
     <section id="timeline" aria-labelledby="timeline-h" className="mt-16">
-      <h2 id="timeline-h" className="font-serif text-3xl font-bold">How we got here, and what comes next</h2>
+      <h2 id="timeline-h" className="h2">How we got here, and what comes next</h2>
       <div className="card mt-6 overflow-x-auto p-4">
         <svg ref={ref} viewBox={'0 0 ' + W + ' ' + H} className="h-auto w-full min-w-[640px]" role="img" aria-label="Timeline of the Medicaid work rule from July 2025 to December 2028. The same events are listed below." />
         <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
@@ -89,7 +89,7 @@ export default function Timeline({ now }) {
         {events.map((e) => (
           <li key={e.date + e.label} className="relative">
             <span className="absolute -left-[27px] top-1.5 h-3 w-3 rounded-full" style={{ background: KIND_COLOR[e.kind] }} aria-hidden="true" />
-            <p className="text-sm font-semibold muted">{formatDate(e.date)}</p>
+            <p className="label muted">{formatDate(e.date)}</p>
             <p className="font-semibold">{e.label}</p>
             <p className="max-w-2xl">{e.detail}</p>
             <p className="mt-1 text-sm muted">
