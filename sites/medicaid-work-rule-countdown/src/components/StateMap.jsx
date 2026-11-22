@@ -22,7 +22,7 @@ const COLOR_VAR = {
   not_announced: 'var(--hh-not-announced)',
   'n/a': 'var(--hh-none)',
 };
-const TEXT_ON = { yes: '#ffffff', no: '#ffffff' };
+const TEXT_ON = { yes: 'var(--on-strong)', no: 'var(--on-strong)' };
 
 const srcById = Object.fromEntries(sources.map((s) => [s.id, s]));
 const COLS = 12;

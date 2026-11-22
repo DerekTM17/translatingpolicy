@@ -22,9 +22,13 @@ export default function Sources() {
         Rules come from federal primary sources first: the CMS rule and fact sheet, the Federal Register, and CMS guidance letters. State choices come from public statements by governors and state agencies as reported by news and trade outlets, each dated. When a state has said nothing public, we say so. Nothing on this page is estimated or invented. All facts checked Nov 22, 2026.
       </p>
       <p className="mt-3">
-        <a className="focus-ring font-semibold text-accent underline underline-offset-4" href="medicaid-work-rule-countdown_sources.xlsx" download>
-          Download the data, sources and method (.xlsx)
-        </a>
+        {import.meta.env.VITE_NO_DOWNLOADS ? (
+          <span className="muted">The data, sources and method workbook (.xlsx) ships with the site files and is linked on the live page.</span>
+        ) : (
+          <a className="focus-ring font-semibold text-accent underline underline-offset-4" href="medicaid-work-rule-countdown_sources.xlsx" download>
+            Download the data, sources and method (.xlsx)
+          </a>
+        )}
       </p>
       <ol className="mt-6 space-y-3 text-sm">
         {sources.map((s) => (

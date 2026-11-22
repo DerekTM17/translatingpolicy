@@ -7,7 +7,7 @@ import { formatDate, toDate } from '../lib/dates.js';
 const KIND_COLOR = {
   law: 'var(--text)',
   federal: 'var(--color-accent)',
-  court: '#7c3aed',
+  court: 'var(--court)',
   state: 'var(--color-warn)',
   deadline: 'var(--color-danger)',
 };
