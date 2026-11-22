@@ -1,0 +1,382 @@
+{
+  "healthCenterPatients2024": {
+    "label": "Health center patients, 2024",
+    "sourceLabel": "HRSA Uniform Data System, state overview page",
+    "national": 32387774,
+    "nationalUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/national",
+    "retrieved": "2026-11-22"
+  },
+  "nfipPolicies": {
+    "label": "Flood insurance policies in force",
+    "sourceLabel": "FEMA FloodSmart, Policy Information by State (data through Oct 31, 2026)",
+    "nationalUrl": "https://agents.floodsmart.gov/flood-maps-and-data/flood-insurance-data",
+    "fileUrl": "https://agents.floodsmart.gov/sites/default/files/media/document/2026-11/nfip_policy-information-by-state_20261031.xlsx",
+    "retrieved": null
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "healthCenterPatients2024": 319642,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/AL",
+      "nfipPolicies": null
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/AK",
+      "nfipPolicies": null
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/AZ",
+      "nfipPolicies": null
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/AR",
+      "nfipPolicies": null
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "healthCenterPatients2024": 5787948,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/CA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/CO",
+      "nfipPolicies": null
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/CT",
+      "nfipPolicies": null
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/DE",
+      "nfipPolicies": null
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/DC",
+      "nfipPolicies": null
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/FL",
+      "nfipPolicies": null
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/GA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "healthCenterPatients2024": 154086,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/HI",
+      "nfipPolicies": null
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/ID",
+      "nfipPolicies": null
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/IL",
+      "nfipPolicies": null
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/IN",
+      "nfipPolicies": null
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/IA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/KS",
+      "nfipPolicies": null
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/KY",
+      "nfipPolicies": null
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/LA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/ME",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MD",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MI",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MN",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MS",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MO",
+      "nfipPolicies": null
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/MT",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NE",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NV",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NH",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NJ",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NM",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "healthCenterPatients2024": 2347837,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NY",
+      "nfipPolicies": null
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NC",
+      "nfipPolicies": null
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/ND",
+      "nfipPolicies": null
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/OH",
+      "nfipPolicies": null
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "healthCenterPatients2024": 346555,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/OK",
+      "nfipPolicies": null
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/OR",
+      "nfipPolicies": null
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/PA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/PR",
+      "nfipPolicies": null
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/RI",
+      "nfipPolicies": null
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/SC",
+      "nfipPolicies": null
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/SD",
+      "nfipPolicies": null
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/TN",
+      "nfipPolicies": null
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/TX",
+      "nfipPolicies": null
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/UT",
+      "nfipPolicies": null
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/VT",
+      "nfipPolicies": null
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/VA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/WA",
+      "nfipPolicies": null
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/WV",
+      "nfipPolicies": null
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/WI",
+      "nfipPolicies": null
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "healthCenterPatients2024": null,
+      "healthCenterUrl": "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/WY",
+      "nfipPolicies": null
+    }
+  ]
+}

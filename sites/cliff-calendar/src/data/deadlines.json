@@ -1,0 +1,522 @@
+{
+  "lastVerified": "2026-11-21",
+  "statusNote": "As of November 21, 2026, Congress has not passed a new funding law since the stopgap signed September 2. Both deadlines still stand.",
+  "statusSources": [
+    {
+      "label": "CRS R49353 (Sept 17, 2026)",
+      "url": "https://www.everycrsreport.com/reports/R49353.html"
+    },
+    {
+      "label": "White House signing notice (Sept 2, 2026)",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/09/congressional-bill-h-r-6500/"
+    }
+  ],
+  "cliffs": [
+    {
+      "date": "2026-12-11",
+      "lapseAt": "2026-12-12T05:01:00Z",
+      "label": "December 11",
+      "headline": "The stopgap runs out",
+      "summary": "The stopgap law that keeps the government open ends on December 11. Many program extensions it carried end the same day.",
+      "law": "P.L. 119-103 (H.R. 6500), the Continuing Appropriations and Extensions Act, 2027, signed September 2, 2026"
+    },
+    {
+      "date": "2026-12-31",
+      "lapseAt": "2027-01-01T05:00:00Z",
+      "label": "December 31",
+      "headline": "Year-end health and family programs",
+      "summary": "A second batch of health and safety net programs runs out at the end of the year. These dates were set by earlier laws, not by the stopgap.",
+      "law": "P.L. 119-75, the Consolidated Appropriations Act, 2026, and earlier health laws"
+    }
+  ],
+  "items": [
+    {
+      "id": "government-funding",
+      "date": "2026-12-11",
+      "title": "Government funding",
+      "tags": [
+        "everyone",
+        "workers"
+      ],
+      "featured": true,
+      "whatStops": "Agencies without a full-year budget must stop work that is not essential. That is a shutdown.",
+      "whoFeelsIt": "Federal workers and contractors, and anyone waiting on a federal office for a permit, loan, or answer.",
+      "reach": null,
+      "mechanics": "Section 106(3) of Division A ends stopgap funding on December 11, 2026, unless a full-year funding law passes first. Funding lapses at 12:01 a.m. Eastern on December 12.",
+      "citation": "P.L. 119-103, Div. A, Sec. 106",
+      "sources": [
+        {
+          "label": "CRS R49353, Overview of Continuing Appropriations for FY2027",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "Senate-passed bill text, H.R. 6500 (govinfo)",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr6500eas",
+          "kind": "Bill text"
+        }
+      ]
+    },
+    {
+      "id": "nfip",
+      "date": "2026-12-11",
+      "title": "Flood insurance (NFIP)",
+      "tags": [
+        "homeowners"
+      ],
+      "featured": true,
+      "whatStops": "FEMA can no longer sell new flood insurance policies. Home sales in flood zones that need a policy can stall.",
+      "whoFeelsIt": "People buying or refinancing a home in a mapped flood zone. Policies already in force keep paying claims until their one-year term ends.",
+      "reach": {
+        "value": "Nearly 4.5 million",
+        "label": "flood insurance policies, with about $1.3 trillion in coverage",
+        "kind": "real",
+        "stateKey": "nfipPolicies"
+      },
+      "extra": "In the June 2010 lapse, estimates suggest over 1,400 home sale closings were canceled or delayed each day. That is a past estimate, not a 2026 forecast.",
+      "mechanics": "Section 139 extends both the authority to write new flood policies and the program's $30.425 billion Treasury borrowing limit through the stopgap. On a lapse, borrowing authority falls to $1 billion (42 U.S.C. 4016(a), 4026).",
+      "citation": "P.L. 119-103, Div. A, Sec. 139",
+      "sources": [
+        {
+          "label": "CRS IN10835, NFIP reauthorization and lapse",
+          "url": "https://www.everycrsreport.com/files/2026-09-11_IN10835_1177d2de1e2916fd50e80100ff618a10dbb6bb04.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "CRS R49353, Section 139",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "surface-transportation",
+      "date": "2026-12-11",
+      "title": "Highway, transit and rail programs",
+      "tags": [
+        "everyone",
+        "workers"
+      ],
+      "featured": true,
+      "whatStops": "The law that lets the Transportation Department run highway, transit, rail and road safety programs runs out.",
+      "whoFeelsIt": "State road and transit agencies that count on federal money, and the crews and contractors they pay.",
+      "reach": null,
+      "mechanics": "Division C, the Surface Transportation Extension Act of 2026, sets an extension end date of December 11, 2026 (Sec. 3002, 3101). Highway Trust Fund spending authority moves to December 12, 2026 (Sec. 3201).",
+      "citation": "P.L. 119-103, Div. C, Secs. 3101 and 3201",
+      "sources": [
+        {
+          "label": "Senate text of the extension divisions (Aug 2, 2026)",
+          "url": "https://www.appropriations.senate.gov/imo/media/doc/extensions_divisions_authorizing_committees2.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "White House signing notice",
+          "url": "https://www.whitehouse.gov/briefings-statements/2026/09/congressional-bill-h-r-6500/",
+          "kind": "Official"
+        }
+      ]
+    },
+    {
+      "id": "e-verify",
+      "date": "2026-12-11",
+      "title": "E-Verify",
+      "tags": [
+        "workers"
+      ],
+      "whatStops": "The legal authority for E-Verify, the online check employers use to see if a new hire can work in the U.S., runs out.",
+      "whoFeelsIt": "Employers who use it, including those required to by a state law or a federal contract, and the people they hire.",
+      "reach": null,
+      "mechanics": "Section 101(6) extends Section 5014 of Division I of P.L. 119-75 for the length of the stopgap.",
+      "citation": "P.L. 119-103, Div. A, Sec. 101(6)",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 101(6)",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "conrad-30",
+      "date": "2026-12-11",
+      "title": "Conrad 30 doctor program",
+      "tags": [
+        "health"
+      ],
+      "whatStops": "States lose a program that lets doctors trained abroad stay in the U.S. if they work where doctors are scarce.",
+      "whoFeelsIt": "Rural and low-income areas that recruit these doctors, and their patients.",
+      "reach": null,
+      "mechanics": "Section 101(6) extends Section 5013 of Division I of P.L. 119-75, the waiver of the J-1 home residence rule for foreign medical graduates.",
+      "citation": "P.L. 119-103, Div. A, Sec. 101(6)",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 101(6)",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "h2b",
+      "date": "2026-12-11",
+      "title": "Extra seasonal worker visas (H-2B)",
+      "tags": [
+        "workers"
+      ],
+      "whatStops": "The authority to add seasonal worker visas above the yearly cap runs out.",
+      "whoFeelsIt": "Seasonal employers such as landscapers, resorts and seafood processors.",
+      "reach": null,
+      "mechanics": "Section 101(6) extends Section 5016 of Division I of P.L. 119-75. Section 5015, special immigrant status for religious workers who are not ministers, is extended the same way.",
+      "citation": "P.L. 119-103, Div. A, Sec. 101(6)",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 101(6)",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "livestock-reporting",
+      "date": "2026-12-11",
+      "title": "Livestock price reports",
+      "tags": [
+        "farmers"
+      ],
+      "whatStops": "The law that makes meatpackers report what they pay for cattle, hogs and lambs runs out.",
+      "whoFeelsIt": "Ranchers and farmers who use USDA price reports to sell their animals.",
+      "reach": null,
+      "mechanics": "Section 119 extends the Livestock Mandatory Reporting Act of 1999 for the length of the stopgap. It was last fully reauthorized in 2015 (P.L. 114-54).",
+      "citation": "P.L. 119-103, Div. A, Sec. 119",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 119",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "wildland-firefighters",
+      "date": "2026-12-11",
+      "title": "Wildland firefighter pay",
+      "tags": [
+        "workers"
+      ],
+      "whatStops": "A waiver ends that lets federal wildland firefighters earn extra pay above the normal cap for emergency fire work.",
+      "whoFeelsIt": "Forest Service and Interior Department fire crews.",
+      "reach": null,
+      "mechanics": "Section 142 waives the premium pay cap for emergency wildland fire suppression for the length of the stopgap.",
+      "citation": "P.L. 119-103, Div. A, Sec. 142",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 142",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "omb-grants-rule",
+      "date": "2026-12-11",
+      "title": "Federal grant rules rewrite",
+      "tags": [
+        "local-government"
+      ],
+      "whatStops": "A ban ends that keeps the White House budget office from finishing its proposed rewrite of federal grant rules.",
+      "whoFeelsIt": "Cities, counties, schools, universities and nonprofits that get federal grants.",
+      "reach": null,
+      "mechanics": "Section 157 bars issuing or finalizing the May 29, 2026 proposed Uniform Guidance rule (91 FR 32198), or a substantially similar rule, through December 11, 2026.",
+      "citation": "P.L. 119-103, Div. A, Sec. 157",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 157",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "cftc-whistleblower",
+      "date": "2026-12-11",
+      "title": "Commodity fraud whistleblower program",
+      "tags": [
+        "everyone"
+      ],
+      "whatStops": "Authority runs out for the program that pays people who report fraud in commodity and futures markets.",
+      "whoFeelsIt": "People who report market fraud, and investors who rely on those tips.",
+      "reach": {
+        "value": "$430 million",
+        "label": "in awards paid since 2014",
+        "kind": "real"
+      },
+      "mechanics": "Section 134 extends the CFTC whistleblower authority through December 11, 2026.",
+      "citation": "P.L. 119-103, Div. A, Sec. 134",
+      "sources": [
+        {
+          "label": "CRS R49353, Section 134",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "va-extenders",
+      "date": "2026-12-11",
+      "title": "Veterans programs",
+      "tags": [
+        "veterans"
+      ],
+      "whatStops": "Several VA programs run out, including help for homeless veterans, rural veterans and family caregivers.",
+      "whoFeelsIt": "Veterans who are homeless or at risk, rural veterans, and the families who care for veterans.",
+      "reach": null,
+      "mechanics": "Division D, Department of Veterans Affairs Extenders, moves most dates from September 30, 2026 to December 11, 2026. For example, Sec. 4304 provides $130,191,781 for Supportive Services for Veteran Families for October 1 to December 11, 2026.",
+      "citation": "P.L. 119-103, Div. D",
+      "sources": [
+        {
+          "label": "Senate text of the extension divisions (Aug 2, 2026)",
+          "url": "https://www.appropriations.senate.gov/imo/media/doc/extensions_divisions_authorizing_committees2.pdf",
+          "kind": "Bill text"
+        }
+      ]
+    },
+    {
+      "id": "other-dec-11",
+      "date": "2026-12-11",
+      "title": "Other authorities ending Dec 11",
+      "tags": [
+        "everyone"
+      ],
+      "whatStops": "A list of smaller authorities also ends, from EPA chemical review fees to a TSA airport screening pilot.",
+      "whoFeelsIt": "Mostly the agencies and industries involved.",
+      "reach": null,
+      "list": [
+        "EPA fees on chemical makers that pay for chemical safety reviews (TSCA), Div. B Sec. 2005",
+        "Defense Production Act authorities, Div. B Sec. 2004",
+        "Cybersecurity information sharing protections, Div. B Sec. 2011",
+        "Patent and Trademark Office fee setting, Div. B Sec. 2015",
+        "Food for Peace, Div. B Sec. 2003",
+        "Grain inspection standards, Div. B Sec. 2001",
+        "U.S. Commission on International Religious Freedom, Div. B Sec. 2016",
+        "TSA paid screening pilot at up to eight airports, Div. A Sec. 138"
+      ],
+      "mechanics": "Each section replaces an earlier end date with December 11, 2026. Dates are from the Senate-passed text dated August 2, 2026 and CRS R49353.",
+      "citation": "P.L. 119-103, Divs. A and B",
+      "sources": [
+        {
+          "label": "Senate text of the extension divisions (Aug 2, 2026)",
+          "url": "https://www.appropriations.senate.gov/imo/media/doc/extensions_divisions_authorizing_committees2.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "CRS R49353",
+          "url": "https://www.everycrsreport.com/reports/R49353.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "community-health-centers",
+      "date": "2026-12-31",
+      "title": "Community health centers",
+      "tags": [
+        "health",
+        "families"
+      ],
+      "featured": true,
+      "whatStops": "The Community Health Center Fund, a main federal funding stream for local health centers, runs out.",
+      "whoFeelsIt": "Patients at community health centers, which see people whether or not they have insurance.",
+      "reach": {
+        "value": "32.4 million",
+        "label": "patients served by HRSA-funded health centers in 2024",
+        "kind": "real",
+        "stateKey": "healthCenterPatients2024"
+      },
+      "mechanics": "The fund is authorized by Section 10503(b)(1) of the Affordable Care Act (42 U.S.C. 254b-2(b)(1)). Its current end date is December 31, 2026.",
+      "citation": "ACA Sec. 10503(b)(1)",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "HRSA, 2024 national health center data",
+          "url": "https://data.hrsa.gov/topics/healthcenters/uds/overview/national",
+          "kind": "Data"
+        }
+      ]
+    },
+    {
+      "id": "tanf",
+      "date": "2026-12-31",
+      "title": "TANF cash help for families",
+      "tags": [
+        "families",
+        "local-government"
+      ],
+      "featured": true,
+      "whatStops": "Federal funding for TANF, the block grant states use for cash help and job programs for low-income families, runs out.",
+      "whoFeelsIt": "Families with children who get cash help, and the state offices that run the program.",
+      "reach": {
+        "value": "About 1 million",
+        "label": "families received TANF assistance in FY2024",
+        "kind": "real"
+      },
+      "extra": "The basic block grant is about $16.4 billion a year.",
+      "mechanics": "P.L. 119-75 funds TANF through December 31, 2026. States would get no new federal TANF money for 2027 until Congress extends it.",
+      "citation": "P.L. 119-75",
+      "sources": [
+        {
+          "label": "CRS R48413, TANF Block Grant: A Primer (May 4, 2026)",
+          "url": "https://www.everycrsreport.com/files/2026-05-04_R48413_304caf380913f930b9369cb24ecce9ebb73927ca.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "medicare-doctor-pay",
+      "date": "2026-12-31",
+      "title": "Medicare doctor pay boost",
+      "tags": [
+        "health",
+        "seniors"
+      ],
+      "featured": true,
+      "whatStops": "A temporary 2.5% raise in what Medicare pays doctors ends with 2026.",
+      "whoFeelsIt": "Doctors who treat Medicare patients, and the seniors and people with disabilities who see them.",
+      "reach": null,
+      "mechanics": "Section 1848(t)(1) of the Social Security Act provides a 2.5% increase for services furnished during calendar year 2026. A floor of 1.0 on the physician work geographic index (Sec. 1848(e)(1)(E)) also ends December 31, 2026.",
+      "citation": "SSA Sec. 1848(t)(1) and 1848(e)(1)(E)",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "rural-hospitals",
+      "date": "2026-12-31",
+      "title": "Rural hospital payments",
+      "tags": [
+        "health",
+        "seniors"
+      ],
+      "whatStops": "Two extra Medicare payments for small and rural hospitals end: the low-volume hospital adjustment and the Medicare-dependent hospital program.",
+      "whoFeelsIt": "Small rural hospitals with few patients or many Medicare patients, and the towns that rely on them.",
+      "reach": null,
+      "mechanics": "Social Security Act Sec. 1886(d)(12)(D) (low-volume hospitals) and Sec. 1886(d)(5)(G) (Medicare-dependent hospitals), both ending December 31, 2026.",
+      "citation": "SSA Sec. 1886(d)(12)(D) and 1886(d)(5)(G)",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "nhsc",
+      "date": "2026-12-31",
+      "title": "National Health Service Corps",
+      "tags": [
+        "health"
+      ],
+      "whatStops": "Funding ends for scholarships and loan repayment for doctors, nurses and dentists who work where care is scarce.",
+      "whoFeelsIt": "Clinicians in the program and patients in areas short on care.",
+      "reach": null,
+      "mechanics": "The National Health Service Corps Fund is authorized by ACA Sec. 10503(b)(2) (42 U.S.C. 254-2(b)(2)) through December 31, 2026.",
+      "citation": "ACA Sec. 10503(b)(2)",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "special-diabetes",
+      "date": "2026-12-31",
+      "title": "Special diabetes programs",
+      "tags": [
+        "health"
+      ],
+      "whatStops": "Funding ends for Type 1 diabetes research and for diabetes programs run by the Indian Health Service and tribes.",
+      "whoFeelsIt": "People with Type 1 diabetes, and American Indian and Alaska Native communities.",
+      "reach": null,
+      "mechanics": "Public Health Service Act Sec. 330B(b)(2) (Type 1) and Sec. 330C(c)(2) (programs for Indians), both through December 31, 2026.",
+      "citation": "PHSA Sec. 330B and 330C",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "other-dec-31",
+      "date": "2026-12-31",
+      "title": "Other health items ending Dec 31",
+      "tags": [
+        "health",
+        "families"
+      ],
+      "whatStops": "Several smaller health and family programs also end with the year.",
+      "whoFeelsIt": "Teens, families of children with special needs, labs, and public health programs.",
+      "reach": null,
+      "list": [
+        "Personal Responsibility Education Program for teens, SSA Sec. 513",
+        "Sexual Risk Avoidance Education, SSA Sec. 510",
+        "Family-to-Family Health Information Centers, SSA Sec. 501(c)(1)(A)",
+        "Delay of Medicare lab payment cuts, SSA Sec. 1834A",
+        "Advance payment model bonus for doctors (1.88% in 2026), SSA Sec. 1833(z)",
+        "Several public health emergency and disaster preparedness authorities, PHSA Secs. 319, 319L, 2811A to 2812"
+      ],
+      "mechanics": "Each ends December 31, 2026 under the law cited, per CRS Table 1.",
+      "citation": "Various, see list",
+      "sources": [
+        {
+          "label": "CRS R49126, Expiring Health Provisions: CY2026 and CY2027",
+          "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html",
+          "kind": "CRS"
+        }
+      ]
+    }
+  ],
+  "notOnCalendar": [
+    {
+      "title": "Medicare telehealth",
+      "note": "Runs through December 31, 2027.",
+      "sourceLabel": "Holland & Knight, Oct 9, 2026 (secondary)",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
+    },
+    {
+      "title": "Hospital care at home",
+      "note": "Runs through September 30, 2030.",
+      "sourceLabel": "Holland & Knight, Oct 9, 2026 (secondary)",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
+    },
+    {
+      "title": "Medicare ambulance add-on payments",
+      "note": "Run through December 31, 2027.",
+      "sourceLabel": "CRS R49126",
+      "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html"
+    },
+    {
+      "title": "Medicaid hospital (DSH) cuts",
+      "note": "Scheduled to start October 1, 2027.",
+      "sourceLabel": "CRS R49126",
+      "url": "https://www.everycrsreport.com/files/2026-08-11_R49126_dbcd2fa217db25aee152d1965bb084ff0b692177.html"
+    },
+    {
+      "title": "Debt limit",
+      "note": "Not found as a deadline in any source we checked. Not shown.",
+      "sourceLabel": null,
+      "url": null
+    }
+  ]
+}

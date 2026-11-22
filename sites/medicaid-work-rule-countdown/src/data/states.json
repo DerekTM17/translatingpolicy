@@ -1,0 +1,727 @@
+[
+ {
+  "code": "AK",
+  "name": "Alaska",
+  "row": 0,
+  "col": 0,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "ME",
+  "name": "Maine",
+  "row": 0,
+  "col": 11,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "VT",
+  "name": "Vermont",
+  "row": 1,
+  "col": 10,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NH",
+  "name": "New Hampshire",
+  "row": 1,
+  "col": 11,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "WA",
+  "name": "Washington",
+  "row": 2,
+  "col": 1,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "ID",
+  "name": "Idaho",
+  "row": 2,
+  "col": 2,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "MT",
+  "name": "Montana",
+  "row": 2,
+  "col": 3,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006",
+   "hk-ifr",
+   "kff-survey"
+  ],
+  "early": "Planned early start: July 1, 2026 (per a June 2026 law firm summary; launch not confirmed here)."
+ },
+ {
+  "code": "ND",
+  "name": "North Dakota",
+  "row": 2,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "MN",
+  "name": "Minnesota",
+  "row": 2,
+  "col": 5,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "IL",
+  "name": "Illinois",
+  "row": 2,
+  "col": 6,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "WI",
+  "name": "Wisconsin",
+  "row": 2,
+  "col": 7,
+  "checked": "2026-11-22",
+  "coverage": "waiver",
+  "holdHarmless": "not_announced",
+  "note": "Wisconsin has not adopted expansion, but it covers adults up to the poverty line through a waiver, and those adults are covered by the rule. No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-elections",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "MI",
+  "name": "Michigan",
+  "row": 2,
+  "col": 8,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NY",
+  "name": "New York",
+  "row": 2,
+  "col": 9,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "yes",
+  "note": "Gov. Kathy Hochul announced on Nov 19, 2026 that New York will use the hold harmless period, so no one loses coverage for this rule before July 1, 2027.",
+  "sources": [
+   "kff-expansion",
+   "dg-ny"
+  ]
+ },
+ {
+  "code": "RI",
+  "name": "Rhode Island",
+  "row": 2,
+  "col": 10,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "MA",
+  "name": "Massachusetts",
+  "row": 2,
+  "col": 11,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "OR",
+  "name": "Oregon",
+  "row": 3,
+  "col": 1,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NV",
+  "name": "Nevada",
+  "row": 3,
+  "col": 2,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "WY",
+  "name": "Wyoming",
+  "row": 3,
+  "col": 3,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "SD",
+  "name": "South Dakota",
+  "row": 3,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "IA",
+  "name": "Iowa",
+  "row": 3,
+  "col": 5,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006",
+   "hk-ifr",
+   "kff-survey"
+  ],
+  "early": "Planned early start: December 1, 2026 (per a June 2026 law firm summary; launch not confirmed here)."
+ },
+ {
+  "code": "IN",
+  "name": "Indiana",
+  "row": 3,
+  "col": 6,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "OH",
+  "name": "Ohio",
+  "row": 3,
+  "col": 7,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "PA",
+  "name": "Pennsylvania",
+  "row": 3,
+  "col": 8,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NJ",
+  "name": "New Jersey",
+  "row": 3,
+  "col": 9,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "CT",
+  "name": "Connecticut",
+  "row": 3,
+  "col": 10,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "CA",
+  "name": "California",
+  "row": 4,
+  "col": 1,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "UT",
+  "name": "Utah",
+  "row": 4,
+  "col": 2,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "CO",
+  "name": "Colorado",
+  "row": 4,
+  "col": 3,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NE",
+  "name": "Nebraska",
+  "row": 4,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "no",
+  "note": "A Nebraska DHHS spokesperson said there is no need for the state to use the hold harmless period (Nebraska Examiner, Nov 18, 2026, as reported by HFMA).",
+  "sources": [
+   "kff-expansion",
+   "hfma-states",
+   "hk-ifr"
+  ],
+  "early": "Started early: May 1, 2026 for new enrollees and July 1, 2026 at renewal."
+ },
+ {
+  "code": "MO",
+  "name": "Missouri",
+  "row": 4,
+  "col": 5,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "KY",
+  "name": "Kentucky",
+  "row": 4,
+  "col": 6,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "WV",
+  "name": "West Virginia",
+  "row": 4,
+  "col": 7,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "undecided",
+  "note": "A West Virginia Department of Human Services spokesperson said the state has not made a decision (HFMA, Nov 19, 2026).",
+  "sources": [
+   "kff-expansion",
+   "hfma-states"
+  ]
+ },
+ {
+  "code": "VA",
+  "name": "Virginia",
+  "row": 4,
+  "col": 8,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "leaning",
+  "note": "Virginia's health secretary said he expects to accept the six month grace period but was still reading the details (Advisory Board, Nov 16, 2026). Not a formal decision.",
+  "sources": [
+   "kff-expansion",
+   "adv-va"
+  ]
+ },
+ {
+  "code": "MD",
+  "name": "Maryland",
+  "row": 4,
+  "col": 9,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "DE",
+  "name": "Delaware",
+  "row": 4,
+  "col": 10,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "AZ",
+  "name": "Arizona",
+  "row": 5,
+  "col": 2,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NM",
+  "name": "New Mexico",
+  "row": 5,
+  "col": 3,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "KS",
+  "name": "Kansas",
+  "row": 5,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "AR",
+  "name": "Arkansas",
+  "row": 5,
+  "col": 5,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006",
+   "hk-ifr",
+   "kff-survey"
+  ],
+  "early": "Planned soft start July 1, 2026, with no coverage losses until January 2027."
+ },
+ {
+  "code": "TN",
+  "name": "Tennessee",
+  "row": 5,
+  "col": 6,
+  "checked": "2026-11-22",
+  "coverage": "waiver",
+  "holdHarmless": "not_announced",
+  "note": "Tennessee has not adopted expansion, but KFF lists certain enrollees in its TennCare waiver as covered by the rule. Which TennCare members are affected was not confirmed for v1. No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-elections",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "NC",
+  "name": "North Carolina",
+  "row": 5,
+  "col": 7,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "SC",
+  "name": "South Carolina",
+  "row": 5,
+  "col": 8,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "DC",
+  "name": "District of Columbia",
+  "row": 5,
+  "col": 9,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "OK",
+  "name": "Oklahoma",
+  "row": 6,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "LA",
+  "name": "Louisiana",
+  "row": 6,
+  "col": 5,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "MS",
+  "name": "Mississippi",
+  "row": 6,
+  "col": 6,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "AL",
+  "name": "Alabama",
+  "row": 6,
+  "col": 7,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "GA",
+  "name": "Georgia",
+  "row": 6,
+  "col": 8,
+  "checked": "2026-11-22",
+  "coverage": "waiver",
+  "holdHarmless": "not_announced",
+  "note": "Georgia has not adopted full expansion. Its Pathways waiver covers some adults up to the poverty line and already has a work rule; KFF says the waiver expires at the end of 2026, so what applies in 2027 depends on what replaces it. No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-elections",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "HI",
+  "name": "Hawaii",
+  "row": 7,
+  "col": 0,
+  "checked": "2026-11-22",
+  "coverage": "expansion",
+  "holdHarmless": "not_announced",
+  "note": "No public decision on the hold harmless period found as of Nov 22, 2026. States are asked to tell CMS by Dec 11, 2026.",
+  "sources": [
+   "kff-expansion",
+   "smd-26-006"
+  ]
+ },
+ {
+  "code": "TX",
+  "name": "Texas",
+  "row": 7,
+  "col": 4,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ },
+ {
+  "code": "FL",
+  "name": "Florida",
+  "row": 7,
+  "col": 9,
+  "checked": "2026-11-22",
+  "coverage": "none",
+  "holdHarmless": "n/a",
+  "note": "Has not adopted the ACA Medicaid expansion and has no covered waiver group, so the federal work rule does not apply here.",
+  "sources": [
+   "kff-expansion",
+   "kff-elections"
+  ]
+ }
+]
