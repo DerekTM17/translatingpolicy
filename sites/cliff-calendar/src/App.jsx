@@ -40,7 +40,7 @@ export default function App() {
       <header className="nav">
         <div className="wrap">
           <a className="brand" href="https://translatingpolicy.com">Translating<span>/</span>Policy</a>
-          <span className="here">The Cliff Calendar</span>
+          <span className="here">Funding Cliff Calendar</span>
         </div>
       </header>
 
