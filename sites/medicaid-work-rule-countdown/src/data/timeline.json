@@ -1,0 +1,14 @@
+[
+  {"date": "2025-07-04", "kind": "law", "label": "Law signed", "detail": "The 2025 budget reconciliation law (P.L. 119-21) becomes law. Section 71119 creates the Medicaid work rule.", "sources": ["crs-r48755"]},
+  {"date": "2026-05-01", "kind": "state", "label": "Nebraska starts early", "detail": "Nebraska applies the rule to new enrollees, then at renewals from July 1, 2026.", "sources": ["hfma-states", "hk-ifr"]},
+  {"date": "2026-06-01", "kind": "federal", "label": "CMS issues the rule", "detail": "CMS releases its interim final rule (CMS-2454-IFC), published in the Federal Register on June 3.", "sources": ["cms-factsheet", "fed-reg"]},
+  {"date": "2026-07-31", "kind": "federal", "label": "Rule takes effect", "detail": "The CMS rule takes effect and public comments close. The same day, a federal judge denies the states' request to pause it.", "sources": ["fed-reg", "aha-ifr", "ml-vacatur"]},
+  {"date": "2026-10-29", "kind": "court", "label": "Court strikes extra frailty test", "detail": "In Massachusetts v. Oz, a federal court in Massachusetts throws out the CMS add-on that made people in a medically frail group also prove the condition limits their ability to work. CMS says it will appeal.", "sources": ["ml-vacatur", "hma-ruling"]},
+  {"date": "2026-11-05", "kind": "court", "label": "Four states sue", "detail": "Oregon, Minnesota, New Mexico and Washington sue in federal court in Oregon, arguing states cannot be forced to run the rule.", "sources": ["occ-suit", "stat-suit"]},
+  {"date": "2026-11-13", "kind": "federal", "label": "CMS offers a 6 month grace period", "detail": "States may keep checking but stop cutting people off for this rule through June 30, 2027.", "sources": ["smd-26-006", "cms-press-hh"]},
+  {"date": "2026-11-19", "kind": "state", "label": "New York opts in", "detail": "New York says it will use the grace period.", "sources": ["dg-ny"]},
+  {"date": "2026-12-11", "kind": "deadline", "label": "States tell CMS", "detail": "CMS asks states that want the grace period from January 1 to tell it by this date.", "sources": ["smd-26-006"]},
+  {"date": "2027-01-01", "kind": "deadline", "label": "Rule starts", "detail": "Every state that has to run the rule must have it in place by now.", "sources": ["cms-factsheet"]},
+  {"date": "2027-06-30", "kind": "deadline", "label": "Grace period ends", "detail": "Last day of the optional grace period. After this, people found out of compliance can be denied or cut off.", "sources": ["smd-26-006"]},
+  {"date": "2028-12-31", "kind": "federal", "label": "Latest state exemption ends", "detail": "The latest a good faith exemption for a struggling state can last, if HHS approves one.", "sources": ["crs-r48755"]}
+]
