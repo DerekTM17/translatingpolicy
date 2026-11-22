@@ -71,3 +71,12 @@ This folder is a standalone Vite app, separate from the Astro hub at the repo ro
 ## Privacy
 
 The checker runs entirely in the browser. No answers are stored, logged or sent. There are no analytics or third-party scripts.
+
+## Two looks
+
+This page builds in either of Derek's two design styles. The markup, data and sources are identical; only the stylesheet and fonts change.
+
+- **Hub look** (default): the translatingpolicy.com hub style, `src/index.css`. `npm run build`.
+- **Dashboard look**: the Congressional Dashboard's newsprint style (white paper and ink, signal blue, Newsreader / Libre Franklin / Share Tech Mono, rules instead of boxes, light and dark), `src/styles/dashboard.css`. `npm run build:dashboard`, or set `VITE_STYLE=dashboard` in the host's environment variables (for example a Vercel project setting) so the normal build picks it.
+
+`vite.config.js` picks the stylesheet and swaps the font link and theme color in `index.html` from `VITE_STYLE`.

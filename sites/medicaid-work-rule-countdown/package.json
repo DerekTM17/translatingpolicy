@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:dashboard": "VITE_STYLE=dashboard vite",
     "build": "vite build",
+    "build:dashboard": "VITE_STYLE=dashboard vite build",
     "preview": "vite preview",
     "test": "node --test tests/*.node.mjs",
     "xlsx": "python3 scripts/build_xlsx.py"
