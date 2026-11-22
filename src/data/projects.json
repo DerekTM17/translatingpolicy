@@ -50,5 +50,25 @@
     "description": "What the war with Iran is costing Americans at the pump and at home. Pick your state to see what it costs you.",
     "stat": "Gas · diesel · all 50 states",
     "accent": "war"
+  },
+  {
+    "id": "fundingcliff",
+    "title": "Funding Cliff Calendar",
+    "host": "fundingcliff.",
+    "url": "https://fundingcliff.translatingpolicy.com",
+    "status": "Live",
+    "description": "Money for many programs runs out in December. See what stops for you, and on which day, if Congress misses its two deadlines.",
+    "stat": "19 programs · 2 deadlines",
+    "accent": "cliff"
+  },
+  {
+    "id": "medicaid",
+    "title": "Medicaid Work Rule Countdown",
+    "host": "medicaid.",
+    "url": "https://medicaid.translatingpolicy.com",
+    "status": "Live",
+    "description": "A new rule says many adults on Medicaid must work or volunteer 80 hours a month. See if it applies to you and what your state has chosen.",
+    "stat": "43 states and DC · 80 hours a month",
+    "accent": "medicaid"
   }
 ]

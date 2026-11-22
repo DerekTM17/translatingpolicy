@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { getProjects, validateProjects } from '../src/lib/projects';
 
-const ACCENTS = ['congress', 'state', 'attractor', 'inflation', 'war'];
+const ACCENTS = ['congress', 'state', 'attractor', 'inflation', 'war', 'cliff', 'medicaid'];
 
 describe('projects data', () => {
   const projects = getProjects();
-  it('has the five projects in order', () => {
-    expect(projects.map((p) => p.id)).toEqual(['congress', 'statehouse', 'attractor', 'inflation', 'iranwar']);
+  it('has the seven projects in order', () => {
+    expect(projects.map((p) => p.id)).toEqual(['congress', 'statehouse', 'attractor', 'inflation', 'iranwar', 'fundingcliff', 'medicaid']);
   });
   it('uses translatingpolicy.com subdomain urls', () => {
     for (const p of projects) expect(p.url).toMatch(/^https:\/\/[a-z]+\.translatingpolicy\.com\/?$/);

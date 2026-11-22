@@ -131,6 +131,8 @@ nav a:focus-visible::after { right: 0; }
 .rowc[data-p="attractor"] { --c: var(--c-attractor); --c-rgb: var(--c-attractor-rgb); }
 .rowc[data-p="inflation"] { --c: var(--c-inflation); --c-rgb: var(--c-inflation-rgb); }
 .rowc[data-p="war"]       { --c: var(--c-war);       --c-rgb: var(--c-war-rgb); }
+.rowc[data-p="cliff"]     { --c: var(--c-cliff);     --c-rgb: var(--c-cliff-rgb); }
+.rowc[data-p="medicaid"]  { --c: var(--c-medicaid);  --c-rgb: var(--c-medicaid-rgb); }
 @media (max-width: 640px) { .rowc { grid-template-columns: minmax(0, 1fr) auto; } .rowc .meta { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; } }
 @keyframes wave { from { left: -40%; } to { left: 105%; } }
 
