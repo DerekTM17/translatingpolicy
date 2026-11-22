@@ -17,8 +17,6 @@ const WHO = [
   { id: 'local-government', label: 'Local government' },
 ];
 
-const cliffTone = ['text-cliff11', 'text-cliff31'];
-
 export default function App() {
   const [when, setWhen] = useState('all');
   const [who, setWho] = useState('all');
@@ -38,84 +36,78 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen">
-      <header className="bg-ink text-white">
-        <div className="mx-auto max-w-5xl px-4 pb-10 pt-6 sm:px-6">
-          <nav className="flex items-center justify-between text-sm text-slate-300">
-            <a href="https://translatingpolicy.com" className="font-semibold text-white">translating.policy</a>
-            <span>The Cliff Calendar</span>
-          </nav>
-          <h1 className="mt-10 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-            Two deadlines. Three weeks.
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-200">
+    <>
+      <header className="nav">
+        <div className="wrap">
+          <a className="brand" href="https://translatingpolicy.com">Translating<span>/</span>Policy</a>
+          <span className="here">The Cliff Calendar</span>
+        </div>
+      </header>
+
+      <div className="wrap">
+        <section className="hero">
+          <p className="eyebrow">Congress, year-end deadlines</p>
+          <h1>Two deadlines. <em>Three weeks.</em></h1>
+          <p className="lede">
             Here is what stops for you on December 11 and December 31 if Congress misses them. Every item links to the law or a Congressional Research Service report.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="tiles">
             {data.cliffs.map((c, i) => {
               const d = daysUntil(c.date);
               return (
-                <a key={c.date} href={`#cliff-${c.date}`} className="block rounded-2xl bg-white/5 p-5 ring-1 ring-white/10 transition hover:bg-white/10">
-                  <p className={`text-sm font-semibold uppercase tracking-wide ${cliffTone[i]}`}>{c.label}</p>
-                  <p className="mt-1 text-5xl font-extrabold tabular-nums">{d >= 0 ? d : 0}<span className="ml-2 text-xl font-semibold text-slate-300">{d === 1 ? 'day' : 'days'}</span></p>
-                  <p className="mt-2 font-semibold">{c.headline}</p>
-                  <p className="mt-1 text-sm text-slate-300">{counts[c.date]} items on this date</p>
+                <a key={c.date} href={`#cliff-${c.date}`} className={`tile d${i}`}>
+                  <span className="k">{c.label}</span>
+                  <div className="n">{d >= 0 ? d : 0}<small>{d === 1 ? 'day' : 'days'}</small></div>
+                  <p className="h">{c.headline}</p>
+                  <p className="m">{counts[c.date]} items on this date</p>
                 </a>
               );
             })}
           </div>
 
-          <p className="mt-6 rounded-xl bg-emerald-400/10 px-4 py-3 text-sm text-emerald-100 ring-1 ring-emerald-300/20">
-            <span className="font-semibold text-emerald-50">Status:</span> {data.statusNote} Last checked {formatDate(data.lastVerified)}.
-          </p>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-5xl px-4 sm:px-6">
-        <section className="-mt-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">The next six weeks</h2>
-          <Timeline cliffs={data.cliffs} counts={counts} />
+          <p className="status"><b>Status</b>{data.statusNote} Last checked {formatDate(data.lastVerified)}.</p>
         </section>
 
-        <section className="sticky top-0 z-10 -mx-4 mt-8 border-b border-slate-200 bg-paper/95 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6" aria-label="Filters">
-          <div className="flex flex-wrap items-center gap-2">
+        <div className="sec-title"><h2>The next six weeks</h2><small>Today to Jan 8</small></div>
+        <Timeline cliffs={data.cliffs} counts={counts} />
+      </div>
+
+      <section className="filters" aria-label="Filters">
+        <div className="wrap">
+          <div className="row">
             {[['all', 'Both dates'], ...data.cliffs.map((c) => [c.date, c.label])].map(([id, label]) => (
-              <button key={id} type="button" onClick={() => setWhen(id)} aria-pressed={when === id}
-                className={`rounded-full px-3 py-1.5 text-sm font-semibold ring-1 ${when === id ? 'bg-ink text-white ring-ink' : 'bg-white text-slate-700 ring-slate-300 hover:ring-slate-500'}`}>
-                {label}
-              </button>
+              <button key={id} type="button" className="chip" onClick={() => setWhen(id)} aria-pressed={when === id}>{label}</button>
             ))}
-            <label className="ml-auto flex items-center gap-2 text-sm">
-              <span className="font-semibold">Your state</span>
-              <select value={stateCode} onChange={(e) => setStateCode(e.target.value)}
-                className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-sm">
+            <label className="state" htmlFor="state-select">
+              <span>Your state</span>
+              <select id="state-select" value={stateCode} onChange={(e) => setStateCode(e.target.value)}>
                 <option value="">Pick one</option>
                 {stateData.states.map((s) => <option key={s.code} value={s.code}>{s.name}</option>)}
               </select>
             </label>
           </div>
-          <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+          <div className="chips">
             {WHO.map((w) => (
-              <button key={w.id} type="button" onClick={() => setWho(w.id)} aria-pressed={who === w.id}
-                className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ring-1 ${who === w.id ? 'bg-slate-800 text-white ring-slate-800' : 'bg-white text-slate-600 ring-slate-300 hover:ring-slate-500'}`}>
-                {w.label}
-              </button>
+              <button key={w.id} type="button" className="chip" onClick={() => setWho(w.id)} aria-pressed={who === w.id}>{w.label}</button>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
+      <main className="wrap">
         {data.cliffs.map((c, i) => {
           const items = visible.filter((it) => it.date === c.date);
           if (!items.length) return null;
           return (
-            <section key={c.date} id={`cliff-${c.date}`} className="mt-10 scroll-mt-28">
-              <h2 className="text-2xl font-extrabold tracking-tight">
-                <span className={cliffTone[i]}>{formatDate(c.date, { month: 'long', day: 'numeric' })}:</span> {c.headline}
-              </h2>
-              <p className="mt-1 max-w-3xl text-slate-700">{c.summary}</p>
-              <p className="mt-1 text-xs text-slate-500">Set by {c.law}.</p>
-              <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <section key={c.date} id={`cliff-${c.date}`} className={`d${i}`}>
+              <div className="sec-title">
+                <h2><span className="tone">{formatDate(c.date, { month: 'short', day: 'numeric' })}</span> {c.headline}</h2>
+                <small>{items.length} {items.length === 1 ? 'item' : 'items'}</small>
+              </div>
+              <p className="sec-lede">{c.summary}</p>
+              <p className="law">Set by {c.law}.</p>
+              <div className="cards">
                 {items.map((it) => (
                   <DeadlineCard key={it.id} item={it} lastVerified={data.lastVerified} stateRow={stateRow} stateMeta={stateMeta} />
                 ))}
@@ -123,40 +115,39 @@ export default function App() {
             </section>
           );
         })}
-        {!visible.length && <p className="mt-10 text-slate-600">Nothing matches those filters. Try Everything.</p>}
+        {!visible.length && <p className="empty">Nothing matches those filters. Try Everything.</p>}
 
-        <section className="mt-14">
-          <h2 className="text-xl font-bold">Not on this calendar</h2>
-          <p className="mt-1 text-slate-700">These come up in year-end coverage, but they do not end this December.</p>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {data.notOnCalendar.map((n) => (
-              <li key={n.title} className="rounded-xl bg-white p-4 text-sm ring-1 ring-slate-200">
-                <p className="font-semibold">{n.title}</p>
-                <p className="mt-1 text-slate-700">{n.note}</p>
-                {n.url && <a className="mt-1 inline-block text-xs text-slate-500 underline" href={n.url} target="_blank" rel="noreferrer">{n.sourceLabel}</a>}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <div className="sec-title"><h2>Not on this calendar</h2><small>Later deadlines</small></div>
+        <p className="sec-lede">These come up in year-end coverage, but they do not end this December.</p>
+        <ul className="offcal">
+          {data.notOnCalendar.map((n) => (
+            <li key={n.title}>
+              <b>{n.title}</b>
+              <p>{n.note}</p>
+              {n.url && <a className="src" href={n.url} target="_blank" rel="noreferrer">{n.sourceLabel}</a>}
+            </li>
+          ))}
+        </ul>
 
-        <section className="mt-14 rounded-2xl bg-white p-6 text-sm leading-relaxed text-slate-700 ring-1 ring-slate-200">
-          <h2 className="text-lg font-bold text-slate-900">How we built this</h2>
-          <p className="mt-2">
+        <div className="sec-title"><h2>How we built this</h2><small>Method</small></div>
+        <div className="method">
+          <p>
             We read the stopgap law and Congressional Research Service reports, then wrote each item in plain words. The countdown counts calendar days in Eastern time. A lapse starts at 12:01 a.m. Eastern the day after the deadline.
           </p>
-          <p className="mt-2">
+          <p>
             Status is checked by hand for now. If Congress passes a new law, we update the cards. We do not predict what Congress will do.
           </p>
-          <p className="mt-2">
+          <p>
             State counts: health center patients come from HRSA's 2024 state pages. In this first version we have loaded {stateData.states.filter((s) => s.healthCenterPatients2024 != null).length} states; the rest link to the official page. The national total is {fmt.format(stateData.healthCenterPatients2024.national)} patients. Flood policy counts by state are in FEMA's file and are not loaded yet.
           </p>
-          <p className="mt-2">A spreadsheet with every item, date, source link and method ships with this page's code.</p>
-        </section>
-      </main>
+          <p>A spreadsheet with every item, date, source link and method ships with this page's code.</p>
+        </div>
 
-      <footer className="mx-auto mt-12 max-w-5xl px-4 pb-12 text-xs text-slate-500 sm:px-6">
-        <p>Made by translating.policy. Public sources only. Not legal advice.</p>
-      </footer>
-    </div>
+        <footer className="site-footer">
+          <span>Made by Translating Policy. Public sources only. Not legal advice.</span>
+          <a href="https://translatingpolicy.com">&larr; Translating Policy</a>
+        </footer>
+      </main>
+    </>
   );
 }

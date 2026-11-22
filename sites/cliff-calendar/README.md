@@ -58,6 +58,10 @@ npm run preview  # serves the built site
 
 `npm run build` first runs `scripts/check-data.mjs`, which fails the build if any item lacks a date, text or an https source, or if the data contains an em dash or en dash.
 
+## Design
+
+The page uses the hub's look (see `docs/superpowers/specs/2026-10-25-translatingpolicy-hub-design.md`, "Look"): void background, scanlines, cursor glow on pointer devices, Chakra Petch, Inter and JetBrains Mono. `src/styles/tokens.css` is an unchanged copy of the hub's `src/styles/tokens.css` (copied, not imported, so this folder builds on its own). The page adds one color, its project accent `--c-cliff` (violet, `#a77bff`). December 11 wears the accent and December 31 wears the hub's `--glow`. Hover effects only on pointer devices; reduced motion turns off the pulse, blink and glow animation.
+
 ## How to update
 
 All content lives in `src/data/deadlines.json` (items, dates, sources, status note) and `src/data/states.json` (state counts). When Congress acts:
@@ -73,7 +77,7 @@ This folder is a standalone Vite app. To put it at `deadlines.translatingpolicy.
 1. In Vercel, add a new project from the `translatingpolicy` repo.
 2. Set Root Directory to `sites/cliff-calendar`. Framework preset: Vite (also set in `vercel.json`). Build command `npm run build`, output `dist`.
 3. Deploy a preview and check it.
-4. In the project's Domains settings, add `deadlines.translatingpolicy.com`, then add the CNAME record Vercel shows at the DNS host for translatingpolicy.com.
+4. In the project's Domains settings, add `deadlines.translatingpolicy.com`, then add the CNAME record Vercel shows in GoDaddy, where translatingpolicy.com's DNS lives (Derek enters GoDaddy records).
 
 The hub site at the repo root (Astro) does not build or read this folder.
 
