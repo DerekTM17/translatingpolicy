@@ -1,4 +1,4 @@
-# The Cliff Calendar
+# Funding Cliff Calendar
 
 Two deadlines, three weeks. This page shows what stops on **December 11, 2026** and **December 31, 2026** if Congress misses them, in plain language first and the legal mechanics second. Every item links to the statute section and a Congressional Research Service report or bill text.
 

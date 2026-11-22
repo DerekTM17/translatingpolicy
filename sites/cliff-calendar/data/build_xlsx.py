@@ -40,7 +40,7 @@ wb = Workbook()
 ws = wb.active
 ws.title = 'Methodology'
 notes = [
-    ('The Cliff Calendar: sources and methodology', ''),
+    ('Funding Cliff Calendar: sources and methodology', ''),
     ('Last verified', deadlines['lastVerified']),
     ('Status at last check', deadlines['statusNote']),
     ('What this is', 'A hand-curated list of federal programs and authorities that end on December 11 or December 31, 2026 unless Congress acts, written in plain language, with the statute and a primary source for each.'),

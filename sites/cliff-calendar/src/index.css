@@ -1,7 +1,7 @@
 @import './styles/tokens.css';
 
 /*
- * The Cliff Calendar in the hub look (docs/superpowers/specs/2026-10-25-translatingpolicy-hub-design.md, "Look").
+ * Funding Cliff Calendar in the hub look (docs/superpowers/specs/2026-10-25-translatingpolicy-hub-design.md, "Look").
  * Colors come from tokens.css. The only new color is this page's project accent, --c-cliff (violet),
  * chosen to stay clear of the hub's cyan, green, orange, amber and red.
  * Dec 11 wears --c-cliff; Dec 31 wears the hub's own --glow.
