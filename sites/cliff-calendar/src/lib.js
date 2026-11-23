@@ -1,14 +1,29 @@
-// Small date helpers. All "today" math uses US Eastern time, since lapses
-// happen at midnight Eastern.
+// The calendar counts whole dates in US Eastern time.
+
+const easternDate = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'America/New_York',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
 
 export function todayInEastern(now = new Date()) {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'America/New_York',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-  }).format(now);
-  return parts; // YYYY-MM-DD
+  const parts = Object.fromEntries(easternDate.formatToParts(now).map(({ type, value }) => [type, value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+// Refresh open tabs, including those returning from sleep or the back/forward cache.
+export function subscribeToEasternDay(check, win = window, doc = document) {
+  const id = win.setInterval(check, 15_000);
+  win.addEventListener('focus', check);
+  win.addEventListener('pageshow', check);
+  doc.addEventListener('visibilitychange', check);
+  return () => {
+    win.clearInterval(id);
+    win.removeEventListener('focus', check);
+    win.removeEventListener('pageshow', check);
+    doc.removeEventListener('visibilitychange', check);
+  };
 }
 
 function toUtcDay(iso) {
@@ -17,8 +32,8 @@ function toUtcDay(iso) {
 }
 
 // Whole calendar days from today (Eastern) to the deadline date.
-export function daysUntil(dateIso, now = new Date()) {
-  return Math.round((toUtcDay(dateIso) - toUtcDay(todayInEastern(now))) / 86400000);
+export function daysBetween(today, dateIso) {
+  return (toUtcDay(dateIso) - toUtcDay(today)) / 86400000;
 }
 
 export function formatDate(dateIso, opts = { month: 'long', day: 'numeric', year: 'numeric' }) {

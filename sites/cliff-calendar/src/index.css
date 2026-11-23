@@ -76,6 +76,7 @@ a { color: inherit; }
 }
 .tile .k { display: block; font-family: var(--f-mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--c); }
 .tile .n { font-family: var(--f-display); font-weight: 700; font-size: clamp(44px, 9vw, 64px); line-height: 1; margin-top: 8px; font-variant-numeric: tabular-nums; color: var(--c); text-shadow: 0 0 18px rgba(var(--c-rgb), .45); }
+.tile .n-status { font-size: clamp(28px, 5vw, 44px); }
 .tile .n small { font-family: var(--f-mono); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-dim); margin-left: 10px; text-shadow: none; }
 .tile .h { margin: 10px 0 0; font-weight: 600; }
 .tile .m { margin: 4px 0 0; font-family: var(--f-mono); font-size: 12px; color: var(--ink-dim); }

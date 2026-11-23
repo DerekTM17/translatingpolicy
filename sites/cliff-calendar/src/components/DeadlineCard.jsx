@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { daysUntil, countdownText, formatDate } from '../lib.js';
+import { countdownText, formatDate } from '../lib.js';
 
 const dateClass = { '2026-12-11': 'd0', '2026-12-31': 'd1' };
 
-export default function DeadlineCard({ item, lastVerified, stateRow, stateMeta }) {
+export default function DeadlineCard({ item, days, lastVerified, stateRow, stateMeta }) {
   const [open, setOpen] = useState(false);
-  const days = daysUntil(item.date);
   const passed = days < 0;
 
   let stateLine = null;

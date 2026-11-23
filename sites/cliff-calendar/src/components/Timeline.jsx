@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import { todayInEastern, formatDate } from '../lib.js';
+import { formatDate } from '../lib.js';
 
 // A simple strip from mid-November to early January with today and both cliffs.
-export default function Timeline({ cliffs, counts }) {
+export default function Timeline({ cliffs, counts, today: todayIso }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -15,9 +15,10 @@ export default function Timeline({ cliffs, counts }) {
       const height = 132;
       const margin = { top: 34, right: 24, bottom: 30, left: 24 };
       const parse = d3.utcParse('%Y-%m-%d');
-      const today = parse(todayInEastern());
-      const start = d3.min([parse('2026-11-16'), today]);
-      const end = d3.max([parse('2027-01-08'), today]);
+      const today = parse(todayIso);
+      const deadlines = cliffs.map((cliff) => parse(cliff.date));
+      const start = d3.utcDay.offset(d3.min([today, ...deadlines]), -7);
+      const end = d3.utcDay.offset(d3.max([today, ...deadlines]), 7);
 
       const x = d3.scaleUtc().domain([start, end]).range([margin.left, width - margin.right]);
       const y = margin.top + 30;
@@ -27,11 +28,11 @@ export default function Timeline({ cliffs, counts }) {
         .attr('width', '100%')
         .attr('height', height)
         .attr('role', 'img')
-        .attr('aria-label', `Timeline: today, then ${cliffs.map((c) => formatDate(c.date, { month: 'long', day: 'numeric' })).join(' and ')}`);
+        .attr('aria-label', `Today: ${formatDate(todayIso)} Eastern. Deadlines: ${cliffs.map((c) => formatDate(c.date, { month: 'long', day: 'numeric' })).join(' and ')}`);
       svg.selectAll('*').remove();
 
       // Band between today and the last cliff.
-      const last = parse(cliffs[cliffs.length - 1].date);
+      const last = d3.max(deadlines);
       if (today < last) {
         svg.append('rect')
           .attr('x', x(today)).attr('y', y - 10)
@@ -58,7 +59,7 @@ export default function Timeline({ cliffs, counts }) {
         .attr('y1', y - 22).attr('y2', y + 22)
         .attr('class', 'today');
       svg.append('text')
-        .attr('x', x(today)).attr('y', y - 26)
+        .attr('x', x(today)).attr('y', y - 44)
         .attr('text-anchor', 'middle').attr('class', 'today-label')
         .text('Today');
 
@@ -79,7 +80,7 @@ export default function Timeline({ cliffs, counts }) {
     const ro = new ResizeObserver(draw);
     ro.observe(el);
     return () => ro.disconnect();
-  }, [cliffs, counts]);
+  }, [cliffs, counts, todayIso]);
 
   return <div ref={ref} className="timeline" />;
 }
