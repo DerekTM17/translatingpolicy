@@ -1,12 +1,14 @@
+import { useSyncExternalStore } from 'react';
 import Countdown from './components/Countdown.jsx';
 import Checker from './components/Checker.jsx';
 import StateMap from './components/StateMap.jsx';
 import Timeline from './components/Timeline.jsx';
 import Mechanics from './components/Mechanics.jsx';
 import Sources from './components/Sources.jsx';
+import { localDayKey, subscribeToLocalDay } from './lib/dates.js';
 
 export default function App() {
-  const now = new Date();
+  const today = useSyncExternalStore(subscribeToLocalDay, localDayKey);
   return (
     <>
       <header className="nav">
@@ -34,12 +36,12 @@ export default function App() {
             Adults 19 to 64 who get Medicaid through the ACA expansion will need to show 80 hours a month of work, school, volunteering, or a job program, or about $580 a month in pay. Many people are excused. Some states will start cutting coverage right away. Others will wait until July.
           </p>
           <p className="label muted mt-4">Facts checked Nov 22, 2026 · Not legal advice</p>
-          <Countdown now={now} />
+          <Countdown today={today} />
         </section>
 
         <Checker />
         <StateMap />
-        <Timeline now={now} />
+        <Timeline today={today} />
         <Mechanics />
         <Sources />
       </main>
