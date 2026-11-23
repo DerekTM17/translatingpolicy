@@ -32,12 +32,38 @@ test('meets via income', () => {
 test('unsure leads to unclear', () => {
   assert.equal(evaluate({ ...base, activities: ['unsure'] }, states).code, 'unclear');
 });
-test('no exemption and no activity is at risk', () => {
-  assert.equal(evaluate(base, states).code, 'at_risk');
+test('reported grace period separates checking from coverage loss in New York', () => {
+  const r = evaluate({ ...base, state: 'NY' }, states);
+  assert.equal(r.code, 'protected');
+  assert.match(r.summary, /still check/);
+  assert.match(r.summary, /solely.*June 30, 2027.*otherwise qualify/);
+  assert.doesNotMatch(r.title, /losing coverage|at risk/);
+});
+test('a reported grace period with no end date does not invent one', () => {
+  const r = evaluate(base, [{ code: 'OH', name: 'Ohio', coverage: 'expansion', holdHarmless: 'yes' }]);
+  assert.equal(r.code, 'protected');
+  assert.match(r.summary, /during its grace period/);
+  assert.doesNotMatch(r.summary, /June|July|January/);
+});
+test('Nebraska does not promise a grace period or invent a January start', () => {
+  const r = evaluate({ ...base, state: 'NE' }, states);
+  assert.equal(r.code, 'at_risk');
+  assert.match(r.summary, /Nebraska says it won’t use the grace period/);
+  assert.match(r.summary, /application or renewal/);
+  assert.doesNotMatch(r.summary, /January/);
+});
+test('unannounced, undecided and leaning states have unconfirmed timing', () => {
+  for (const state of ['OH', 'WV', 'VA']) {
+    const r = evaluate({ ...base, state }, states);
+    assert.equal(r.code, 'timing_unknown');
+    assert.match(r.title, /isn’t confirmed/);
+    assert.match(r.summary, /Checking.*denying or ending coverage are separate/);
+    assert.doesNotMatch(r.summary, /January|June|July/);
+  }
 });
 test('waiver state adds caveat', () => {
   const r = evaluate({ ...base, state: 'WI' }, states);
-  assert.equal(r.code, 'at_risk');
+  assert.equal(r.code, 'timing_unknown');
   assert.equal(r.caveats.length, 1);
 });
 test('state data has 51 jurisdictions and 44 covered', () => {
