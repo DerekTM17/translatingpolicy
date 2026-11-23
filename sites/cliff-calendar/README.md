@@ -1,6 +1,6 @@
 # Funding Cliff Calendar
 
-Two deadlines, three weeks. This page shows what stops on **December 11, 2026** and **December 31, 2026** if Congress misses them, in plain language first and the legal mechanics second. Every item links to the statute section and a Congressional Research Service report or bill text.
+Two year-end deadlines. This page shows what stops on **December 11, 2026** and **December 31, 2026** if Congress misses them, in plain language first and the legal mechanics second. Every item links to the statute section and a Congressional Research Service report or bill text.
 
 Planned home: `deadlines.translatingpolicy.com` (not deployed yet).
 
@@ -8,7 +8,7 @@ Status: v1, built from the nightly site idea of November 21, 2026. Data last ver
 
 ## What is on the page
 
-- Two countdown tiles (calendar days, Eastern time) and a D3 timeline strip.
+- Two countdown tiles (calendar days, Eastern time) and a D3 timeline strip share one live day clock. That clock is independent of the manually verified source date.
 - 19 deadline cards: 12 on December 11 (the stopgap, P.L. 119-103) and 7 on December 31 (health and family programs set by P.L. 119-75 and earlier laws).
 - Each card: what stops, who feels it, a sourced reach figure where one exists, and a "How it works" drawer with the statute, sources and last-checked date.
 - Filters by date and by who is affected.
@@ -51,6 +51,7 @@ The full list, every item, the state table and a fact-check of the original plan
 ```bash
 cd sites/cliff-calendar
 npm install
+npm test         # Eastern clock regression tests
 npm run dev      # local dev server
 npm run build    # checks the data, then builds to dist/
 npm run preview  # serves the built site

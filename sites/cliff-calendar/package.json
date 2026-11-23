@@ -6,6 +6,7 @@
   "description": "Funding Cliff Calendar: what stops on Dec 11 and Dec 31, 2026 if Congress misses its deadlines.",
   "scripts": {
     "dev": "vite",
+    "test": "node --test tests/*.node.mjs",
     "build": "node scripts/check-data.mjs && vite build",
     "preview": "vite preview",
     "check-data": "node scripts/check-data.mjs"

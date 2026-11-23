@@ -1,9 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useSyncExternalStore } from 'react';
 import data from './data/deadlines.json';
 import stateData from './data/states.json';
 import Timeline from './components/Timeline.jsx';
 import DeadlineCard from './components/DeadlineCard.jsx';
-import { daysUntil, formatDate, fmt } from './lib.js';
+import { countdownText, daysBetween, formatDate, fmt, subscribeToEasternDay, todayInEastern } from './lib.js';
 
 const WHO = [
   { id: 'all', label: 'Everything' },
@@ -18,6 +18,7 @@ const WHO = [
 ];
 
 export default function App() {
+  const today = useSyncExternalStore(subscribeToEasternDay, todayInEastern);
   const [when, setWhen] = useState('all');
   const [who, setWho] = useState('all');
   const [stateCode, setStateCode] = useState('');
@@ -47,18 +48,20 @@ export default function App() {
       <div className="wrap">
         <section className="hero">
           <p className="eyebrow">Congress, year-end deadlines</p>
-          <h1>Two deadlines. <em>Three weeks.</em></h1>
+          <h1>Two deadlines. <em>What’s at stake.</em></h1>
           <p className="lede">
             Here is what stops for you on December 11 and December 31 if Congress misses them. Every item links to the law or a Congressional Research Service report.
           </p>
 
           <div className="tiles">
             {data.cliffs.map((c, i) => {
-              const d = daysUntil(c.date);
+              const d = daysBetween(today, c.date);
               return (
                 <a key={c.date} href={`#cliff-${c.date}`} className={`tile d${i}`}>
                   <span className="k">{c.label}</span>
-                  <div className="n">{d >= 0 ? d : 0}<small>{d === 1 ? 'day' : 'days'}</small></div>
+                  {d > 0
+                    ? <div className="n">{d}{' '}<small>{d === 1 ? 'day left' : 'days left'}</small></div>
+                    : <div className="n n-status">{countdownText(d)}</div>}
                   <p className="h">{c.headline}</p>
                   <p className="m">{counts[c.date]} items on this date</p>
                 </a>
@@ -66,11 +69,11 @@ export default function App() {
             })}
           </div>
 
-          <p className="status"><b>Status</b>{data.statusNote} Last checked {formatDate(data.lastVerified)}.</p>
+          <p className="status"><b>Legislative status</b>{data.statusNote} Sources last checked <time dateTime={data.lastVerified}>{formatDate(data.lastVerified)}</time>.</p>
         </section>
 
-        <div className="sec-title"><h2>The next six weeks</h2><small>Today to Jan 8</small></div>
-        <Timeline cliffs={data.cliffs} counts={counts} />
+        <div className="sec-title"><h2>Deadline timeline</h2><small>Today: <time dateTime={today}>{formatDate(today)}</time> ET</small></div>
+        <Timeline cliffs={data.cliffs} counts={counts} today={today} />
       </div>
 
       <section className="filters" aria-label="Filters">
@@ -109,7 +112,7 @@ export default function App() {
               <p className="law">Set by {c.law}.</p>
               <div className="cards">
                 {items.map((it) => (
-                  <DeadlineCard key={it.id} item={it} lastVerified={data.lastVerified} stateRow={stateRow} stateMeta={stateMeta} />
+                  <DeadlineCard key={it.id} item={it} days={daysBetween(today, it.date)} lastVerified={data.lastVerified} stateRow={stateRow} stateMeta={stateMeta} />
                 ))}
               </div>
             </section>
@@ -132,7 +135,7 @@ export default function App() {
         <div className="sec-title"><h2>How we built this</h2><small>Method</small></div>
         <div className="method">
           <p>
-            We read the stopgap law and Congressional Research Service reports, then wrote each item in plain words. The countdown counts calendar days in Eastern time. A lapse starts at 12:01 a.m. Eastern the day after the deadline.
+            We read the stopgap law and Congressional Research Service reports, then wrote each item in plain words. The countdown updates automatically and counts calendar days in Eastern time. It does not confirm whether a provision actually lapsed; see the legislative status and linked sources.
           </p>
           <p>
             Status is checked by hand for now. If Congress passes a new law, we update the cards. We do not predict what Congress will do.
