@@ -11,6 +11,8 @@ const TONE = {
   meets: 'tone-meets',
   unclear: 'tone-unclear',
   at_risk: 'tone-risk',
+  protected: 'tone-unclear',
+  timing_unknown: 'tone-unclear',
   incomplete: 'tone-none',
 };
 

@@ -6,12 +6,26 @@ import { formatDate, toDate } from '../lib/dates.js';
 
 const KIND_COLOR = {
   law: 'var(--text)',
-  federal: 'var(--color-accent)',
+  federal: 'var(--glow)',
   court: 'var(--court)',
   state: 'var(--color-warn)',
   deadline: 'var(--color-danger)',
 };
 const KIND_LABEL = { law: 'Congress', federal: 'Federal agency', court: 'Courts', state: 'States', deadline: 'Deadline' };
+// Use the same glyphs in the chart, legend and event list. Color is not the
+// only way to tell a court event from a federal agency event.
+const DOT = 'M0,-6 A6,6 0 1,1 0,6 A6,6 0 1,1 0,-6 Z';
+const DIAMOND = 'M0,-7 L7,0 L0,7 L-7,0 Z';
+const glyph = (kind) => kind === 'court' ? DIAMOND : DOT;
+
+function EventMarker({ kind, className }) {
+  return (
+    <svg className={className} viewBox="-8 -8 16 16" aria-hidden="true">
+      <path d={glyph(kind)} fill={KIND_COLOR[kind]} />
+    </svg>
+  );
+}
+
 const srcById = Object.fromEntries(sources.map((s) => [s.id, s]));
 
 const W = 900;
@@ -58,17 +72,16 @@ export default function Timeline({ now }) {
 
     svg
       .append('g')
-      .selectAll('circle')
+      .selectAll('path')
       .data(events)
-      .join('circle')
-      .attr('cx', (d) => x(toDate(d.date)))
-      .attr('cy', (d, i) => axisY - 18 - (i % 3) * 16)
-      .attr('r', 6)
+      .join('path')
+      .attr('transform', (d, i) => 'translate(' + x(toDate(d.date)) + ',' + (axisY - 18 - (i % 3) * 16) + ')')
+      .attr('d', (d) => glyph(d.kind))
       .attr('fill', (d) => KIND_COLOR[d.kind])
       .attr('stroke', 'var(--surface)')
       .attr('stroke-width', 2)
       .append('title')
-      .text((d) => formatDate(d.date) + ': ' + d.label);
+      .text((d) => formatDate(d.date) + ' · ' + KIND_LABEL[d.kind] + ': ' + d.label);
   }, [now]);
 
   return (
@@ -79,7 +92,7 @@ export default function Timeline({ now }) {
         <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
           {Object.entries(KIND_LABEL).map(([k, label]) => (
             <li key={k} className="flex items-center gap-2">
-              <span className="inline-block h-3 w-3 rounded-full" style={{ background: KIND_COLOR[k] }} />
+              <EventMarker kind={k} className="h-4 w-4 shrink-0" />
               {label}
             </li>
           ))}
@@ -88,8 +101,8 @@ export default function Timeline({ now }) {
       <ol className="mt-6 space-y-4 border-l-2 rule pl-5">
         {events.map((e) => (
           <li key={e.date + e.label} className="relative">
-            <span className="absolute -left-[27px] top-1.5 h-3 w-3 rounded-full" style={{ background: KIND_COLOR[e.kind] }} aria-hidden="true" />
-            <p className="label muted">{formatDate(e.date)}</p>
+            <EventMarker kind={e.kind} className="absolute -left-[29px] top-1 h-4 w-4" />
+            <p className="label muted"><span className="sr-only">{KIND_LABEL[e.kind]}: </span>{formatDate(e.date)}</p>
             <p className="font-semibold">{e.label}</p>
             <p className="max-w-2xl">{e.detail}</p>
             <p className="mt-1 text-sm muted">
