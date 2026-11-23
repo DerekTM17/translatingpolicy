@@ -24,8 +24,42 @@ export const ACTIVITIES = [
 ];
 
 const RULE_LINE =
-  HOURS_PER_MONTH + ' hours a month of work, volunteering, a job program, or half-time school, or $' +
-  INCOME_THRESHOLD_2026 + ' a month in pay';
+  HOURS_PER_MONTH + ' hours a month of qualifying activities, at least half-time school, or at least $' +
+  INCOME_THRESHOLD_2026 + ' in monthly income at the 2026 federal minimum wage';
+
+const GRACE_DATE = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric',
+});
+
+function coverageTiming(st) {
+  if (st.holdHarmless === 'yes') {
+    const through = st.protectedThrough
+      ? ' through ' + GRACE_DATE.format(new Date(st.protectedThrough + 'T00:00:00Z'))
+      : ' during its grace period';
+    return {
+      code: 'protected',
+      title: 'The rule likely applies, but your state plans to give you more time.',
+      summary: "Your state can still check whether you meet the rule. Based on " + st.name +
+        "’s reported plan, it won’t deny or end Medicaid solely for not meeting this rule" + through +
+        ' if you otherwise qualify.',
+    };
+  }
+
+  if (st.holdHarmless === 'no') {
+    return {
+      code: 'at_risk',
+      title: 'The rule likely applies, and your coverage may be at risk.',
+      summary: st.name + ' says it won’t use the grace period. Check with your state Medicaid agency for when the rule applies to your application or renewal.',
+    };
+  }
+
+  return {
+    code: 'timing_unknown',
+    title: 'The rule likely applies. When it can affect your coverage isn’t confirmed here.',
+    summary: 'We haven’t confirmed whether ' + st.name +
+      ' will use the grace period. Checking whether you meet the rule and denying or ending coverage are separate. Check your state Medicaid notice for the timing that applies to you.',
+  };
+}
 
 /**
  * @param {object} a answers
@@ -35,7 +69,7 @@ const RULE_LINE =
  * @param {'adult'|'other'|'unsure'|''} a.group
  * @param {string[]} a.exemptions keys from EXEMPTIONS, plus 'unsure'
  * @param {string[]} a.activities keys from ACTIVITIES, plus 'unsure'
- * @param {Array<{code:string,name:string,coverage:string}>} states
+ * @param {Array<{code:string,name:string,coverage:string,holdHarmless:string,protectedThrough?:string}>} states
  */
 export function evaluate(a, states) {
   const st = states.find((s) => s.code === a.state);
@@ -129,14 +163,14 @@ export function evaluate(a, states) {
       caveats,
     };
   }
+  const timing = coverageTiming(st);
   return {
-    code: 'at_risk',
-    title: 'Likely covered by the rule, and you may be at risk of losing coverage.',
-    summary: 'From January 2027 you will probably need ' + RULE_LINE + '.',
+    ...timing,
     steps: [
+      'Common ways to meet the rule: ' + RULE_LINE + '.',
       'Ask your state about short-term hardship exceptions. States can excuse people in a hospital or nursing home, in a disaster area, or in a county with high unemployment.',
       'Watch your mail. If you get a notice that you are out of compliance, you have 30 days to respond.',
-      'If you lose coverage, you can reapply at any time.',
+      ...(timing.code === 'at_risk' ? ['If you lose coverage, you can reapply at any time.'] : []),
     ],
     caveats,
   };
