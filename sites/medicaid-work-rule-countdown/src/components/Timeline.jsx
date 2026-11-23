@@ -32,7 +32,7 @@ const W = 900;
 const H = 150;
 const M = { left: 20, right: 20 };
 
-export default function Timeline({ now }) {
+export default function Timeline({ today }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -51,18 +51,18 @@ export default function Timeline({ now }) {
       .call((g) => g.selectAll('text').attr('fill', 'var(--muted)').attr('font-size', 12))
       .call((g) => g.selectAll('line,path').attr('stroke', 'var(--line)'));
 
-    const today = now || new Date();
+    const todayDate = toDate(today);
     svg
       .append('line')
-      .attr('x1', x(today))
-      .attr('x2', x(today))
+      .attr('x1', x(todayDate))
+      .attr('x2', x(todayDate))
       .attr('y1', 18)
       .attr('y2', axisY)
       .attr('stroke', 'var(--text)')
       .attr('stroke-dasharray', '3 3');
     svg
       .append('text')
-      .attr('x', x(today))
+      .attr('x', x(todayDate))
       .attr('y', 12)
       .attr('text-anchor', 'middle')
       .attr('font-size', 12)
@@ -82,13 +82,13 @@ export default function Timeline({ now }) {
       .attr('stroke-width', 2)
       .append('title')
       .text((d) => formatDate(d.date) + ' · ' + KIND_LABEL[d.kind] + ': ' + d.label);
-  }, [now]);
+  }, [today]);
 
   return (
     <section id="timeline" aria-labelledby="timeline-h" className="mt-16">
       <h2 id="timeline-h" className="h2">How we got here, and what comes next</h2>
       <div className="card mt-6 overflow-x-auto p-4">
-        <svg ref={ref} viewBox={'0 0 ' + W + ' ' + H} className="h-auto w-full min-w-[640px]" role="img" aria-label="Timeline of the Medicaid work rule from July 2025 to December 2028. The same events are listed below." />
+        <svg ref={ref} viewBox={'0 0 ' + W + ' ' + H} className="h-auto w-full min-w-[640px]" role="img" aria-label={`Timeline of the Medicaid work rule from July 2025 to December 2028. Today is ${formatDate(today)}. The same events are listed below.`} />
         <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
           {Object.entries(KIND_LABEL).map(([k, label]) => (
             <li key={k} className="flex items-center gap-2">

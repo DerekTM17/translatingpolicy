@@ -1,4 +1,4 @@
-import { daysUntil, formatDate } from '../lib/dates.js';
+import { daysUntil, formatDate, toDate } from '../lib/dates.js';
 
 const MILESTONES = [
   { date: '2026-12-11', label: 'States tell CMS if they will wait', note: 'CMS asked states to say by this date whether they will use the grace period.' },
@@ -6,7 +6,8 @@ const MILESTONES = [
   { date: '2027-06-30', label: 'The grace period ends', note: 'In states that took it, coverage can be cut for this rule after this day.' },
 ];
 
-export default function Countdown({ now }) {
+export default function Countdown({ today }) {
+  const now = toDate(today);
   return (
     <section aria-labelledby="countdown-h" className="mt-8">
       <h2 id="countdown-h" className="sr-only">Countdown</h2>
