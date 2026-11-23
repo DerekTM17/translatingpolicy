@@ -85,13 +85,14 @@ readme.column_dimensions["B"].width = 110
 sheet(
     wb,
     "States",
-    ["Code", "State", "Must run the rule?", "Hold harmless position", "Early start", "Note", "Source IDs", "Source URLs", "Checked"],
+    ["Code", "State", "Must run the rule?", "Hold harmless position", "Reported protection through", "Early start", "Note", "Source IDs", "Source URLs", "Checked"],
     [
         [
             s["code"],
             s["name"],
             COVERAGE[s["coverage"]],
             HH[s["holdHarmless"]],
+            s.get("protectedThrough", ""),
             s.get("early", ""),
             s["note"],
             ", ".join(s["sources"]),
@@ -100,7 +101,7 @@ sheet(
         ]
         for s in sorted(states, key=lambda x: x["name"])
     ],
-    [7, 20, 26, 26, 40, 70, 30, 70, 12],
+    [7, 20, 26, 26, 26, 40, 70, 30, 70, 12],
 )
 
 sheet(
@@ -133,7 +134,7 @@ sheet(
         [4, "Medicaid group", "Covered only in the adult (expansion) group or certain 1115 demonstrations. Other groups: likely does not apply.", "cms-factsheet"],
         [5, "Exemptions", "Any of: pregnant or postpartum; parent or caretaker of a child 13 or under or of a disabled person; medically frail (5 groups; extra impairment test vacated Oct 29, 2026); veteran with total disability rating; American Indian or Alaska Native; former foster youth; in drug or alcohol treatment; meets TANF work rules or in a SNAP household not exempt from SNAP work rules; inmate. Result: likely exempt.", "cms-factsheet, ml-vacatur, hma-ruling"],
         [6, "Activities", "80 hours a month of work, community service, or work program; half-time school; a combination; or income of at least federal minimum wage x 80 ($580 a month in 2026). Result: covered and likely meets it.", "cms-factsheet, fed-reg"],
-        [7, "Fallback", "Any 'not sure' answer with no exemption or activity: unclear. Otherwise: covered and at risk. Shows 30 day notice, hardship exceptions, right to reapply.", "cms-factsheet"],
+        [7, "Fallback", "Any 'not sure' answer with no exemption or activity: unclear. Otherwise: likely covered. The result distinguishes reported grace-period protection, no grace period, and unconfirmed timing. Shows notice and hardship guidance.", "cms-factsheet, smd-26-006"],
     ],
     [6, 18, 100, 40],
 )

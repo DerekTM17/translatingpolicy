@@ -178,6 +178,7 @@
   "checked": "2026-11-22",
   "coverage": "expansion",
   "holdHarmless": "yes",
+  "protectedThrough": "2027-06-30",
   "note": "Gov. Kathy Hochul announced on Nov 19, 2026 that New York will use the hold harmless period, so no one loses coverage for this rule before July 1, 2027.",
   "sources": [
    "kff-expansion",
