@@ -6,12 +6,14 @@ from openpyxl import Workbook
 from openpyxl.styles import Font
 
 HERE = Path(__file__).parent
-CHECKED = "2026-11-23"
+CHECKED = "2026-11-24"
 
 SOURCES = [
     ("ssa-cola", "SSA press release: 3.6 percent benefit increase for 2027", "2026-10-14", "https://www.ssa.gov/news/en/press/releases/2026-10-14.html", "Once a year (October, with September CPI-W)"),
+    ("ssa-cola-fs", "SSA 2027 COLA fact sheet: average benefits before and after, taxable maximum", "2026-10-14", "https://www.ssa.gov/news/en/cola/factsheets/2027.html", "Once a year (October)"),
     ("ssa-blog", "SSA blog: COLA timing, notices, taxable maximum", "2026-10-14", "https://www.ssa.gov/blog/en/posts/2026-10-14.html", "Once a year"),
     ("cms-2027", "CMS-8094-N, Federal Register 2026-23601: Part B premium, deductible, income tiers for 2027", "2026-11-19", "https://www.federalregister.gov/documents/2026/11/19/2026-23601/medicare-program-medicare-part-b-monthly-actuarial-rates-premium-rates-and-annual-deductible", "Once a year (November)"),
+    ("cms-2027-fs", "CMS fact sheet: 2027 Medicare Parts A and B premiums and deductibles", "2026-11-17", "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles", "Once a year (November)"),
     ("cms-2026", "CMS fact sheet: 2026 Medicare Parts A and B premiums and deductibles", "2025-11", "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles", "Once a year"),
     ("poms-irmaa", "SSA POMS HI 01101.031: how IRMAA is calculated (two-year lookback)", "2025-12-02", "https://secure.ssa.gov/poms.nsf/lnx/0601101031", "As revised"),
 ]
@@ -23,10 +25,10 @@ RATES = [
     ("Part B premium change", 6.50, "cms-2027"),
     ("Part B deductible 2026", 283, "cms-2026"),
     ("Part B deductible 2027", 292, "cms-2027"),
-    ("SSA average retiree raise (stated)", "about $75 a month", "ssa-blog"),
+    ("SSA average retiree raise (stated)", "about $75 a month ($2,095 to $2,170, all retired workers)", "ssa-cola-fs"),
     ("SSI raise starts", "2026-12-31", "ssa-cola"),
     ("Social Security raise starts", "January 2027 payments", "ssa-cola"),
-    ("Taxable maximum 2026 to 2027", "$184,500 to $192,300 (context only, not used in calculator)", "ssa-blog"),
+    ("Taxable maximum 2026 to 2027", "$184,500 to $192,300 (context only, not used in calculator)", "ssa-cola-fs"),
 ]
 
 IRMAA = {

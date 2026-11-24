@@ -4,7 +4,7 @@ Social Security checks rise 3.6% in January 2027. The Medicare Part B premium th
 
 Planned home: `socialsecurityraise.translatingpolicy.com` (not deployed).
 
-Status: v1 from the nightly site idea of November 23, 2026. Figures checked against primary sources on November 23, 2026 (Eastern).
+Status: v1 from the nightly site idea of November 23, 2026. Figures checked against primary sources on November 23, 2026 (Eastern), and rechecked on November 24, 2026 against the SSA 2027 COLA release, blog and fact sheet and the CMS 2027 and 2026 Part B fact sheets. Every rate, deductible and income tier matched.
 
 ## What is on the page
 
@@ -20,8 +20,8 @@ Every figure is real and from a primary federal source. Nothing is sample data. 
 
 | Data | Source |
 |---|---|
-| 3.6% COLA, start dates, about $75 average retiree raise | SSA press release and blog, Oct 14, 2026 |
-| 2027 premium $209.40, deductible $292, income tiers | CMS-8094-N, Federal Register, Nov 19, 2026 |
+| 3.6% COLA, start dates, about $75 average retiree raise ($2,095 to $2,170) | SSA press release, blog and 2027 COLA fact sheet, Oct 14, 2026 |
+| 2027 premium $209.40, deductible $292, income tiers | CMS 2027 fact sheet (Nov 17, 2026); CMS-8094-N, Federal Register, Nov 19, 2026 |
 | 2026 premium $202.90, deductible $283, income tiers | CMS 2026 fact sheet |
 | Two-year income lookback | SSA POMS HI 01101.031 |
 

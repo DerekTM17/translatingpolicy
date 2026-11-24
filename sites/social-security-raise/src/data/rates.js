@@ -32,8 +32,10 @@ export const IRMAA = {
 
 export const SOURCES = [
   { id: 'ssa-cola', label: 'SSA press release: 3.6 percent benefit increase for 2027 (Oct 14, 2026)', url: 'https://www.ssa.gov/news/en/press/releases/2026-10-14.html' },
+  { id: 'ssa-cola-fs', label: 'SSA 2027 COLA fact sheet: average benefits before and after the raise', url: 'https://www.ssa.gov/news/en/cola/factsheets/2027.html' },
   { id: 'ssa-blog', label: 'SSA blog: COLA timing, notices, taxable maximum (Oct 14, 2026)', url: 'https://www.ssa.gov/blog/en/posts/2026-10-14.html' },
   { id: 'cms-2027', label: 'CMS notice CMS-8094-N: Part B premium, deductible and income tiers for 2027 (Federal Register, Nov 19, 2026)', url: 'https://www.federalregister.gov/documents/2026/11/19/2026-23601/medicare-program-medicare-part-b-monthly-actuarial-rates-premium-rates-and-annual-deductible' },
+  { id: 'cms-2027-fs', label: 'CMS fact sheet: 2027 Medicare Parts A and B premiums and deductibles (Nov 17, 2026)', url: 'https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles' },
   { id: 'cms-2026', label: 'CMS fact sheet: 2026 Medicare Parts A and B premiums and deductibles', url: 'https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles' },
   { id: 'poms-irmaa', label: 'SSA POMS HI 01101.031: how the income-related premium is calculated', url: 'https://secure.ssa.gov/poms.nsf/lnx/0601101031' },
 ];
