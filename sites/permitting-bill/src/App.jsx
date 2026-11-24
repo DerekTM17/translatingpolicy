@@ -2,8 +2,9 @@ import { useState } from 'react';
 import data from './data/bill.json';
 import Stepper from './components/Stepper.jsx';
 import ChangeCard from './components/ChangeCard.jsx';
+import ConcernCard from './components/ConcernCard.jsx';
 import VoteChart from './components/VoteChart.jsx';
-import { formatDate, nextStep } from './lib.js';
+import { CHECK_LABELS, formatDate, nextStep } from './lib.js';
 
 const final = data.votes.find((v) => v.roll === 270);
 const topics = ['All', ...new Set(data.changes.map((c) => c.topic))];
@@ -46,6 +47,10 @@ export default function App() {
           </div>
 
           <p className="status"><b>Not law yet</b>{data.statusNote} Sources last checked <time dateTime={data.lastVerified}>{formatDate(data.lastVerified)}</time>.</p>
+          <a className="callout" href="#worried">
+            <b>Who&rsquo;s worried and why</b>
+            Tribal nations, environmental groups and some state and local officials say parts of this bill go well beyond speed. See {data.concerns.length} specific worries, how solid each one is, and what supporters say back.
+          </a>
         </section>
 
         <div className="sec-title"><h2>What it would change for you</h2><small>{data.changes.length} changes</small></div>
@@ -58,6 +63,22 @@ export default function App() {
         <div className="cards">
           {shown.map((c) => <ChangeCard key={c.id} change={c} />)}
         </div>
+
+        <section id="worried">
+          <div className="sec-title"><h2>Who&rsquo;s worried and why</h2><small>{data.concerns.length} worries</small></div>
+          <p className="sec-lede">{data.concernsIntro}</p>
+          <ol className="glance" aria-label="Worries at a glance">
+            {data.concerns.map((c) => (
+              <li key={c.id}>
+                <a href={`#worried-${c.id}`}>{c.title}</a>
+                <span className={`check check-${c.check}`}>{CHECK_LABELS[c.check]}</span>
+              </li>
+            ))}
+          </ol>
+          <div className="concerns">
+            {data.concerns.map((c) => <ConcernCard key={c.id} concern={c} />)}
+          </div>
+        </section>
 
         <section id="status">
           <div className="sec-title"><h2>Where it stands</h2><small>Senate done, House next</small></div>
@@ -107,7 +128,10 @@ export default function App() {
         <div className="sec-title"><h2>How we built this</h2><small>Method</small></div>
         <div className="method">
           <p>
-            Vote counts come from senate.gov roll call records. What the bill does comes from the Congressional Research Service summary of the bill as introduced on September 30, checked against a public tracker&rsquo;s reading of the text the Senate passed. We could not read the passed text directly, so each card says which sources back it, and anything only a law firm or advocates reported is labeled that way.
+            Vote counts come from senate.gov roll call records. For what the bill does, we read the first 96 pages of the sponsors&rsquo; November 7 substitute text, which covers the environmental review and lawsuit changes and was offered on the floor as amendment 6883. The rest of that text was out of our reach, so for the other parts we rely on Congressional Research Service reports on the bill as introduced, a public tracker&rsquo;s reading of the passed text, and analyses by tribal organizations, advocates, law firms and think tanks. Every card and worry says which of these back it. Floor changes made November 17 and 18 are not checked line by line.
+          </p>
+          <p>
+            In &ldquo;Who&rsquo;s worried and why,&rdquo; the critics&rsquo; claims are theirs, quoted and linked. &ldquo;What it could mean in practice&rdquo; is our plain explanation of how the mechanics would play out, not a prediction. Every worry shows a supporter&rsquo;s answer, or says that we found none.
           </p>
           <p>
             We do not show estimates of power bills, jobs or the federal deficit, because no official estimate for the passed version was available. Status is checked by hand. When the House acts, we update this page.

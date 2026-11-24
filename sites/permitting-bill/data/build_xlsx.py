@@ -18,10 +18,11 @@ BOLD = Font(bold=True)
 HEAD = PatternFill('solid', fgColor='E2E8F0')
 WRAP = Alignment(wrap_text=True, vertical='top')
 CHECK = {
+    'text': "In the sponsors' Nov 7 substitute text, which we read",
     'both': 'CRS summary and a reading of the passed text agree',
     'crs': 'CRS summary of the bill as introduced',
     'tracker': "A tracker's reading of the passed text only",
-    'reported': 'Reported by a law firm or advocates, not yet confirmed',
+    'reported': 'Reported by tribal groups, advocates or law firms; not confirmed in the text',
 }
 
 
@@ -51,11 +52,12 @@ notes = [
     ('Last verified', d['lastVerified']),
     ('Status at last check', d['statusNote']),
     ('Vote counts', 'From senate.gov roll call records. Final passage (roll call 270) and the party split were read on the vote detail page on 2026-11-24; party counts were tallied from its name lists. Other tallies come from the senate.gov 119th Congress, 2nd session vote list. Not voting = 100 minus yea minus nay. The sheet Votes has formulas that recompute totals and the yea share.'),
-    ('What the bill does', 'From CRS R49506 (Nov 5, 2026), which summarizes the bill as introduced on Sept 30, checked against the More Than Just Parks tracker, which quotes the Senate-passed substitute with Congressional Record page numbers. We could not read the substitute text ourselves: the govinfo Congressional Record pages we reached held only amendment notices, and congress.gov refuses automated reads. Each change is labeled with how firmly it is sourced (sheet Changes, column Sourcing).'),
+    ('What the bill does', "On 2026-11-24 we read pages 1 to 96 of the sponsors' Nov 7 substitute text (posted by Senate EPW, offered on the floor as S.Amdt. 6883): Division A Title I, NEPA, through Sec. 1121, including Sec. 1110 judicial review. The rest of the PDF was beyond what our reader could reach, the Congressional Record text and congress.gov were not reachable, and floor changes of Nov 17 and 18 are not checked line by line. For other parts we use CRS R49506 (all sections, introduced bill), CRS R49511 (Title IV, introduced bill), the More Than Just Parks tracker, and named analyses. Each change and worry is labeled with how firmly it is sourced."),
+    ('Who is worried and why', "Sheet Whos_worried lists each criticism: who raises it, their claim (attributed, short quotes), our plain explanation of what it could mean in practice (an explanation of mechanics, not a prediction), what we could confirm and what we could not, and a supporter's response or a sourced note that none was found. The build fails if a worry lacks either."),
     ('Sourcing labels', '; '.join(f'{k} = {v}' for k, v in CHECK.items())),
     ('Balance rule', 'Supporters and opponents are listed in equal numbers, attributed, and never stated as fact. The build fails if the counts differ.'),
     ('Left out on purpose', 'Any estimate of power bill savings, jobs or the federal deficit (no official estimate for the passed version was found); House timing beyond "no date set as of Nov 23"; reported but unconfirmed details of the transmission backstop in the passed text.'),
-    ('Open checks', 'Read Sec. 2107 (Ratepayer protection), Sec. 2101 (transmission backstop), Secs. 1401 and 1402 (bad-faith suits) and Title III in the Senate-passed text. Find a CBO estimate for the substitute. Recheck House status daily.'),
+    ('Open checks', 'Read Title IV (Secs. 1401 to 1403), Division B Title I (Secs. 2101, 2102, 2107, 2117), Sec. 2215 (mill sites) and Title III (Secs. 2301, 2302, historic preservation and tribal consultation) in the passed text. Confirm whether a FERC backstop permit carries eminent domain. Check the Nov 17 and 18 floor changes. Find a CBO estimate. Recheck House status daily.'),
 ]
 for k, v in notes:
     ws.append([k, v])
@@ -92,6 +94,17 @@ for c in d['changes']:
 sheet(wb, 'Changes', ['ID', 'Topic', 'Change', 'Section', 'Sourcing', 'Felt impact', 'Who notices', 'Numbers and source', 'Mechanics', 'Sources'],
       crows, [14, 14, 34, 18, 34, 50, 40, 50, 70, 70])
 
+wrows = []
+for c in d['concerns']:
+    resp = f"{c['response']['who']}: {c['response']['claim']} ({c['response']['url']})" if c.get('response') else f"None found. {c['noResponse']['text']} ({c['noResponse']['url']})"
+    if c.get('concession'):
+        resp += f"\n{c['concession']['text']} ({c['concession']['url']})"
+    wrows.append([c['id'], c['topic'], c['title'], c['section'], CHECK[c['check']],
+                  '\n'.join(f"{p['who']} ({p['url']})" for p in c['critics']), c['claim'], c['practice'],
+                  c['confirmed'], c['open'], resp, '\n'.join(f"{s['label']}: {s['url']}" for s in c['sources'])])
+sheet(wb, 'Whos_worried', ['ID', 'Topic', 'Worry', 'Section', 'How solid', 'Raised by', 'What critics say (attributed)', 'What it could mean in practice (our explanation)', 'What we could confirm', 'Not confirmed yet', 'Supporter response', 'Sources'],
+      wrows, [14, 16, 34, 20, 30, 40, 70, 70, 60, 50, 60, 80])
+
 srows = [[s['date'] or 'pending', s['label'], s['detail'], 'Yes' if s['done'] else 'No', s['source']['label'], s['source']['url']] for s in d['steps']]
 sheet(wb, 'Status_steps', ['Date', 'Step', 'Detail', 'Done', 'Source', 'URL'], srows, [12, 34, 70, 8, 34, 70])
 
@@ -109,6 +122,13 @@ for v in d['votes']:
 for c in d['changes']:
     for s in c['sources']:
         add(s['url'], s['label'], c['id'])
+for c in d['concerns']:
+    for s in c['sources']:
+        add(s['url'], s['label'], f"worry: {c['id']}")
+    for p in c['critics']:
+        add(p['url'], p['who'], f"worry: {c['id']}")
+    if c.get('response'):
+        add(c['response']['url'], c['response']['who'], f"worry: {c['id']} (response)")
 for s in d['steps']:
     add(s['source']['url'], s['source']['label'], 'status')
 for k in ('support', 'oppose'):
@@ -125,12 +145,18 @@ checks = [
     ['Party split on final passage', 'Confirmed', 'Counted from the vote 270 name lists: yea R 47, D 14, I 1; nay R 2, D 30, I 1; not voting R 4, D 1.'],
     ['Roll calls 257, 258, 264, 266, 267, 268', 'Confirmed', 'senate.gov vote list, read 2026-11-24.'],
     ['House has not voted on the Senate version', 'Confirmed as of Nov 23', 'More Than Just Parks and Bommarito (both updated Nov 23): no House vote date set. congress.gov all-actions could not be read.'],
-    ['150-day limit to file a NEPA challenge (Sec. 1110)', 'Two sources agree', 'CRS R49506 (introduced text) and the MTJP tracker quoting the substitute (Record p. S5478). A Nov 21 note said this was read in the Record at govinfo PgS5471-2; on Nov 24 that page held only an amendment notice, so we no longer count it as read in the text.'],
-    ['1 year EA and 2 year EIS deadlines (Sec. 1106)', 'Tracker only for the numbers', 'CRS confirms Sec. 1106 sets decision deadlines; the 1 and 2 year figures are from MTJP quoting Record pp. S5476 to S5477.'],
-    ['Bad-faith payment provisions (Secs. 1401, 1402)', 'Tracker only', 'MTJP quoting Record pp. S5488 to S5490. Not in the CRS sections we read.'],
-    ['Data center ratepayer protection (Sec. 2107)', 'Reported', 'Section title confirmed in an earlier read of the substitute table of contents; content from White & Case (Nov 11). MTJP did not describe a cost rule.'],
-    ['Transmission backstop siting (Sec. 2101)', 'CRS (introduced) only', 'Not confirmed in the passed text.'],
-    ['Title III changes for tribal programs', 'Reported', 'Bommarito, based on a committee summary; NARF and NCAI oppose.'],
+    ['150-day limit to file a NEPA challenge (Sec. 1110)', 'Confirmed in text', "Read in the sponsors' Nov 7 substitute text, new NEPA sec. 111, pp. 72 to 74, with the comment requirement, the direct-harm test and appeals-court venue. Also in CRS R49506 and MTJP."],
+    ['Remand without vacatur or injunction is the only NEPA remedy; permit stays in effect (Sec. 1110)', 'Confirmed in text', 'Substitute text pp. 75 to 77. Preliminary injunctions still possible for likely violations of laws other than NEPA and the NHPA (pp. 75 to 76).'],
+    ["No claims over omissions from the developer's stakeholder engagement list (Sec. 1110)", 'Confirmed in text', 'Substitute text p. 79, referring to the list in new NEPA sec. 3(22)(B), pp. 24 to 25.'],
+    ['NEPA suits over tribal trust land projects limited to the trust tribe (Sec. 1110)', 'Confirmed in text', 'Substitute text pp. 78 to 79; exception for effects outside the trust lands.'],
+    ['1 year EA and 2 year EIS deadlines (Sec. 1106)', 'Confirmed in text', 'Substitute text pp. 49 to 53; decisions on authorizations 90 or 120 days later. CEQ dispute rulings final and not reviewable, pp. 53 to 56.'],
+    ['Loan-only projects and certain gas pipeline covered activities are not major federal actions (Sec. 1102)', 'Confirmed in text', "Substitute text pp. 16 to 22. Which pipeline work is a covered activity depends on a new Natural Gas Act section we did not read."],
+    ['Bad-faith payment provisions (Secs. 1401, 1402)', 'CRS (introduced) and tracker', 'CRS R49511: clear and convincing standard, 25 to 50 percent and 50 to 100 percent payments, Judgment Fund. MTJP reports the same in the passed text. Protected-permit date moved from Sept 16 to Nov 6, 2026 per IFP.'],
+    ['Data center ratepayer protection (Sec. 2107)', 'Reported', 'Section title in the substitute table of contents; content from White & Case (Nov 11) and sponsors. NRDC says local impacts are not addressed.'],
+    ['Transmission backstop siting (Sec. 2101)', 'CRS (introduced) and an advocacy reading', 'Not confirmed in the passed text. No source we read addresses eminent domain.'],
+    ['Title III Section 106 changes: 30-day response clock, softer consultation wording, financial-assistance exclusion, THPO reviews', 'Reported', 'TNPI explainer (Nov 12), NATHPO, Native News Online, CWP. Not read in the text. TNPI and NCAI say the substitute dropped the sacred-property redefinition and the Interior takeover of THPOs.'],
+    ['Mill sites and mine waste on public land (Sec. 2215)', 'Reported', 'Section title in the table of contents. Content from Earthworks, Earthjustice, CWP, NRDC and Heatmap News.'],
+    ['Seabed mining near U.S. territories', 'Left out', 'One outlet (Pasquines, Nov 18) reported it; the page would not load, so we did not use it.'],
 ]
 sheet(wb, 'Fact_checks', ['Claim', 'Result', 'Evidence'], checks, [50, 24, 110])
 

@@ -25,13 +25,14 @@ export function nextStep(steps) {
   return steps.find((s) => !s.done) || null;
 }
 
-// How firmly each change is sourced. We could not read the Senate-passed text directly,
-// so nothing is labeled as checked against the text.
+// How firmly each item is sourced. "text" means we read it ourselves in the sponsors'
+// Nov 7 substitute text, which was offered as S.Amdt. 6883 (later floor changes not checked).
 export const CHECK_LABELS = {
+  text: 'In the sponsors\u2019 substitute text, which we read',
   both: 'CRS summary and a reading of the passed text agree',
   crs: 'CRS summary of the bill as introduced',
   tracker: 'A tracker\u2019s reading of the passed text only',
-  reported: 'Reported by a law firm or advocates, not yet confirmed',
+  reported: 'Reported by tribal groups, advocates or law firms; not confirmed in the text',
 };
 
 // Validates the hand-curated data. Returns a list of problems (empty when clean).
@@ -80,6 +81,27 @@ export function checkData(raw) {
   if ((data.sides?.support || []).length !== (data.sides?.oppose || []).length) {
     errors.push('supporters and opponents should be listed in equal numbers (balance rule)');
   }
+  const cids = new Set();
+  for (const c of data.concerns || []) {
+    if (cids.has(c.id)) errors.push(`duplicate concern id ${c.id}`);
+    cids.add(c.id);
+    for (const f of ['title', 'section', 'short', 'claim', 'practice', 'confirmed', 'open']) if (!c[f]) errors.push(`concern ${c.id}: missing ${f}`);
+    if (!CHECK_LABELS[c.check]) errors.push(`concern ${c.id}: unknown check "${c.check}"`);
+    if (!c.critics?.length) errors.push(`concern ${c.id}: name who raises it`);
+    for (const p of c.critics || []) if (!p.who || !https(p.url)) errors.push(`concern ${c.id}: critic ${p.who || '?'} needs an https source`);
+    // Balance rule: every worry shows the other side, or says plainly that we found none.
+    if (c.response) {
+      if (!c.response.who || !c.response.claim || !https(c.response.url)) errors.push(`concern ${c.id}: response needs who, claim and an https source`);
+    } else if (!c.noResponse?.text || !https(c.noResponse?.url)) {
+      errors.push(`concern ${c.id}: add a supporter response or a sourced note that none was found`);
+    }
+    if (c.quote && (!c.quote.text || !c.quote.who || !https(c.quote.url))) errors.push(`concern ${c.id}: quote needs text, who and an https source`);
+    if (c.concession && (!c.concession.text || !https(c.concession.url))) errors.push(`concern ${c.id}: concession needs an https source`);
+    if (!c.sources?.length) errors.push(`concern ${c.id}: no sources`);
+    for (const s of c.sources || []) if (!https(s.url)) errors.push(`concern ${c.id}: source not https`);
+  }
+  if ((data.concerns || []).length && !data.concernsIntro) errors.push('concerns need an intro');
+
   for (const n of data.myths || []) if (!n.claim || !n.fact || !https(n.url)) errors.push(`myth ${n.claim || '?'} needs claim, fact and an https source`);
   return errors;
 }

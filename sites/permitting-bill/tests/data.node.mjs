@@ -47,3 +47,24 @@ test('a finished step without a source is rejected', () => {
 test('dates format in UTC so they never shift a day', () => {
   assert.equal(formatDate('2026-11-19'), 'November 19, 2026');
 });
+
+test('Who’s worried section: tribes first, every worry sourced and answered', () => {
+  const d = JSON.parse(raw);
+  assert.ok(d.concerns.length >= 5);
+  assert.equal(d.concerns[0].id, 'tribes-106');
+  for (const c of d.concerns) {
+    assert.ok(c.critics.length > 0, `${c.id} names who raises it`);
+    assert.ok(c.response || c.noResponse, `${c.id} shows the other side or says none was found`);
+  }
+  // Only items we read in the bill text may carry the "text" label.
+  const textIds = d.concerns.filter((c) => c.check === 'text').map((c) => c.id).sort();
+  assert.deepEqual(textIds, ['courts', 'less-review']);
+});
+
+test('checkData rejects a worry with no supporter response and no note', () => {
+  const d = JSON.parse(raw);
+  delete d.concerns[1].response;
+  delete d.concerns[1].noResponse;
+  const errs = checkData(JSON.stringify(d));
+  assert.ok(errs.some((e) => e.includes('supporter response')), errs.join('; '));
+});

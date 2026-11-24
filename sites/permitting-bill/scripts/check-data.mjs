@@ -11,4 +11,4 @@ if (errors.length) {
   process.exit(1);
 }
 const data = JSON.parse(raw);
-console.log(`Data check passed: ${data.changes.length} changes, ${data.votes.length} roll calls, ${data.steps.length} steps.`);
+console.log(`Data check passed: ${data.changes.length} changes, ${(data.concerns || []).length} concerns, ${data.votes.length} roll calls, ${data.steps.length} steps.`);
