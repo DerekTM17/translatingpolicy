@@ -218,7 +218,7 @@
           "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
         }
       ],
-      "mechanics": "Section 1106 sets deadlines for agency decisions: 1 year for an environmental assessment and 2 years for an environmental impact statement, then 90 days (or 120 for agencies outside the review) to decide on permits. Missed deadlines bring consequences for senior officials, and the developer can go to court over a missed deadline. Section 1403, per the CRS summary of the introduced bill, gives permits that need no environmental review a 1 year decision deadline.",
+      "mechanics": "Section 1106 sets deadlines for agency decisions: 1 year for an environmental assessment and 2 years for an environmental impact statement, then 90 days (or 120 for agencies outside the review) to decide on permits. Missed deadlines bring consequences for senior officials, and the developer can go to court over a missed deadline. Section 1403, per CRS on the introduced bill, gives permits that need no environmental review a 1 year decision deadline; Earthjustice reads it in the substitute as \"judicially-enforceable,\" and C2ES says the substitute lets developers seek court enforcement of permitting deadlines.",
       "section": "Secs. 1106 and 1403",
       "check": "text",
       "sources": [
@@ -236,6 +236,16 @@
           "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
           "url": "https://morethanjustparks.com/bill-tracker/baaja",
           "kind": "Tracker"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "C2ES summary, updated for the sponsors' substitute (Nov 10, 2026)",
+          "url": "https://www.c2es.org/document/comprehensive-summary-of-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
         }
       ]
     },
@@ -309,7 +319,7 @@
           "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf"
         }
       ],
-      "mechanics": "Per the Congressional Research Service summary of the bill as introduced: Section 1401 bars agencies from revoking or changing a fully permitted project's approvals unless the agency proves an exception by clear and convincing evidence, and a court finding of bad faith adds a payment of 25 to 50 percent of costs. Section 1402 lets a developer sue over a pattern of denials or delays for its type of project, with a win paying 50 to 100 percent of expected construction cost. Payments come from the Judgment Fund, which needs no new vote in Congress. A tracker reports the same ranges in the passed text. See Who's worried and why.",
+      "mechanics": "Per the Congressional Research Service summary of the bill as introduced: Section 1401 bars agencies from revoking or changing a fully permitted project's approvals unless the agency proves an exception by clear and convincing evidence, and a court finding of bad faith adds a payment of 25 to 50 percent of costs. Section 1402 lets a developer sue over a pattern of denials or delays for its type of project, with a win paying 50 to 100 percent of expected construction cost. Payments come from the Judgment Fund, which needs no new vote in Congress. A tracker reports the same ranges in the passed text. Earthjustice says the sponsors' substitute added a bad-faith requirement to Sec. 1402 suits, more exceptions for harm to health and the environment, and limits on Judgment Fund payments to court orders or court-approved settlements. See Who's worried and why.",
       "section": "Secs. 1401 and 1402",
       "check": "crs",
       "sources": [
@@ -317,6 +327,11 @@
           "label": "CRS R49511 on Title IV of the bill as introduced (Nov 6, 2026)",
           "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf",
           "kind": "CRS"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
         },
         {
           "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
@@ -492,23 +507,42 @@
         {
           "who": "All Pueblo Council of Governors",
           "url": "https://www.abqjournal.com/news/lawmakers-and-tribal-leaders-urge-rejection-of-permitting-reform-bill/3166881"
+        },
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf"
         }
       ],
-      "claim": "Title III rewrites Section 106 of the National Historic Preservation Act, the step where federal agencies must consult tribes before a project can harm historic or sacred places. As tribal groups and analysts read it: the duty softens to agencies having to \"seek, discuss, as appropriate, and incorporate, as applicable\" tribal views; tribes face set deadlines, including 30 days to respond to an agency report, after which the agency may go ahead; projects whose only federal role is a grant or loan would generally skip the review, except Transportation Department projects over $10 million; and tribal preservation offices would face federal performance reviews that can suspend their funding. NCAI says the changes \"strip the protections to sacred sites that Tribal Nations have relied on for 60 years.\"",
+      "claim": "Title III rewrites Section 106 of the National Historic Preservation Act, the step where federal agencies must consult tribes before a project can harm historic or sacred places. As tribal groups and analysts read it: the duty softens to agencies having to \"seek, discuss, as appropriate, and incorporate, as applicable\" tribal views; tribes face set deadlines, including 30 days to send information after an agency asks for it, after which the agency may go ahead; projects whose only federal role is a grant or loan would generally skip the review, except Transportation Department projects over $10 million; and tribal preservation offices would face federal performance reviews that can suspend their funding. NCAI says the changes \"strip the protections to sacred sites that Tribal Nations have relied on for 60 years.\"",
       "quote": {
         "text": "Once these places are bulldozed, they cannot be restored.",
         "who": "Ira L. Matt, executive director, National Association of Tribal Historic Preservation Officers",
         "url": "https://www.yahoo.com/news/politics/articles/fast-tracked-baaja-puts-tribal-042512199.html"
       },
       "practice": "Many sacred places are not on any public map, and tribes often keep their locations private for protection. A tribal preservation office with one or two staff can get many review requests at once. Under a 30-day clock, a missed deadline lets the agency move on, and a tribal policy explainer says the agency would not have to revisit earlier findings if the tribe comes back later. Add the 150-day lawsuit window and the limits on stopping a project in court, and a tribe that spots harm late may have little it can still do.",
-      "confirmed": "In the part of the substitute text we read, the environmental review title adds two protections for tribes: a NEPA lawsuit over a project on tribal trust land can generally be brought only by that tribe, and when a tribe proposes its own project, agencies must presume that saying no would hurt the tribe. Those are not in the historic preservation title tribes object to.",
-      "open": "We have not read Title III's text, so the deadlines and wording above are the critics' reading. A tribal policy explainer and NCAI say the substitute dropped two earlier pieces tribes fought: a federal redefinition of tribal sacred places and an Interior Department takeover of tribal preservation offices. Whether floor changes on November 17 and 18 touched the 30-day clock is not confirmed.",
+      "confirmed": "Groups on both sides quote the same wording from the sponsors' substitute. Earthjustice, which opposes the bill, and the Institute for Progress, which defends its tribal provisions, both say agencies must \"seek, discuss, as appropriate, and incorporate, as applicable\" tribal information, and IFP quotes the 30-day window. Both say the substitute dropped the earlier \"may consult\" wording, the narrower definition of sacred places and the Interior takeover of tribal preservation offices, and that transportation projects with more than $10 million in federal funding stay under review. IFP says the window to object to an agency report grew from 30 to 45 days. CRS and IFP say Section 106 claims get their own 150-day, remand-only lawsuit rule. Earthjustice says the new wording \"could be read to limit consultation as much or more than the original text\"; IFP says the amended bill is \"more favorable to Tribal interests\" than the status quo under a rule the federal preservation council has proposed. Separately, in the part of the substitute text we read, the environmental review title adds two protections for tribes: a NEPA lawsuit over a project on tribal trust land can generally be brought only by that tribe, and when a tribe proposes its own project, agencies must presume that saying no would hurt the tribe.",
+      "open": "We have not read Title III's text ourselves; the wording above is as quoted by Earthjustice and IFP from the sponsors' November substitute. Neither says what happens to tribal information that arrives after 30 days beyond IFP's reading that the agency proceeds. Whether floor changes on November 17 and 18 touched the 30-day clock is not confirmed.",
       "response": {
         "who": "Sen. Mike Lee, a lead sponsor, on the Senate floor",
         "claim": "\"We have strengthened Tribal consultation provisions.\" Sen. Martin Heinrich, another sponsor, says the bill is defending against the administration's attacks on tribal consultation.",
         "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf"
       },
       "sources": [
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Institute for Progress, Tribal consultation under BAAJA, updated for the substitute (Nov 17, 2026)",
+          "url": "https://ifp.org/tribal-consultation-under-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
+        },
+        {
+          "label": "CRS R49498 on the historic preservation title as introduced (Oct 30, 2026)",
+          "url": "https://www.everycrsreport.com/files/2026-10-30_R49498_7748c521f84c904a8af8556f25bb87283c745f74.html",
+          "kind": "CRS"
+        },
         {
           "label": "Tribal Nations Policy Institute, Section 106 explained (Nov 12, 2026)",
           "url": "https://aipinstitute.substack.com/p/section-106-explained-three-federal",
@@ -579,7 +613,7 @@
       "claim": "Critics say the bill shuts most people out of court. Earthjustice says challenges that can now be filed for up to six years would have to be filed within 150 days. NRDC says a court \"can never invalidate a permit\" over a violation of the environmental review law or the historic preservation law. Rep. Adelita Grijalva says the bill would \"all but eliminate judicial review.\"",
       "practice": "Say a company gets approval for a pipeline or a mine near a small town or a reservation. The clock starts when the approval is made public. Residents who learn about it late, who did not file a detailed comment during the comment period, or who cannot show direct harm may not be able to sue at all. Those who can sue start in a federal appeals court, which costs more than a local trial court. If they win, the agency redoes its review, in up to 180 days, and the permit stays in effect, so work can keep going. The bill also bars any claim over who a developer left off its required outreach list of state, local and tribal officials.",
       "confirmed": "We read this in the sponsors' November 7 substitute text: the 150-day deadline; the rule that you must have filed a substantive comment, for comment periods held after the law takes effect; the direct-harm test; appeals-court venue; remand without vacatur or injunction as the only remedy; the permit staying in effect during remand; substantial deference to the agency; and no claims over omissions from the developer's outreach list. A court can still pause a project early if it is likely breaking a law other than NEPA or the historic preservation law.",
-      "open": "We have not read how the same limits apply to historic preservation claims under Sec. 2301. Earthjustice and NATHPO say they do.",
+      "open": "Section 106 historic preservation claims get a matching 150-day, remand-only rule in Sec. 2301, per CRS and the Institute for Progress, running from notice to each consulting tribe. We have not read that section ourselves.",
       "response": {
         "who": "Sen. Martin Heinrich, a lead sponsor",
         "claim": "\"We make permitting faster, and so we're going to be able to put more cheap, clean electrons onto the grid.\"",
@@ -610,6 +644,11 @@
           "label": "The Dispute Index, quotes from both sides (updated Nov 23, 2026)",
           "url": "https://disputeindex.com/cases/senate-baaja-permitting-bill",
           "kind": "Secondary"
+        },
+        {
+          "label": "Institute for Progress, Tribal consultation under BAAJA, updated for the substitute (Nov 17, 2026)",
+          "url": "https://ifp.org/tribal-consultation-under-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
         }
       ]
     },
@@ -640,8 +679,8 @@
       ],
       "claim": "Critics say Sec. 1401 freezes permits once issued for any project with a private sponsor, including mines, logging and data centers, not only clean energy. The Clean Air Task Force says it creates \"a risk that it would be difficult for future administrations to unwind hastily issued or unlawful permits.\" California local officials warn Sec. 1402 could mean \"billions in taxpayer-funded damages.\"",
       "practice": "If a later administration decides a permit was a mistake and tries to pull or tighten it, the agency has to prove by clear and convincing evidence that one of a short list of exceptions applies. If a court finds the government acted in bad faith, the developer can collect 25 to 50 percent of its costs. Under Sec. 1402, a developer can sue if approvals for its type of project dropped sharply compared with the past five years, and collect 50 to 100 percent of expected construction costs. Payments come from the Judgment Fund, a standing account that needs no vote in Congress. CRS notes about $3.8 billion was paid from it for 10 offshore wind settlements from April to October 2026.",
-      "confirmed": "The Congressional Research Service describes these mechanics in the bill as introduced (report R49511, November 6, 2026): the clear and convincing standard, the payment ranges and the Judgment Fund. CRS says Sec. 1402 \"appears to contemplate a finding of liability without any direct evidence\" of intent. The Institute for Progress says the substitute moved the protected date from September 16 to November 6, 2026.",
-      "open": "We have not read Title IV in the passed text. Lawyers disagree about how far the lock-in reaches.",
+      "confirmed": "The Congressional Research Service describes these mechanics in the bill as introduced (report R49511, November 6, 2026): the clear and convincing standard, the payment ranges and the Judgment Fund. CRS says Sec. 1402 \"appears to contemplate a finding of liability without any direct evidence\" of intent. The Institute for Progress says the substitute moved the protected date from September 16 to November 6, 2026. Earthjustice's analysis of the substitute says Title IV stayed in with changes: added exceptions for immediate harm to human health or the environment, a clause saying nothing in Sec. 1401 limits other authority, a requirement that developers suing under Sec. 1402 show the government acted in bad faith, a look-back extended from 5 to 10 years, and Judgment Fund payments only under court orders or court-approved settlements. Earthjustice says the word \"immediate\" makes the government's showing \"even more onerous.\"",
+      "open": "We have not read Title IV in the passed text, and no source we found gives the payment percentages for the substitute; the 25 to 100 percent figures come from CRS on the introduced bill and a tracker. Lawyers disagree about how far the lock-in reaches.",
       "response": {
         "who": "Institute for Progress (Ben Schifman)",
         "claim": "\"Section 1401 restricts federal agencies, not courts.\" The government can still ask a court to cancel an unlawful permit, and the 25 to 50 percent payment needs a court finding of bad faith.",
@@ -652,6 +691,11 @@
           "label": "CRS R49511 on Title IV of the bill as introduced (Nov 6, 2026)",
           "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf",
           "kind": "CRS"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
         },
         {
           "label": "Institute for Progress, BAAJA certainty (Nov 8, 2026)",
@@ -810,7 +854,7 @@
       "claim": "The Wisconsin group says Sec. 2101 lets the Federal Energy Regulatory Commission approve an interstate line after the state utility commission says no, takes more than a year, or sets conditions that make the line \"not economically feasible.\" It says FERC must weigh landowners' views, but \"None of these rules lets a landowner or the state stop a FERC permit.\"",
       "practice": "Landowners along a route would have less leverage through their own state. Whether a federal permit would carry the power to take land by eminent domain matters a lot for them, and we could not confirm it in the passed text.",
       "confirmed": "CRS describes backstop siting authority for FERC in the bill as introduced.",
-      "open": "We have not read Sec. 2101's text and have not confirmed any eminent domain power.",
+      "open": "We have not read Sec. 2101's text. The Institute for Progress wrote in October that the introduced version let a federally sited line use federal eminent domain; we found no source confirming that for the passed version.",
       "response": {
         "who": "NRDC, which opposes the bill overall",
         "claim": "Calls the transmission and interconnection reforms \"the bill's principal strengths.\" Earthjustice also calls the transmission provisions very positive.",
@@ -831,6 +875,11 @@
           "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
           "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
           "kind": "Advocacy"
+        },
+        {
+          "label": "Institute for Progress, How the permitting deal works, on the introduced bill (Oct 12, 2026)",
+          "url": "https://ifp.org/how-the-permitting-deal-works/",
+          "kind": "Think tank"
         }
       ]
     },
