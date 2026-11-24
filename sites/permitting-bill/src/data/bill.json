@@ -1,0 +1,442 @@
+{
+  "lastVerified": "2026-11-24",
+  "name": "Bipartisan American Affordability and Jobs Act of 2026",
+  "short": "BAAJA",
+  "statusNote": "The Senate passed it 62 to 33 on November 19, 2026. The House has not voted on the Senate version, and no House vote date was set as of November 23. It is not law.",
+  "statusSources": [
+    {
+      "label": "senate.gov roll call vote 270",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm"
+    },
+    {
+      "label": "More Than Just Parks bill tracker",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    }
+  ],
+  "billLinks": [
+    {
+      "label": "H.R. 2347 on Congress.gov (the bill the Senate passed)",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+    },
+    {
+      "label": "S. 5653 on Congress.gov (the original Senate bill)",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5653"
+    },
+    {
+      "label": "CRS summary of all sections",
+      "url": "https://www.everycrsreport.com/reports/R49506.html"
+    }
+  ],
+  "steps": [
+    {
+      "date": "2026-04-27",
+      "label": "House passes the original H.R. 2347",
+      "detail": "A short tax bill about damages paid to survivors passed the House by voice vote. It had nothing to do with permits yet.",
+      "done": true,
+      "source": {
+        "label": "More Than Just Parks bill tracker",
+        "url": "https://morethanjustparks.com/bill-tracker/baaja"
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "label": "BAAJA introduced as S. 5653",
+      "detail": "Sen. Shelley Moore Capito (R-WV) introduced it with Sens. Martin Heinrich (D-NM), Mike Lee (R-UT) and Sheldon Whitehouse (D-RI).",
+      "done": true,
+      "source": {
+        "label": "CRS R49506",
+        "url": "https://www.everycrsreport.com/reports/R49506.html"
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "label": "Senate votes to take it up",
+      "detail": "73 to 25 to end debate on starting the bill (roll call 257).",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call list",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "label": "BAAJA text swapped into H.R. 2347",
+      "detail": "The Senate replaced all of H.R. 2347 with BAAJA, 69 to 27 (roll call 267). That lets the House finish it with one more vote.",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call 267",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "label": "Senate passes it",
+      "detail": "62 to 33, with 5 not voting (roll call 270).",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call 270",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm"
+      }
+    },
+    {
+      "date": null,
+      "label": "House votes on the Senate version",
+      "detail": "If the House passes the same text, it goes to the President. If the House changes it, it goes back to the Senate. No date was set as of November 23.",
+      "done": false,
+      "source": {
+        "label": "More Than Just Parks bill tracker",
+        "url": "https://morethanjustparks.com/bill-tracker/baaja"
+      }
+    },
+    {
+      "date": null,
+      "label": "President signs or vetoes",
+      "detail": "The White House said it strongly supports the bill.",
+      "done": false,
+      "source": {
+        "label": "Statement of Administration Policy, Nov 9, 2026",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
+      }
+    }
+  ],
+  "votes": [
+    {
+      "roll": 257,
+      "date": "2026-11-09",
+      "short": "Start debate",
+      "question": "Cloture on the motion to proceed to H.R. 2347",
+      "yea": 73,
+      "nay": 25,
+      "notVoting": 2,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 258,
+      "date": "2026-11-10",
+      "short": "Take up the bill",
+      "question": "Motion to proceed to H.R. 2347",
+      "yea": 62,
+      "nay": 21,
+      "notVoting": 17,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 264,
+      "date": "2026-11-16",
+      "short": "End debate on BAAJA text",
+      "question": "Cloture on S.Amdt. 6883 (the BAAJA substitute)",
+      "yea": 70,
+      "nay": 27,
+      "notVoting": 3,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm"
+    },
+    {
+      "roll": 266,
+      "date": "2026-11-18",
+      "short": "Waive budget rules",
+      "question": "Motion to waive all applicable budgetary discipline",
+      "yea": 70,
+      "nay": 26,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 267,
+      "date": "2026-11-18",
+      "short": "Adopt BAAJA text",
+      "question": "S.Amdt. 6883, in the nature of a substitute",
+      "yea": 69,
+      "nay": 27,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+    },
+    {
+      "roll": 268,
+      "date": "2026-11-18",
+      "short": "End debate on the bill",
+      "question": "Cloture on H.R. 2347",
+      "yea": 65,
+      "nay": 31,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 270,
+      "date": "2026-11-19",
+      "short": "Final passage",
+      "question": "On passage of H.R. 2347, as amended",
+      "yea": 62,
+      "nay": 33,
+      "notVoting": 5,
+      "result": "Passed",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm",
+      "parties": {
+        "Republican": {
+          "yea": 47,
+          "nay": 2,
+          "notVoting": 4
+        },
+        "Democrat": {
+          "yea": 14,
+          "nay": 30,
+          "notVoting": 1
+        },
+        "Independent": {
+          "yea": 1,
+          "nay": 1,
+          "notVoting": 0
+        }
+      }
+    }
+  ],
+  "changes": [
+    {
+      "id": "deadlines",
+      "topic": "Speed",
+      "title": "Federal agencies get a clock",
+      "felt": "Power lines, pipelines, mines and other projects that need federal sign-off would get answers on a schedule instead of waiting years.",
+      "who": "Anyone near a proposed project, and anyone waiting on one to be built.",
+      "numbers": [
+        {
+          "value": "1 year",
+          "label": "to finish a shorter environmental review (an EA)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja"
+        },
+        {
+          "value": "2 years",
+          "label": "to finish a full environmental impact statement",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja"
+        }
+      ],
+      "mechanics": "Section 1106 sets deadlines for agency decisions after the environmental review and adds consequences when an agency misses one. A tracker reading the Senate-passed text reports 1 year for an environmental assessment and 2 years for an environmental impact statement. Section 1403 gives permits that need no environmental review a 1 year decision deadline, and the applicant can go to court if the agency misses it.",
+      "section": "Secs. 1106 and 1403",
+      "check": "both",
+      "sources": [
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        }
+      ]
+    },
+    {
+      "id": "lawsuit-window",
+      "topic": "Courts",
+      "title": "150 days to challenge a project in court",
+      "felt": "If you think a project near you skipped a proper environmental review, you or a group you back would have about five months to sue, and the case starts in a federal appeals court.",
+      "who": "Neighbors, tribes, local governments and groups that challenge projects, and the companies building them.",
+      "numbers": [
+        {
+          "value": "150 days",
+          "label": "to file after the approval is made public",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja"
+        }
+      ],
+      "mechanics": "Section 1110 adds a new NEPA section 111. A claim that an agency broke the National Environmental Policy Act must be filed within 150 days after the environmental impact statement is published in the Federal Register or the approval is made public, and it must be filed in a federal court of appeals.",
+      "section": "Sec. 1110",
+      "check": "both",
+      "sources": [
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        }
+      ]
+    },
+    {
+      "id": "remand",
+      "topic": "Courts",
+      "title": "A flawed review usually would not stop the project",
+      "felt": "Even if a court agrees the review was flawed, the project could generally keep going while the agency fixes the paperwork.",
+      "who": "Same as above. This changes what winning a lawsuit gets you.",
+      "numbers": [],
+      "mechanics": "Section 1110 generally bars courts from vacating an approval or issuing an injunction unless certain criteria are met. Instead the court sends the review back to the agency to fix (remand without vacatur).",
+      "section": "Sec. 1110",
+      "check": "both",
+      "sources": [
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        }
+      ]
+    },
+    {
+      "id": "bad-faith",
+      "topic": "Courts",
+      "title": "Developers could sue over bad-faith denials",
+      "felt": "If a court finds the government blocked a project in bad faith, taxpayers could owe the developer a large share of its costs.",
+      "who": "Developers, and taxpayers who would fund any payments.",
+      "numbers": [
+        {
+          "value": "25 to 50%",
+          "label": "of development and construction costs (Sec. 1401)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja"
+        },
+        {
+          "value": "50 to 100%",
+          "label": "of expected construction cost (Sec. 1402)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja"
+        }
+      ],
+      "mechanics": "As read by a tracker from the Senate-passed text: Section 1401 has the government pay 25 to 50 percent of development and construction costs if a court finds bad-faith interference. Section 1402 lets a developer sue if permits for its type of project were denied in bad faith as part of a pattern, with a win paying 50 to 100 percent of expected construction cost. We could not yet confirm these sections in the bill text ourselves.",
+      "section": "Secs. 1401 and 1402",
+      "check": "tracker",
+      "sources": [
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        }
+      ]
+    },
+    {
+      "id": "power-lines",
+      "topic": "Power grid",
+      "title": "A federal backup for big power lines",
+      "felt": "Long power lines that cross state lines could get a federal path to approval when states do not act.",
+      "who": "People who pay electric bills, and landowners along proposed routes.",
+      "numbers": [],
+      "mechanics": "Section 2101 changes transmission permitting and, per the CRS summary of the introduced bill, gives the Federal Energy Regulatory Commission backstop siting authority for some interstate lines. Some senators proposed amendments to narrow it (for example, giving states two years first). We have not confirmed how the passed text handles this.",
+      "section": "Sec. 2101",
+      "check": "crs",
+      "sources": [
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "Bommarito Consulting vote tracker (Nov 20 snapshot)",
+          "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+          "kind": "Secondary"
+        }
+      ]
+    },
+    {
+      "id": "data-centers",
+      "topic": "Power grid",
+      "title": "Data centers pay for the grid they need",
+      "felt": "The bill aims to keep the cost of serving big data centers off other customers’ electric bills.",
+      "who": "Anyone with an electric bill in an area where data centers are being built.",
+      "numbers": [],
+      "mechanics": "Section 2107 is titled \"Ratepayer protection.\" A law firm reading the Senate substitute reported that it makes large new loads cover both new and existing transmission costs they cause, and that the substitute dropped a 20 megawatt threshold. We have not read the section’s text ourselves, so treat the details as reported.",
+      "section": "Sec. 2107",
+      "check": "reported",
+      "sources": [
+        {
+          "label": "White & Case on the substitute’s data center provisions (Nov 11, 2026)",
+          "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+          "kind": "Law firm"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "tribes",
+      "topic": "Places and people",
+      "title": "Changes to historic and sacred site reviews",
+      "felt": "Tribes say the bill weakens their say when projects could harm sacred sites. Supporters say the review process needed updating.",
+      "who": "Tribal nations, and communities with historic places near projects.",
+      "numbers": [],
+      "mechanics": "The bill’s historic preservation title changes how projects review effects on historic and sacred places. A secondary summary reports that the Senate substitute dropped a required federal takeover of tribal preservation programs that fall out of compliance and added consultation language. The Native American Rights Fund and the National Congress of American Indians still oppose the title.",
+      "section": "Title III (historic preservation)",
+      "check": "reported",
+      "sources": [
+        {
+          "label": "Native American Rights Fund on Title III (Nov 12, 2026)",
+          "url": "https://narf.org/baaja-reform-bill/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Bommarito Consulting vote tracker (Nov 20 snapshot)",
+          "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+          "kind": "Secondary"
+        }
+      ]
+    }
+  ],
+  "sides": {
+    "support": [
+      {
+        "who": "The White House",
+        "claim": "\"The Administration strongly supports passage of S. 5653.\"",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
+      },
+      {
+        "who": "Bill sponsors, including Sen. Heinrich",
+        "claim": "Building faster means cheaper, more reliable power and more jobs.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      },
+      {
+        "who": "Groups such as Third Way and Evergreen Action",
+        "claim": "Faster permits help clean energy and power lines get built.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      }
+    ],
+    "oppose": [
+      {
+        "who": "Native American Rights Fund and National Congress of American Indians",
+        "claim": "The historic preservation title weakens tribal consultation on sacred sites.",
+        "url": "https://narf.org/baaja-reform-bill/"
+      },
+      {
+        "who": "Union of Concerned Scientists",
+        "claim": "Less review means more pollution and less say for communities.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      },
+      {
+        "who": "Center for Western Priorities",
+        "claim": "It weakens bedrock environmental laws on public lands.",
+        "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/"
+      }
+    ]
+  },
+  "myths": [
+    {
+      "claim": "It passed, so it is law.",
+      "fact": "Not yet. The House has to pass the same text, then the President has to sign it.",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "claim": "H.R. 2347 is a tax bill.",
+      "fact": "It started as one. The Senate replaced its entire text with BAAJA on November 18, so the number now carries the permitting bill.",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+    },
+    {
+      "claim": "Watch S. 5653.",
+      "fact": "S. 5653 is the original Senate bill and has had no action since September 30. The live version is H.R. 2347.",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "claim": "It will cut your power bill by a set amount.",
+      "fact": "No official estimate of the effect on power bills exists. Lower bills are a claim by supporters, not a measured result.",
+      "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+    }
+  ]
+}
