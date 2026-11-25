@@ -1,8 +1,8 @@
 {
-  "lastVerified": "2026-11-24",
+  "lastVerified": "2026-11-25",
   "name": "Bipartisan American Affordability and Jobs Act of 2026",
   "short": "BAAJA",
-  "statusNote": "The Senate passed it 62 to 33 on November 19, 2026. The House has not voted on the Senate version, and no House vote date was set as of November 23. It is not law.",
+  "statusNote": "The Senate passed it 62 to 33 on November 19, 2026. The House has not voted on the Senate version, and no House vote date was set as of November 24. It is not law.",
   "statusSources": [
     {
       "label": "senate.gov roll call vote 270",
@@ -11,9 +11,17 @@
     {
       "label": "More Than Just Parks bill tracker",
       "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "label": "Bommarito Consulting, BAAJA in the House (updated Nov 24, 2026)",
+      "url": "https://bommaritollc.com/insights/baaja-house-vote/"
     }
   ],
   "billLinks": [
+    {
+      "label": "Official text as passed by the Senate, Nov 19 (GovInfo)",
+      "url": "https://www.govinfo.gov/app/details/BILLS-119hr2347eas"
+    },
     {
       "label": "H.R. 2347 on Congress.gov (the bill the Senate passed)",
       "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
