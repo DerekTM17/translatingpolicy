@@ -1,0 +1,935 @@
+{
+  "lastVerified": "2026-11-25",
+  "name": "Bipartisan American Affordability and Jobs Act of 2026",
+  "short": "BAAJA",
+  "statusNote": "The Senate passed it 62 to 33 on November 19, 2026. The House has not voted on the Senate version, and no House vote date was set as of November 24. It is not law.",
+  "statusSources": [
+    {
+      "label": "senate.gov roll call vote 270",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm"
+    },
+    {
+      "label": "More Than Just Parks bill tracker",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "label": "Bommarito Consulting, BAAJA in the House (updated Nov 24, 2026)",
+      "url": "https://bommaritollc.com/insights/baaja-house-vote/"
+    }
+  ],
+  "billLinks": [
+    {
+      "label": "Official text as passed by the Senate, Nov 19 (GovInfo)",
+      "url": "https://www.govinfo.gov/app/details/BILLS-119hr2347eas"
+    },
+    {
+      "label": "H.R. 2347 on Congress.gov (the bill the Senate passed)",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347"
+    },
+    {
+      "label": "Sponsors' substitute text, Nov 7 (PDF)",
+      "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
+    },
+    {
+      "label": "S. 5653 on Congress.gov (the original Senate bill)",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5653"
+    },
+    {
+      "label": "CRS summary of all sections",
+      "url": "https://www.everycrsreport.com/reports/R49506.html"
+    }
+  ],
+  "steps": [
+    {
+      "date": "2026-04-27",
+      "label": "House passes the original H.R. 2347",
+      "detail": "A short tax bill about damages paid to survivors passed the House by voice vote. It had nothing to do with permits yet.",
+      "done": true,
+      "source": {
+        "label": "More Than Just Parks bill tracker",
+        "url": "https://morethanjustparks.com/bill-tracker/baaja"
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "label": "BAAJA introduced as S. 5653",
+      "detail": "Sen. Shelley Moore Capito (R-WV) introduced it with Sens. Martin Heinrich (D-NM), Mike Lee (R-UT) and Sheldon Whitehouse (D-RI).",
+      "done": true,
+      "source": {
+        "label": "CRS R49506",
+        "url": "https://www.everycrsreport.com/reports/R49506.html"
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "label": "Senate votes to take it up",
+      "detail": "73 to 25 to end debate on starting the bill (roll call 257).",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call list",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "label": "BAAJA text swapped into H.R. 2347",
+      "detail": "The Senate replaced all of H.R. 2347 with BAAJA, 69 to 27 (roll call 267). That lets the House finish it with one more vote.",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call 267",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "label": "Senate passes it",
+      "detail": "62 to 33, with 5 not voting (roll call 270).",
+      "done": true,
+      "source": {
+        "label": "senate.gov roll call 270",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm"
+      }
+    },
+    {
+      "date": null,
+      "label": "House votes on the Senate version",
+      "detail": "If the House passes the same text, it goes to the President. If the House changes it, it goes back to the Senate. No date was set as of November 23.",
+      "done": false,
+      "source": {
+        "label": "More Than Just Parks bill tracker",
+        "url": "https://morethanjustparks.com/bill-tracker/baaja"
+      }
+    },
+    {
+      "date": null,
+      "label": "President signs or vetoes",
+      "detail": "The White House said it strongly supports the bill.",
+      "done": false,
+      "source": {
+        "label": "Statement of Administration Policy, Nov 9, 2026",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
+      }
+    }
+  ],
+  "votes": [
+    {
+      "roll": 257,
+      "date": "2026-11-09",
+      "short": "Start debate",
+      "question": "Cloture on the motion to proceed to H.R. 2347",
+      "yea": 73,
+      "nay": 25,
+      "notVoting": 2,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 258,
+      "date": "2026-11-10",
+      "short": "Take up the bill",
+      "question": "Motion to proceed to H.R. 2347",
+      "yea": 62,
+      "nay": 21,
+      "notVoting": 17,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 264,
+      "date": "2026-11-16",
+      "short": "End debate on BAAJA text",
+      "question": "Cloture on S.Amdt. 6883 (the BAAJA substitute)",
+      "yea": 70,
+      "nay": 27,
+      "notVoting": 3,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm"
+    },
+    {
+      "roll": 266,
+      "date": "2026-11-18",
+      "short": "Waive budget rules",
+      "question": "Motion to waive all applicable budgetary discipline",
+      "yea": 70,
+      "nay": 26,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 267,
+      "date": "2026-11-18",
+      "short": "Adopt BAAJA text",
+      "question": "S.Amdt. 6883, in the nature of a substitute",
+      "yea": 69,
+      "nay": 27,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+    },
+    {
+      "roll": 268,
+      "date": "2026-11-18",
+      "short": "End debate on the bill",
+      "question": "Cloture on H.R. 2347",
+      "yea": 65,
+      "nay": 31,
+      "notVoting": 4,
+      "result": "Agreed to",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "roll": 270,
+      "date": "2026-11-19",
+      "short": "Final passage",
+      "question": "On passage of H.R. 2347, as amended",
+      "yea": 62,
+      "nay": 33,
+      "notVoting": 5,
+      "result": "Passed",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm",
+      "parties": {
+        "Republican": {
+          "yea": 47,
+          "nay": 2,
+          "notVoting": 4
+        },
+        "Democrat": {
+          "yea": 14,
+          "nay": 30,
+          "notVoting": 1
+        },
+        "Independent": {
+          "yea": 1,
+          "nay": 1,
+          "notVoting": 0
+        }
+      }
+    }
+  ],
+  "changes": [
+    {
+      "id": "deadlines",
+      "topic": "Speed",
+      "title": "Federal agencies get a clock",
+      "felt": "Power lines, pipelines, mines and other projects that need federal sign-off would get answers on a schedule instead of waiting years.",
+      "who": "Anyone near a proposed project, and anyone waiting on one to be built.",
+      "numbers": [
+        {
+          "value": "1 year",
+          "label": "to finish a shorter environmental review (an EA)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
+        },
+        {
+          "value": "2 years",
+          "label": "to finish a full environmental impact statement",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
+        }
+      ],
+      "mechanics": "Section 1106 sets deadlines for agency decisions: 1 year for an environmental assessment and 2 years for an environmental impact statement, then 90 days (or 120 for agencies outside the review) to decide on permits. Missed deadlines bring consequences for senior officials, and the developer can go to court over a missed deadline. Section 1403, per CRS on the introduced bill, gives permits that need no environmental review a 1 year decision deadline; Earthjustice reads it in the substitute as \"judicially-enforceable,\" and C2ES says the substitute lets developers seek court enforcement of permitting deadlines.",
+      "section": "Secs. 1106 and 1403",
+      "check": "text",
+      "sources": [
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 49 to 62)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "C2ES summary, updated for the sponsors' substitute (Nov 10, 2026)",
+          "url": "https://www.c2es.org/document/comprehensive-summary-of-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
+        }
+      ]
+    },
+    {
+      "id": "lawsuit-window",
+      "topic": "Courts",
+      "title": "150 days to challenge a project in court",
+      "felt": "If you think a project near you skipped a proper environmental review, you or a group you back would have about five months to sue, and the case starts in a federal appeals court.",
+      "who": "Neighbors, tribes, local governments and groups that challenge projects, and the companies building them.",
+      "numbers": [
+        {
+          "value": "150 days",
+          "label": "to file after the approval is made public",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
+        }
+      ],
+      "mechanics": "Section 1110 adds a new NEPA section 111. A claim must be filed within 150 days after the environmental impact statement is published in the Federal Register or the approval is made public, in a federal court of appeals. The person suing must claim direct harm and, for comment periods held after the law takes effect, must have filed a detailed comment. See Who's worried and why for what this means in practice.",
+      "section": "Sec. 1110",
+      "check": "text",
+      "sources": [
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 72 to 74)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "remand",
+      "topic": "Courts",
+      "title": "A flawed review usually would not stop the project",
+      "felt": "Even if a court agrees the review was flawed, the project could generally keep going while the agency fixes the paperwork.",
+      "who": "Same as above. This changes what winning a lawsuit gets you.",
+      "numbers": [],
+      "mechanics": "Section 1110 makes sending the review back to the agency, without canceling the permit or ordering work to stop, the only remedy for a NEPA violation. The permit stays in effect during the fix, which the court can require within 180 days. Courts must give the agency substantial deference. A court can still pause a project early if it is likely breaking a law other than NEPA or the historic preservation law.",
+      "section": "Sec. 1110",
+      "check": "text",
+      "sources": [
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 75 to 79)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "bad-faith",
+      "topic": "Courts",
+      "title": "Developers could sue over bad-faith denials",
+      "felt": "If a court finds the government blocked a project in bad faith, taxpayers could owe the developer a large share of its costs.",
+      "who": "Developers, and taxpayers who would fund any payments.",
+      "numbers": [
+        {
+          "value": "25 to 50%",
+          "label": "of development and construction costs (Sec. 1401)",
+          "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf"
+        },
+        {
+          "value": "50 to 100%",
+          "label": "of expected construction cost (Sec. 1402)",
+          "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf"
+        }
+      ],
+      "mechanics": "Per the Congressional Research Service summary of the bill as introduced: Section 1401 bars agencies from revoking or changing a fully permitted project's approvals unless the agency proves an exception by clear and convincing evidence, and a court finding of bad faith adds a payment of 25 to 50 percent of costs. Section 1402 lets a developer sue over a pattern of denials or delays for its type of project, with a win paying 50 to 100 percent of expected construction cost. Payments come from the Judgment Fund, which needs no new vote in Congress. A tracker reports the same ranges in the passed text. Earthjustice says the sponsors' substitute added a bad-faith requirement to Sec. 1402 suits, more exceptions for harm to health and the environment, and limits on Judgment Fund payments to court orders or court-approved settlements. See Who's worried and why.",
+      "section": "Secs. 1401 and 1402",
+      "check": "crs",
+      "sources": [
+        {
+          "label": "CRS R49511 on Title IV of the bill as introduced (Nov 6, 2026)",
+          "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf",
+          "kind": "CRS"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "More Than Just Parks bill tracker, reading of the Senate-passed text (Nov 23, 2026)",
+          "url": "https://morethanjustparks.com/bill-tracker/baaja",
+          "kind": "Tracker"
+        }
+      ]
+    },
+    {
+      "id": "power-lines",
+      "topic": "Power grid",
+      "title": "A federal backup for big power lines",
+      "felt": "Long power lines that cross state lines could get a federal path to approval when states do not act.",
+      "who": "People who pay electric bills, and landowners along proposed routes.",
+      "numbers": [],
+      "mechanics": "Section 2101 changes transmission permitting and, per the CRS summary of the introduced bill, gives the Federal Energy Regulatory Commission backstop siting authority for some interstate lines. Some senators proposed amendments to narrow it (for example, giving states two years first). We have not confirmed how the passed text handles this.",
+      "section": "Sec. 2101",
+      "check": "crs",
+      "sources": [
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "Bommarito Consulting vote tracker (Nov 20 snapshot)",
+          "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+          "kind": "Secondary"
+        }
+      ]
+    },
+    {
+      "id": "data-centers",
+      "topic": "Power grid",
+      "title": "Data centers pay for the grid they need",
+      "felt": "The bill aims to keep the cost of serving big data centers off other customers’ electric bills.",
+      "who": "Anyone with an electric bill in an area where data centers are being built.",
+      "numbers": [],
+      "mechanics": "Section 2107 is titled \"Ratepayer protection.\" A law firm reading the Senate substitute reported that it makes large new loads cover both new and existing transmission costs they cause, and that the substitute dropped a 20 megawatt threshold. We have not read the section’s text ourselves, so treat the details as reported.",
+      "section": "Sec. 2107",
+      "check": "reported",
+      "sources": [
+        {
+          "label": "White & Case on the substitute’s data center provisions (Nov 11, 2026)",
+          "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+          "kind": "Law firm"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        }
+      ]
+    },
+    {
+      "id": "tribes",
+      "topic": "Places and people",
+      "title": "Changes to historic and sacred site reviews",
+      "felt": "Tribes say the bill weakens their say when projects could harm sacred sites. Sponsors say it strengthens consultation. See Who's worried and why for the details.",
+      "who": "Tribal nations, and communities with historic places near projects.",
+      "numbers": [],
+      "mechanics": "The bill's historic preservation title (Sec. 2301) rewrites how agencies review effects on historic and sacred places under Section 106. Tribal groups and analysts report set response deadlines, softer consultation wording and fewer projects covered. The substitute dropped a federal redefinition of tribal sacred places and an Interior takeover of tribal preservation offices. We have not read this title's text.",
+      "section": "Title III (historic preservation)",
+      "check": "reported",
+      "sources": [
+        {
+          "label": "Tribal Nations Policy Institute, Section 106 explained (Nov 12, 2026)",
+          "url": "https://aipinstitute.substack.com/p/section-106-explained-three-federal",
+          "kind": "Policy explainer"
+        },
+        {
+          "label": "Native American Rights Fund on Title III (Nov 12, 2026)",
+          "url": "https://narf.org/baaja-reform-bill/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Bommarito Consulting vote tracker (Nov 20 snapshot)",
+          "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+          "kind": "Secondary"
+        }
+      ]
+    }
+  ],
+  "sides": {
+    "support": [
+      {
+        "who": "The White House",
+        "claim": "\"The Administration strongly supports passage of S. 5653.\"",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
+      },
+      {
+        "who": "Bill sponsors, including Sen. Heinrich",
+        "claim": "Building faster means cheaper, more reliable power and more jobs.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      },
+      {
+        "who": "Groups such as Third Way and Evergreen Action",
+        "claim": "Faster permits help clean energy and power lines get built.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      }
+    ],
+    "oppose": [
+      {
+        "who": "Native American Rights Fund and National Congress of American Indians",
+        "claim": "The historic preservation title weakens tribal consultation on sacred sites.",
+        "url": "https://narf.org/baaja-reform-bill/"
+      },
+      {
+        "who": "Union of Concerned Scientists",
+        "claim": "Less review means more pollution and less say for communities.",
+        "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+      },
+      {
+        "who": "Center for Western Priorities",
+        "claim": "It weakens bedrock environmental laws on public lands.",
+        "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/"
+      }
+    ]
+  },
+  "myths": [
+    {
+      "claim": "It passed, so it is law.",
+      "fact": "Not yet. The House has to pass the same text, then the President has to sign it.",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "claim": "H.R. 2347 is a tax bill.",
+      "fact": "It started as one. The Senate replaced its text with BAAJA on November 18 and kept the original tax provision, on damages paid to abuse survivors, as Division C.",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm"
+    },
+    {
+      "claim": "Watch S. 5653.",
+      "fact": "S. 5653 is the original Senate bill and has had no action since September 30. The live version is H.R. 2347.",
+      "url": "https://morethanjustparks.com/bill-tracker/baaja"
+    },
+    {
+      "claim": "It will cut your power bill by a set amount.",
+      "fact": "No official estimate of the effect on power bills exists. Lower bills are a claim by supporters, not a measured result.",
+      "url": "https://www.yahoo.com/news/politics/articles/us-senate-passes-bill-speed-042308842.html"
+    },
+    {
+      "claim": "It is just about faster energy permits.",
+      "fact": "It also changes mining law on public land, rewrites historic and sacred site reviews, limits lawsuits, and protects issued permits from later changes.",
+      "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf"
+    }
+  ],
+  "concernsIntro": "Tribal nations, environmental groups, some state and local officials and some members of Congress say parts of this bill go well beyond speeding up permits. Here is each worry: who raises it, what it could mean in practice, what we could confirm in the bill, and what supporters say back. Each one is labeled by how solid it is.",
+  "concerns": [
+    {
+      "id": "tribes-106",
+      "topic": "Tribes and sacred sites",
+      "title": "Tribes say they would lose real say over sacred sites",
+      "section": "Division B, Title III (Sec. 2301)",
+      "check": "reported",
+      "short": "Rewritten historic site reviews could let a project move ahead before a tribe can identify a sacred place.",
+      "critics": [
+        {
+          "who": "National Congress of American Indians",
+          "url": "https://www.ncai.org/news/ncai-calls-for-withdrawal"
+        },
+        {
+          "who": "National Association of Tribal Historic Preservation Officers",
+          "url": "https://www.nathpo.org/permitting-reform-baaja-tribal-historic-preservation/"
+        },
+        {
+          "who": "Native American Rights Fund",
+          "url": "https://narf.org/baaja-reform-bill/"
+        },
+        {
+          "who": "11 tribal organizations, joint statement",
+          "url": "https://www.ncai.org/news/tribal-organizations-urge-congress-to-halt-baaja-over-threats-to-tribal-sovereignty-and-sacred-places"
+        },
+        {
+          "who": "All Pueblo Council of Governors",
+          "url": "https://www.abqjournal.com/news/lawmakers-and-tribal-leaders-urge-rejection-of-permitting-reform-bill/3166881"
+        },
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf"
+        }
+      ],
+      "claim": "Title III rewrites Section 106 of the National Historic Preservation Act, the step where federal agencies must consult tribes before a project can harm historic or sacred places. As tribal groups and analysts read it: the duty softens to agencies having to \"seek, discuss, as appropriate, and incorporate, as applicable\" tribal views; tribes face set deadlines, including 30 days to send information after an agency asks for it, after which the agency may go ahead; projects whose only federal role is a grant or loan would generally skip the review, except Transportation Department projects over $10 million; and tribal preservation offices would face federal performance reviews that can suspend their funding. NCAI says the changes \"strip the protections to sacred sites that Tribal Nations have relied on for 60 years.\"",
+      "quote": {
+        "text": "Once these places are bulldozed, they cannot be restored.",
+        "who": "Ira L. Matt, executive director, National Association of Tribal Historic Preservation Officers",
+        "url": "https://www.yahoo.com/news/politics/articles/fast-tracked-baaja-puts-tribal-042512199.html"
+      },
+      "practice": "Many sacred places are not on any public map, and tribes often keep their locations private for protection. A tribal preservation office with one or two staff can get many review requests at once. Under a 30-day clock, a missed deadline lets the agency move on, and a tribal policy explainer says the agency would not have to revisit earlier findings if the tribe comes back later. Add the 150-day lawsuit window and the limits on stopping a project in court, and a tribe that spots harm late may have little it can still do.",
+      "confirmed": "Groups on both sides quote the same wording from the sponsors' substitute. Earthjustice, which opposes the bill, and the Institute for Progress, which defends its tribal provisions, both say agencies must \"seek, discuss, as appropriate, and incorporate, as applicable\" tribal information, and IFP quotes the 30-day window. Both say the substitute dropped the earlier \"may consult\" wording, the narrower definition of sacred places and the Interior takeover of tribal preservation offices, and that transportation projects with more than $10 million in federal funding stay under review. IFP says the window to object to an agency report grew from 30 to 45 days. CRS and IFP say Section 106 claims get their own 150-day, remand-only lawsuit rule. Earthjustice says the new wording \"could be read to limit consultation as much or more than the original text\"; IFP says the amended bill is \"more favorable to Tribal interests\" than the status quo under a rule the federal preservation council has proposed. Separately, in the part of the substitute text we read, the environmental review title adds two protections for tribes: a NEPA lawsuit over a project on tribal trust land can generally be brought only by that tribe, and when a tribe proposes its own project, agencies must presume that saying no would hurt the tribe.",
+      "open": "We have not read Title III's text ourselves; the wording above is as quoted by Earthjustice and IFP from the sponsors' November substitute. Neither says what happens to tribal information that arrives after 30 days beyond IFP's reading that the agency proceeds. Whether floor changes on November 17 and 18 touched the 30-day clock is not confirmed.",
+      "response": {
+        "who": "Sen. Mike Lee, a lead sponsor, on the Senate floor",
+        "claim": "\"We have strengthened Tribal consultation provisions.\" Sen. Martin Heinrich, another sponsor, says the bill is defending against the administration's attacks on tribal consultation.",
+        "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf"
+      },
+      "sources": [
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Institute for Progress, Tribal consultation under BAAJA, updated for the substitute (Nov 17, 2026)",
+          "url": "https://ifp.org/tribal-consultation-under-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
+        },
+        {
+          "label": "CRS R49498 on the historic preservation title as introduced (Oct 30, 2026)",
+          "url": "https://www.everycrsreport.com/files/2026-10-30_R49498_7748c521f84c904a8af8556f25bb87283c745f74.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "Tribal Nations Policy Institute, Section 106 explained (Nov 12, 2026)",
+          "url": "https://aipinstitute.substack.com/p/section-106-explained-three-federal",
+          "kind": "Policy explainer"
+        },
+        {
+          "label": "NATHPO, Permitting reform, BAAJA and tribal historic preservation (Nov 19, 2026)",
+          "url": "https://www.nathpo.org/permitting-reform-baaja-tribal-historic-preservation/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "NCAI and 10 other tribal organizations, joint statement (Nov 8, 2026)",
+          "url": "https://www.ncai.org/news/tribal-organizations-urge-congress-to-halt-baaja-over-threats-to-tribal-sovereignty-and-sacred-places",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Native News Online, Fast-tracked BAAJA puts tribal sovereignty, lands at risk (Nov 18, 2026)",
+          "url": "https://www.yahoo.com/news/politics/articles/fast-tracked-baaja-puts-tribal-042512199.html",
+          "kind": "News"
+        },
+        {
+          "label": "Center for Western Priorities on the passed bill (Nov 20, 2026)",
+          "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Cherokee One Feather, with Sen. Heinrich's response (Nov 10, 2026)",
+          "url": "https://theonefeather.com/2026/11/10/tribal-organizations-environmental-groups-oppose-advancement-of-baaja/",
+          "kind": "News"
+        },
+        {
+          "label": "Congressional Record, Senate, Nov 10, 2026, Sen. Lee (p. S5391)",
+          "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+          "kind": "Congressional Record"
+        },
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 40, 78 to 79)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        }
+      ]
+    },
+    {
+      "id": "courts",
+      "topic": "Courts",
+      "title": "Less time and fewer ways to challenge a project in court",
+      "section": "Sec. 1110 (new NEPA sec. 111)",
+      "check": "text",
+      "short": "150 days to sue, only if you commented, and even a win usually cannot stop construction.",
+      "critics": [
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide"
+        },
+        {
+          "who": "NRDC",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+        },
+        {
+          "who": "National Association of Tribal Historic Preservation Officers",
+          "url": "https://www.nathpo.org/permitting-reform-baaja-tribal-historic-preservation/"
+        },
+        {
+          "who": "Rep. Adelita Grijalva and other House Democrats",
+          "url": "https://www.abqjournal.com/news/lawmakers-and-tribal-leaders-urge-rejection-of-permitting-reform-bill/3166881"
+        }
+      ],
+      "claim": "Critics say the bill shuts most people out of court. Earthjustice says challenges that can now be filed for up to six years would have to be filed within 150 days. NRDC says a court \"can never invalidate a permit\" over a violation of the environmental review law or the historic preservation law. Rep. Adelita Grijalva says the bill would \"all but eliminate judicial review.\"",
+      "practice": "Say a company gets approval for a pipeline or a mine near a small town or a reservation. The clock starts when the approval is made public. Residents who learn about it late, who did not file a detailed comment during the comment period, or who cannot show direct harm may not be able to sue at all. Those who can sue start in a federal appeals court, which costs more than a local trial court. If they win, the agency redoes its review, in up to 180 days, and the permit stays in effect, so work can keep going. The bill also bars any claim over who a developer left off its required outreach list of state, local and tribal officials.",
+      "confirmed": "We read this in the sponsors' November 7 substitute text: the 150-day deadline; the rule that you must have filed a substantive comment, for comment periods held after the law takes effect; the direct-harm test; appeals-court venue; remand without vacatur or injunction as the only remedy; the permit staying in effect during remand; substantial deference to the agency; and no claims over omissions from the developer's outreach list. A court can still pause a project early if it is likely breaking a law other than NEPA or the historic preservation law.",
+      "open": "Section 106 historic preservation claims get a matching 150-day, remand-only rule in Sec. 2301, per CRS and the Institute for Progress, running from notice to each consulting tribe. We have not read that section ourselves.",
+      "response": {
+        "who": "Sen. Martin Heinrich, a lead sponsor",
+        "claim": "\"We make permitting faster, and so we're going to be able to put more cheap, clean electrons onto the grid.\"",
+        "url": "https://disputeindex.com/cases/senate-baaja-permitting-bill"
+      },
+      "sources": [
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 72 to 79)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "Earthjustice impact guide (updated Nov 20, 2026)",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Albuquerque Journal, New Mexico lawmakers and tribal leaders oppose BAAJA (Nov 23, 2026)",
+          "url": "https://www.abqjournal.com/news/lawmakers-and-tribal-leaders-urge-rejection-of-permitting-reform-bill/3166881",
+          "kind": "News"
+        },
+        {
+          "label": "The Dispute Index, quotes from both sides (updated Nov 23, 2026)",
+          "url": "https://disputeindex.com/cases/senate-baaja-permitting-bill",
+          "kind": "Secondary"
+        },
+        {
+          "label": "Institute for Progress, Tribal consultation under BAAJA, updated for the substitute (Nov 17, 2026)",
+          "url": "https://ifp.org/tribal-consultation-under-the-bipartisan-american-affordability-and-jobs-act/",
+          "kind": "Think tank"
+        }
+      ]
+    },
+    {
+      "id": "lock-in",
+      "topic": "Taxpayers",
+      "title": "Taxpayers could owe developers if a permit is pulled",
+      "section": "Secs. 1401 and 1402",
+      "check": "crs",
+      "short": "Approved permits get hard to revoke, and bad-faith interference could cost taxpayers 25 to 100 percent of a project's costs.",
+      "critics": [
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/experts/sambhav-sankar/yes-the-permitting-bill-really-could-lock-in-illegal-permits"
+        },
+        {
+          "who": "Clean Air Task Force",
+          "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/"
+        },
+        {
+          "who": "NRDC",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+        },
+        {
+          "who": "Eight California mayors and county supervisors",
+          "url": "https://earthjustice.org/document/baaja-ca-local-elected-officials-letter-11-5-2026"
+        }
+      ],
+      "claim": "Critics say Sec. 1401 freezes permits once issued for any project with a private sponsor, including mines, logging and data centers, not only clean energy. The Clean Air Task Force says it creates \"a risk that it would be difficult for future administrations to unwind hastily issued or unlawful permits.\" California local officials warn Sec. 1402 could mean \"billions in taxpayer-funded damages.\"",
+      "practice": "If a later administration decides a permit was a mistake and tries to pull or tighten it, the agency has to prove by clear and convincing evidence that one of a short list of exceptions applies. If a court finds the government acted in bad faith, the developer can collect 25 to 50 percent of its costs. Under Sec. 1402, a developer can sue if approvals for its type of project dropped sharply compared with the past five years, and collect 50 to 100 percent of expected construction costs. Payments come from the Judgment Fund, a standing account that needs no vote in Congress. CRS notes about $3.8 billion was paid from it for 10 offshore wind settlements from April to October 2026.",
+      "confirmed": "The Congressional Research Service describes these mechanics in the bill as introduced (report R49511, November 6, 2026): the clear and convincing standard, the payment ranges and the Judgment Fund. CRS says Sec. 1402 \"appears to contemplate a finding of liability without any direct evidence\" of intent. The Institute for Progress says the substitute moved the protected date from September 16 to November 6, 2026. Earthjustice's analysis of the substitute says Title IV stayed in with changes: added exceptions for immediate harm to human health or the environment, a clause saying nothing in Sec. 1401 limits other authority, a requirement that developers suing under Sec. 1402 show the government acted in bad faith, a look-back extended from 5 to 10 years, and Judgment Fund payments only under court orders or court-approved settlements. Earthjustice says the word \"immediate\" makes the government's showing \"even more onerous.\"",
+      "open": "We have not read Title IV in the passed text, and no source we found gives the payment percentages for the substitute; the 25 to 100 percent figures come from CRS on the introduced bill and a tracker. Lawyers disagree about how far the lock-in reaches.",
+      "response": {
+        "who": "Institute for Progress (Ben Schifman)",
+        "claim": "\"Section 1401 restricts federal agencies, not courts.\" The government can still ask a court to cancel an unlawful permit, and the 25 to 50 percent payment needs a court finding of bad faith.",
+        "url": "https://ifp.org/wp-content/uploads/BAAJA-Certainty.pdf"
+      },
+      "sources": [
+        {
+          "label": "CRS R49511 on Title IV of the bill as introduced (Nov 6, 2026)",
+          "url": "https://www.everycrsreport.com/files/2026-11-06_R49511_00fb323be13dacdd74cdcfad2cce14b3843d59ce.pdf",
+          "kind": "CRS"
+        },
+        {
+          "label": "Earthjustice analysis of the sponsors' substitute (before the Nov 9 vote)",
+          "url": "https://earthjustice.org/wp-content/uploads/2026/11/baaja_managers-amendment-final-analysis.pdf",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Institute for Progress, BAAJA certainty (Nov 8, 2026)",
+          "url": "https://ifp.org/wp-content/uploads/BAAJA-Certainty.pdf",
+          "kind": "Think tank"
+        },
+        {
+          "label": "Institute for Progress memo on reversing permits (Nov 8, 2026)",
+          "url": "https://ifp.org/wp-content/uploads/Reversing-Permits-Under-BAAJA-%E2%80%94-IFP-memo-2026-11-08.pdf",
+          "kind": "Think tank"
+        },
+        {
+          "label": "Clean Air Task Force on the revised certainty provisions (Nov 9, 2026)",
+          "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Earthjustice, Yes, the permitting bill really could lock in illegal permits (Oct 29, 2026)",
+          "url": "https://earthjustice.org/experts/sambhav-sankar/yes-the-permitting-bill-really-could-lock-in-illegal-permits",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "California local elected officials' letter (Nov 5, 2026)",
+          "url": "https://earthjustice.org/document/baaja-ca-local-elected-officials-letter-11-5-2026",
+          "kind": "Letter"
+        }
+      ]
+    },
+    {
+      "id": "mining",
+      "topic": "Public lands",
+      "title": "Mines could put waste on more public land",
+      "section": "Sec. 2215 (hardrock mining mill sites)",
+      "check": "reported",
+      "short": "Critics say mining companies could claim public land for waste rock and tailings with no acreage limit.",
+      "critics": [
+        {
+          "who": "Earthworks",
+          "url": "https://earthworks.org/blog/permitting-bill-text-would-strip-our-most-basic-federal-protections/"
+        },
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide"
+        },
+        {
+          "who": "Center for Western Priorities",
+          "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/"
+        },
+        {
+          "who": "NRDC",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+        }
+      ],
+      "claim": "Critics say Sec. 2215 removes the acreage limits on mining \"mill sites\" and lets companies use public land for waste rock, tailings and \"any other use relevant to a mining project,\" in NRDC's words. Earthworks says companies could claim \"nearly unlimited public lands.\" Earthjustice and Heatmap News say it would reverse a 2022 federal appeals court ruling that stopped the Rosemont copper mine in Arizona.",
+      "practice": "Public land next to a mine, including land used for hunting, grazing or tribal cultural practices, could be covered by waste piles for decades, and cleanup can fall to taxpayers if a company walks away.",
+      "confirmed": "The bill's table of contents lists Sec. 2215, \"Hardrock mining mill sites.\" Heatmap News reported in October that the bill includes the full text of the Mining Regulatory Clarity Act.",
+      "open": "We have not read Sec. 2215's text, so the details are the critics' reading.",
+      "response": null,
+      "noResponse": {
+        "text": "We found no sponsor statement on this section. Earthworks, a critic, called the bill's abandoned mine cleanup fund \"the one good thing\" it had spotted, to Heatmap News.",
+        "url": "https://heatmap.news/politics/baaja-mining-waste"
+      },
+      "sources": [
+        {
+          "label": "Earthworks on the bill text (Oct 19, 2026)",
+          "url": "https://earthworks.org/blog/permitting-bill-text-would-strip-our-most-basic-federal-protections/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Heatmap News, Miners struck gold with the Senate permitting bill (Oct 2, 2026)",
+          "url": "https://heatmap.news/politics/baaja-mining-waste",
+          "kind": "News"
+        },
+        {
+          "label": "Earthjustice impact guide (updated Nov 20, 2026)",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+          "kind": "Advocacy"
+        }
+      ]
+    },
+    {
+      "id": "less-review",
+      "topic": "Environmental review",
+      "title": "Some pipelines and loan-backed projects skip environmental review",
+      "section": "Secs. 1102 and 1106",
+      "check": "text",
+      "short": "Certain gas pipeline work and projects backed only by federal loans would not count as federal actions that need review.",
+      "critics": [
+        {
+          "who": "Earthworks",
+          "url": "https://earthworks.org/blog/permitting-bill-text-would-strip-our-most-basic-federal-protections/"
+        },
+        {
+          "who": "Earthjustice",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide"
+        },
+        {
+          "who": "NRDC",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+        }
+      ],
+      "claim": "Critics say the bill quietly narrows which projects get any environmental review. Earthjustice says \"pipeline expansions within existing rights-of-way\" and projects backed only by federal loans or loan guarantees would be excluded. NRDC says states and tribes would lose power over a gas pipeline's water impacts other than direct discharges, and that many oil and gas wells on private land would no longer need federal permits.",
+      "practice": "When a project is not a \"major federal action,\" there is no environmental assessment, no impact statement and no NEPA comment period, so neighbors may first hear about it when work starts. Fewer reviews also means fewer decisions anyone can challenge.",
+      "confirmed": "In the substitute text (Sec. 1102), the definition of major federal action leaves out projects with no or minimal federal funding, projects whose only federal role is a loan or loan guarantee, natural gas pipeline \"covered activities\" defined in a new section of the Natural Gas Act, and certain transmission work. Sec. 1106 also makes the White House Council on Environmental Quality's ruling on disputes between agencies final, with no court review.",
+      "open": "We have not read the new Natural Gas Act section, so we have not confirmed exactly which pipeline work counts. The water and private-land well claims (Secs. 1202 and 2211) are the critics' reading.",
+      "response": {
+        "who": "Sen. Tim Scott",
+        "claim": "\"By streamlining environmental reviews and permitting procedures, this legislation will help lower energy costs.\"",
+        "url": "https://disputeindex.com/cases/senate-baaja-permitting-bill"
+      },
+      "concession": {
+        "text": "NRDC, which opposes the bill, also says faster permitting \"may not produce a large increase in emissions compared with business as usual.\"",
+        "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+      },
+      "sources": [
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (pp. 16 to 22 and 53 to 56)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        },
+        {
+          "label": "Earthjustice impact guide (updated Nov 20, 2026)",
+          "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Earthworks on the bill text (Oct 19, 2026)",
+          "url": "https://earthworks.org/blog/permitting-bill-text-would-strip-our-most-basic-federal-protections/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+          "kind": "Advocacy"
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "topic": "Power grid",
+      "title": "Washington could approve a power line a state rejected",
+      "section": "Sec. 2101",
+      "check": "reported",
+      "short": "Federal regulators could approve an interstate line after a state says no or takes more than a year.",
+      "critics": [
+        {
+          "who": "No 765 Line, a Wisconsin group fighting a proposed line",
+          "url": "https://no765line.org/news-senate-permitting-bill/"
+        }
+      ],
+      "claim": "The Wisconsin group says Sec. 2101 lets the Federal Energy Regulatory Commission approve an interstate line after the state utility commission says no, takes more than a year, or sets conditions that make the line \"not economically feasible.\" It says FERC must weigh landowners' views, but \"None of these rules lets a landowner or the state stop a FERC permit.\"",
+      "practice": "Landowners along a route would have less leverage through their own state. Whether a federal permit would carry the power to take land by eminent domain matters a lot for them, and we could not confirm it in the passed text.",
+      "confirmed": "CRS describes backstop siting authority for FERC in the bill as introduced.",
+      "open": "We have not read Sec. 2101's text. The Institute for Progress wrote in October that the introduced version let a federally sited line use federal eminent domain; we found no source confirming that for the passed version.",
+      "response": {
+        "who": "NRDC, which opposes the bill overall",
+        "claim": "Calls the transmission and interconnection reforms \"the bill's principal strengths.\" Earthjustice also calls the transmission provisions very positive.",
+        "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+      },
+      "sources": [
+        {
+          "label": "No 765 Line on the Senate bill (updated Nov 19, 2026)",
+          "url": "https://no765line.org/news-senate-permitting-bill/",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "CRS R49506, Summary of All Sections (Nov 5, 2026)",
+          "url": "https://www.everycrsreport.com/reports/R49506.html",
+          "kind": "CRS"
+        },
+        {
+          "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Institute for Progress, How the permitting deal works, on the introduced bill (Oct 12, 2026)",
+          "url": "https://ifp.org/how-the-permitting-deal-works/",
+          "kind": "Think tank"
+        }
+      ]
+    },
+    {
+      "id": "data-centers-local",
+      "topic": "Power grid",
+      "title": "Data center rules cover grid costs, not local impacts",
+      "section": "Secs. 2107 and 2117",
+      "check": "reported",
+      "short": "Data centers would pay for grid upgrades, but the bill leaves their water use, noise and air pollution alone.",
+      "critics": [
+        {
+          "who": "NRDC",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill"
+        }
+      ],
+      "claim": "NRDC supports the grid cost provisions but says \"The bill does not address local air pollution, water consumption, noise, land use.\"",
+      "practice": "A town that hosts a data center might be spared some electric bill increases, but water use, diesel backup generators and noise stay with state and local rules.",
+      "confirmed": "The table of contents lists Sec. 2107, \"Ratepayer protection,\" and Sec. 2117, a Data Center Community Assistance Program.",
+      "open": "We have not read either section's text.",
+      "response": {
+        "who": "Sen. Martin Heinrich, a lead sponsor",
+        "claim": "The bill will \"make sure data centers pay for the energy they use and the grid upgrades they cause.\"",
+        "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-democratic?ID=7FF2E672-7CE8-4240-8A32-FDE5646EBE48"
+      },
+      "sources": [
+        {
+          "label": "NRDC assessment of BAAJA (Nov 23, 2026)",
+          "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+          "kind": "Advocacy"
+        },
+        {
+          "label": "Sponsors' release on the substitute (Nov 7, 2026)",
+          "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-democratic?ID=7FF2E672-7CE8-4240-8A32-FDE5646EBE48",
+          "kind": "Sponsors"
+        },
+        {
+          "label": "Sponsors' substitute text to H.R. 2347, Nov 7, 2026 (table of contents)",
+          "url": "https://www.epw.senate.gov/wp-content/uploads/media/doc/11.7.26%20ANS%20to%20H.R.%202347.pdf",
+          "kind": "Bill text"
+        }
+      ]
+    }
+  ]
+}

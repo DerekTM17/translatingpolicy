@@ -1,0 +1,23 @@
+{
+  "name": "permitting-bill",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The Permitting Bill (BAAJA): what the Senate-passed permitting overhaul changes, where it stands, and how senators voted.",
+  "scripts": {
+    "dev": "vite",
+    "test": "node --test tests/*.node.mjs",
+    "build": "node scripts/check-data.mjs && vite build",
+    "preview": "vite preview",
+    "check-data": "node scripts/check-data.mjs"
+  },
+  "dependencies": {
+    "d3": "^7.9.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8"
+  }
+}
