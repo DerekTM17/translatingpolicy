@@ -1,0 +1,74 @@
+[
+ {
+  "id": "kff-benchmark",
+  "publisher": "KFF",
+  "title": "Marketplace Average Monthly Benchmark Premiums (State Health Facts)",
+  "url": "https://www.kff.org/affordable-care-act/state-indicator/marketplace-average-benchmark-premiums/",
+  "date": "2026-11-06",
+  "type": "Analysis of HealthCare.gov and state rate data",
+  "supports": "State average monthly benchmark silver premium for a 40-year-old, 2026 and 2027 (county values weighted by plan selections; 2027 updated Nov 6, 2026 for OR and CA)"
+ },
+ {
+  "id": "kff-2027-oe",
+  "publisher": "KFF",
+  "title": "9 Things to Watch for the 2027 ACA Open Enrollment Period",
+  "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/",
+  "date": "2026-11",
+  "type": "Analysis",
+  "supports": "Benchmark up 13% for 2027; enhanced credits expired end of 2025; no help above 400% FPL; repayment caps eliminated starting tax year 2026; Medicaid work rule link to tax credits; open enrollment began Nov 1, 2026"
+ },
+ {
+  "id": "rp-26-26",
+  "publisher": "IRS",
+  "title": "Rev. Proc. 2026-26 (2027 applicable percentage table)",
+  "url": "https://www.irs.gov/pub/irs-drop/rp-26-26.pdf",
+  "date": "2026",
+  "type": "Primary (Treasury guidance)",
+  "supports": "2027 applicable percentages by income band; required contribution percentage 10.22%"
+ },
+ {
+  "id": "fpl-2026",
+  "publisher": "HHS ASPE / Federal Register",
+  "title": "Annual Update of the HHS Poverty Guidelines (FR Doc. 2026-00755)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/html/2026-00755.htm",
+  "date": "2026-01-15",
+  "type": "Primary",
+  "supports": "2026 poverty guidelines used to measure income for 2027 coverage"
+ },
+ {
+  "id": "cms-age-curve",
+  "publisher": "CMS CCIIO",
+  "title": "Final Guidance Regarding Age Curves and State Reporting",
+  "url": "https://www.hhs.gov/guidance/sites/default/files/hhs-guidance-documents/CMS/Final_Guidance_Regarding_AgeCurvesandStateReporting_121616_5CR_060117.pdf",
+  "date": "2016-12-16",
+  "type": "Primary",
+  "supports": "Federal default standard age curve (age 21 = 1.000, age 40 = 1.278, age 64+ = 3.000)"
+ },
+ {
+  "id": "cms-rating",
+  "publisher": "CMS CCIIO",
+  "title": "Market Rating Reforms (state rating table)",
+  "url": "https://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Market-Reforms/state-rating",
+  "date": "2021-12-10",
+  "type": "Primary",
+  "supports": "States with their own age curve (AL, DC, MA, MN, MS, OR, UT) and with no age rating (NY, VT)"
+ },
+ {
+  "id": "hio-2027",
+  "publisher": "healthinsurance.org",
+  "title": "2027 ACA open enrollment: What's changing",
+  "url": "https://www.healthinsurance.org/blog/2027-aca-open-enrollment-whats-changing/",
+  "date": "2026-11",
+  "type": "Secondary",
+  "supports": "Open enrollment through Jan 15 in HealthCare.gov states; 2027 out-of-pocket maximum $12,000 (from $10,600)"
+ },
+ {
+  "id": "kff-expansion",
+  "publisher": "KFF (via the Medicaid Work Rule Countdown data file)",
+  "title": "Status of State Medicaid Expansion Decisions",
+  "url": "https://www.kff.org/medicaid/status-of-state-medicaid-expansion-decisions/",
+  "date": "2026-11-22",
+  "type": "Analysis",
+  "supports": "Which states expanded Medicaid (41 including DC), used to flag likely Medicaid eligibility below 138% FPL"
+ }
+]

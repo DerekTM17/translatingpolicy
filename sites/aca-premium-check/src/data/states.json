@@ -1,0 +1,469 @@
+{
+ "checked": "2026-11-24",
+ "source": "kff-benchmark",
+ "usAverage": {
+  "b2026": 625,
+  "b2027": 703
+ },
+ "states": [
+  {
+   "code": "AL",
+   "name": "Alabama",
+   "b2026": 645,
+   "b2027": 712,
+   "medicaidExpansion": false,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "AK",
+   "name": "Alaska",
+   "b2026": 1032,
+   "b2027": 1284,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "AK"
+  },
+  {
+   "code": "AZ",
+   "name": "Arizona",
+   "b2026": 532,
+   "b2027": 609,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "AR",
+   "name": "Arkansas",
+   "b2026": 774,
+   "b2027": 757,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "CA",
+   "name": "California",
+   "b2026": 570,
+   "b2027": 633,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "CO",
+   "name": "Colorado",
+   "b2026": 557,
+   "b2027": 615,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "b2026": 870,
+   "b2027": 1005,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "DE",
+   "name": "Delaware",
+   "b2026": 691,
+   "b2027": 876,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "DC",
+   "name": "District of Columbia",
+   "b2026": 610,
+   "b2027": 678,
+   "medicaidExpansion": true,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "b2026": 683,
+   "b2027": 738,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "GA",
+   "name": "Georgia",
+   "b2026": 615,
+   "b2027": 733,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "HI",
+   "name": "Hawaii",
+   "b2026": 541,
+   "b2027": 592,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "HI"
+  },
+  {
+   "code": "ID",
+   "name": "Idaho",
+   "b2026": 490,
+   "b2027": 553,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "b2026": 646,
+   "b2027": 707,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "IN",
+   "name": "Indiana",
+   "b2026": 474,
+   "b2027": 537,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "IA",
+   "name": "Iowa",
+   "b2026": 501,
+   "b2027": 528,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "KS",
+   "name": "Kansas",
+   "b2026": 670,
+   "b2027": 748,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "KY",
+   "name": "Kentucky",
+   "b2026": 590,
+   "b2027": 667,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "LA",
+   "name": "Louisiana",
+   "b2026": 646,
+   "b2027": 730,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "ME",
+   "name": "Maine",
+   "b2026": 709,
+   "b2027": 804,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "b2026": 414,
+   "b2027": 491,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "b2026": 494,
+   "b2027": 551,
+   "medicaidExpansion": true,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MI",
+   "name": "Michigan",
+   "b2026": 523,
+   "b2027": 595,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MN",
+   "name": "Minnesota",
+   "b2026": 448,
+   "b2027": 525,
+   "medicaidExpansion": true,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MS",
+   "name": "Mississippi",
+   "b2026": 662,
+   "b2027": 814,
+   "medicaidExpansion": false,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "b2026": 605,
+   "b2027": 675,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "MT",
+   "name": "Montana",
+   "b2026": 692,
+   "b2027": 889,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NE",
+   "name": "Nebraska",
+   "b2026": 710,
+   "b2027": 780,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "b2026": 497,
+   "b2027": 565,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NH",
+   "name": "New Hampshire",
+   "b2026": 401,
+   "b2027": 486,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NJ",
+   "name": "New Jersey",
+   "b2026": 545,
+   "b2027": 665,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NM",
+   "name": "New Mexico",
+   "b2026": 623,
+   "b2027": 725,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NY",
+   "name": "New York",
+   "b2026": 817,
+   "b2027": 1041,
+   "medicaidExpansion": true,
+   "ageRating": "none",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "NC",
+   "name": "North Carolina",
+   "b2026": 638,
+   "b2027": 660,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "ND",
+   "name": "North Dakota",
+   "b2026": 570,
+   "b2027": 610,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "OH",
+   "name": "Ohio",
+   "b2026": 513,
+   "b2027": 603,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "OK",
+   "name": "Oklahoma",
+   "b2026": 604,
+   "b2027": 686,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "b2026": 543,
+   "b2027": 656,
+   "medicaidExpansion": true,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "PA",
+   "name": "Pennsylvania",
+   "b2026": 572,
+   "b2027": 648,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "b2026": 506,
+   "b2027": 629,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "SC",
+   "name": "South Carolina",
+   "b2026": 564,
+   "b2027": 702,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "SD",
+   "name": "South Dakota",
+   "b2026": 655,
+   "b2027": 704,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "TN",
+   "name": "Tennessee",
+   "b2026": 711,
+   "b2027": 796,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "TX",
+   "name": "Texas",
+   "b2026": 661,
+   "b2027": 737,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "UT",
+   "name": "Utah",
+   "b2026": 640,
+   "b2027": 716,
+   "medicaidExpansion": true,
+   "ageRating": "own",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "VT",
+   "name": "Vermont",
+   "b2026": 1299,
+   "b2027": 1313,
+   "medicaidExpansion": true,
+   "ageRating": "none",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "VA",
+   "name": "Virginia",
+   "b2026": 455,
+   "b2027": 549,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "WA",
+   "name": "Washington",
+   "b2026": 612,
+   "b2027": 768,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "WV",
+   "name": "West Virginia",
+   "b2026": 1073,
+   "b2027": 1185,
+   "medicaidExpansion": true,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "WI",
+   "name": "Wisconsin",
+   "b2026": 611,
+   "b2027": 720,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  },
+  {
+   "code": "WY",
+   "name": "Wyoming",
+   "b2026": 1090,
+   "b2027": 1190,
+   "medicaidExpansion": false,
+   "ageRating": "federal",
+   "fplRegion": "US48"
+  }
+ ]
+}
