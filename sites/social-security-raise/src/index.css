@@ -1,0 +1,96 @@
+@import './tokens.css';
+
+/*
+ * Social Security Raise in the hub look (docs/superpowers/specs/2026-10-25-translatingpolicy-hub-design.md, "Look").
+ * Colors come from tokens.css. The only new color is this page's accent, --c-ssraise (lime), chosen to stay clear
+ * of the hub's cyan, green, orange, amber, red, violet and magenta. Decreases wear the hub's --c-war red.
+ * Hover rules live inside @media (hover: hover) so taps never stick.
+ */
+:root { --c-ssraise: #c6ff3d; --c-ssraise-rgb: 198, 255, 61; }
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 700px at 70% -10%, var(--void-mid), var(--void) 70%) fixed, var(--void);
+  color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; min-height: 100vh; overflow-x: hidden;
+  --mx: 50%; --my: 30%;
+}
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(var(--glow-rgb), 0.10), transparent 60%); }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 3px); }
+#root { position: relative; z-index: 1; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--glow); outline-offset: 2px; }
+
+.nav { border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.brand { font-family: var(--f-display); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 15px; text-decoration: none; }
+.brand span { color: var(--glow); text-shadow: 0 0 14px rgba(var(--glow-rgb), .6); }
+.here { font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--c-ssraise); }
+
+.hero { padding-block: 56px 24px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--c-ssraise); display: flex; align-items: center; gap: 10px; margin: 0; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--c-ssraise); box-shadow: 0 0 8px var(--c-ssraise); }
+.hero h1 { font-family: var(--f-display); font-weight: 700; text-transform: uppercase; letter-spacing: .02em; font-size: clamp(34px, 6.4vw, 72px); line-height: 1.02; margin: 18px 0 20px; text-wrap: balance; }
+.hero h1 em { font-style: normal; color: var(--c-ssraise); text-shadow: 0 0 22px rgba(var(--c-ssraise-rgb), .35); }
+.lede { max-width: 60ch; color: var(--ink-dim); font-size: 18px; margin: 0; }
+
+.tiles { margin-top: 30px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 820px; }
+@media (max-width: 640px) { .tiles { grid-template-columns: 1fr; } }
+.tile { --c: var(--c-ssraise); --c-rgb: var(--c-ssraise-rgb); padding: 16px 18px; border: 1px solid rgba(var(--c-rgb), .4); background: rgba(var(--c-rgb), .04); box-shadow: inset 0 0 24px rgba(var(--c-rgb), .08); }
+.tile.minus { --c: var(--c-war); --c-rgb: var(--c-war-rgb); }
+.tile .k { font-family: var(--f-mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--c); }
+.tile .n { font-family: var(--f-display); font-weight: 700; font-size: clamp(44px, 9vw, 64px); line-height: 1; margin-top: 8px; font-variant-numeric: tabular-nums; color: var(--c); text-shadow: 0 0 18px rgba(var(--c-rgb), .45); }
+.tile .m { margin: 8px 0 0; font-family: var(--f-mono); font-size: 12px; color: var(--ink-dim); }
+
+.sec-title { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; border-top: 1px solid var(--line); padding-top: 18px; margin: 40px 0 18px; }
+.sec-title h2 { font-family: var(--f-display); font-size: 22px; letter-spacing: .14em; text-transform: uppercase; margin: 0; font-weight: 600; text-wrap: balance; }
+.sec-title small { font-family: var(--f-mono); font-size: 11px; color: var(--ink-dim); letter-spacing: .12em; text-transform: uppercase; }
+.sec-lede { margin: -6px 0 18px; color: var(--ink-dim); max-width: 70ch; }
+
+.calc { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 28px; }
+@media (max-width: 860px) { .calc { grid-template-columns: 1fr; } }
+.field { border: 0; padding: 0; margin: 0 0 22px; display: block; min-width: 0; }
+.field > span, .field legend { display: block; font-weight: 600; margin-bottom: 8px; }
+.field small, .magi small { display: block; color: var(--ink-dim); font-size: 13px; margin-top: 6px; }
+.money { display: flex; align-items: center; border: 1px solid rgba(var(--c-ssraise-rgb), .5); background: rgba(var(--c-ssraise-rgb), .04); }
+.money b { font-family: var(--f-display); font-size: 28px; color: var(--c-ssraise); padding: 0 4px 0 14px; }
+input { font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--line); padding: 10px 12px; width: 100%; min-width: 0; }
+.money input { border: 0; font-family: var(--f-display); font-size: 32px; font-variant-numeric: tabular-nums; padding: 8px 12px 8px 0; }
+.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg button { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; color: var(--ink-dim); background: transparent; border: 1px solid var(--line); padding: 9px 12px; cursor: pointer; text-align: left; }
+.seg button[aria-pressed="true"] { color: var(--c-ssraise); border-color: rgba(var(--c-ssraise-rgb), .6); background: rgba(var(--c-ssraise-rgb), .10); }
+@media (hover: hover) { .seg button:hover { color: var(--ink); border-color: rgba(var(--glow-rgb), .4); } }
+.magi { margin-top: 12px; display: grid; gap: 10px; }
+.magi label { display: grid; gap: 4px; font-size: 14px; color: var(--ink-dim); }
+
+.result { border: 1px solid var(--line); padding: 18px; min-width: 0; background: rgba(var(--glow-rgb), .02); }
+.result .big { font-family: var(--f-display); font-size: clamp(24px, 3.6vw, 34px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.result .big b.up { color: var(--c-ssraise); text-shadow: 0 0 16px rgba(var(--c-ssraise-rgb), .4); }
+.result .big b.down { color: var(--c-war); }
+.result .sub { color: var(--ink-dim); margin: 8px 0 12px; }
+.facts { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; font-size: 15px; }
+.facts b { font-family: var(--f-mono); font-weight: 500; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); margin-right: 6px; }
+.axis-note { font-family: var(--f-mono); font-size: 11px; color: var(--ink-dim); margin: 12px 0 0; }
+
+.waterfall svg, .share svg { display: block; overflow: visible; }
+.bar rect { fill: rgba(var(--glow-rgb), .55); }
+.bar.up rect { fill: var(--c-ssraise); filter: drop-shadow(0 0 6px rgba(var(--c-ssraise-rgb), .5)); }
+.bar.down rect { fill: var(--c-war); filter: drop-shadow(0 0 6px rgba(var(--c-war-rgb), .5)); }
+.bar .val { font-family: var(--f-mono); font-size: 12px; fill: var(--ink); }
+.bar .lab { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; fill: var(--ink-dim); }
+.rail { stroke: var(--line); stroke-width: 2; }
+.axis text { font-family: var(--f-mono); font-size: 11px; fill: var(--ink-dim); }
+.axis line, .axis path { stroke: var(--line); }
+.share .line { fill: none; stroke: var(--c-war); stroke-width: 2; filter: drop-shadow(0 0 5px rgba(var(--c-war-rgb), .5)); }
+.share .me { fill: var(--c-ssraise); stroke: var(--void); stroke-width: 2; }
+.share .me-label { font-family: var(--f-mono); font-size: 11px; fill: var(--c-ssraise); text-transform: uppercase; letter-spacing: .1em; }
+
+.how { padding-left: 20px; max-width: 75ch; display: grid; gap: 10px; color: var(--ink); }
+.limits { color: var(--ink-dim); max-width: 75ch; font-size: 14px; }
+.sources { padding-left: 20px; display: grid; gap: 6px; font-size: 14px; }
+.sources a { color: var(--glow); }
+.foot { margin-top: 56px; border-top: 1px solid var(--line); padding-block: 20px; font-family: var(--f-mono); font-size: 11px; letter-spacing: .1em; color: var(--ink-dim); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
