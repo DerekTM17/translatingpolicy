@@ -1,0 +1,59 @@
+{
+  "asOf": "2026-11-26",
+  "totals": {
+    "ieepaCollectedBillions": 166,
+    "ieepaCollectedNote": "Estimated IEEPA tariffs paid by the importer class, Feb 1, 2025 to Feb 19, 2026, as reported from the Court of International Trade class certification in Freestyle World v. United States.",
+    "ieepaCollectedSource": "forbes-2026-11-20",
+    "mayStayWithGovernmentBillions": 30,
+    "mayStayNote": "The court's rough estimate of refunds that would otherwise stay with the government, much of it tied to liquidated entries of importers that never sued.",
+    "mayStaySource": "forbes-2026-11-20",
+    "householdsThousands": 134790,
+    "householdsYear": 2025,
+    "householdsSource": "fred-ttlhh"
+  },
+  "milestones": [
+    { "date": "2026-08-31", "label": "Aug 2026", "billions": 115, "qualifier": "more than", "measure": "Disbursed to companies", "source": "fortune-2026-11-12" },
+    { "date": "2026-09-17", "label": "Mid Sep 2026", "billions": 122, "qualifier": "about", "measure": "Certified and sent to Treasury for payment, including interest", "source": "chr-2026-09-17" },
+    { "date": "2026-10-02", "label": "Oct 2, 2026", "billions": 126, "qualifier": "about", "measure": "Refunds and interest sent to Treasury for payment", "source": "forbes-2026-11-20" }
+  ],
+  "capeSnapshot": {
+    "source": "chr-2026-09-17",
+    "acceptedIntoCapeBillions": 134.7,
+    "declarationsSubmitted": 286000,
+    "declarationsAccepted": 201000,
+    "entriesCovered": 27200000,
+    "onHoldNoBankInfoCount": 20184,
+    "onHoldNoBankInfoBillions": 1.3
+  },
+  "timeline": [
+    { "date": "2025-02-01", "label": "Tariff window opens", "detail": "Start of the period covered by the importer class.", "source": "forbes-2026-11-20", "status": "past" },
+    { "date": "2026-02-20", "label": "Supreme Court strikes the tariffs", "detail": "Learning Resources v. Trump, 6 to 3, Roberts writing: the emergency powers law (IEEPA) does not let the President impose tariffs.", "source": "cornell-lii", "status": "past", "dateNote": "Day taken from a Feb 20, 2026 law firm Supreme Court update; confirm against the slip opinion." },
+    { "date": "2026-03-15", "label": "Trade court: every importer is owed", "detail": "Judge Richard Eaton rules all importers of record who paid IEEPA tariffs are entitled to refunds.", "source": "fortune-2026-11-12", "status": "past", "approxDate": true },
+    { "date": "2026-04-20", "label": "CBP opens the refund portal", "detail": "CAPE goes live in the ACE portal; importers file a CSV of entries and get refunds 60 to 90 days after validation.", "source": "castro-factsheet", "status": "past" },
+    { "date": "2026-06-15", "label": "Administration appeals", "detail": "DOJ appeals the universal refund order to the Federal Circuit, arguing only importers who sued should be repaid. Pending.", "source": "forbes-2026-11-20", "status": "past", "approxDate": true },
+    { "date": "2026-10-06", "label": "CAPE Phase 3", "detail": "More importers can file refund declarations.", "source": "chr-2026-09-17", "status": "past" },
+    { "date": "2026-10-08", "label": "Class certified", "detail": "Freestyle World v. United States covers more than 330,000 importers who did not sue.", "source": "forbes-2026-11-20", "status": "past" },
+    { "date": "2026-11-10", "label": "Motion to repay everyone", "detail": "Class counsel asks the court to order refunds to all importers of record, sued or not.", "source": "forbes-2026-11-20", "status": "past" },
+    { "date": "2026-12-09", "label": "DOJ answer due", "detail": "The government's response to the relief motion is due. This decides whether the remaining non-suing importers get paid.", "source": "fortune-2026-11-12", "status": "next" }
+  ],
+  "covered": ["IEEPA tariffs (the emergency tariffs the Court struck down)"],
+  "notCovered": ["Section 232 tariffs (steel, aluminum, autos and others)", "Section 301 tariffs (China trade case)", "Antidumping and countervailing duties", "Ordinary most favored nation duties"],
+  "coverageSource": "castro-factsheet",
+  "consumerRoute": {
+    "summary": "Refunds go to the importer of record. Shoppers who paid higher prices have no legal route to a refund from the government.",
+    "examples": [
+      "FedEx and UPS say they are reimbursing customers who paid itemized tariff charges.",
+      "Consumers have filed class actions against Walmart, Target and Nike seeking a share.",
+      "No pending bill in Congress would require companies to pass refunds to customers."
+    ],
+    "source": "forbes-2026-11-20"
+  },
+  "sources": [
+    { "id": "forbes-2026-11-20", "name": "Forbes, Companies are getting billions in tariff refunds; what happens to consumers? (Nov 20, 2026)", "url": "https://www.forbes.com/sites/nathangoldman/2026/11/20/walmart-apple-and-fedex-are-getting-tariff-refunds-will-consumers/", "kind": "secondary", "cites": "CIT class certification order, CBP CAPE data through Oct 2, ProPublica refund database" },
+    { "id": "fortune-2026-11-12", "name": "Fortune, importers one step closer to $166 billion in universal rebates (Nov 12, 2026)", "url": "https://fortune.com/2026/11/12/tariff-refund-class-action-lawsuit-universal-tariff-refunds-trump-administration/", "kind": "secondary", "cites": "CIT orders, government appeal filing, Treasury Monthly Statement" },
+    { "id": "chr-2026-09-17", "name": "C.H. Robinson advisory relaying CBP's declaration to the Court of International Trade (Sep 17, 2026)", "url": "https://www.chrobinson.com/en-us/resources/insights-and-advisories/client-advisories/2026q3/09-17-26-cbp-cape-phase-3-ieepa-refunds/", "kind": "secondary", "cites": "CBP declaration to the CIT" },
+    { "id": "castro-factsheet", "name": "Rep. Joaquin Castro, IEEPA tariff refunds fact sheet", "url": "https://castro.house.gov/tariffrefund", "kind": "congressional", "cites": "CBP CAPE guidance" },
+    { "id": "cornell-lii", "name": "Cornell LII, Learning Resources v. Trump, 607 U.S. 229 (2026)", "url": "https://www.law.cornell.edu/wex/Learning_Resources_v_Trump_2026", "kind": "reference", "cites": "Supreme Court opinion" },
+    { "id": "fred-ttlhh", "name": "FRED, Total Households (TTLHH), Census Bureau CPS", "url": "https://fred.stlouisfed.org/series/TTLHH", "kind": "primary", "cites": "Census Bureau" }
+  ]
+}
